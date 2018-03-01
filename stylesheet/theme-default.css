@@ -249,73 +249,116 @@
   border-color:#F56C6C;
 }
 /*--------------------------------按钮主题----------------------*/
-.btn-default{
+.btn.default{
   background-color:#DCDFE6;
   border-color:#DCDFE6;
   color:#606266;
 }
-.is-plain.btn-default{
+.default.is-plain{
   background:#fff;
 }
-.btn-primary{
+.default.is-outline{
+  background:#fff;
+}
+.btn.primary{
   background-color:#409EFF;
   border-color:#409EFF;
 }
-.is-outline.btn-primary{
-  color:#409EFF;
-}
-.is-plain.btn-primary{
+.btn.is-plain.primary{
   background-color:#ECF5FF;
   color:#409EFF;
   border-color:#B3D8FF;
 }
-.btn-success{
+.btn.is-plain.primary:active{
+  background:#409EFF;
+  color:#fff;
+}
+.primary.is-outline{
+  background:#fff;
+  color:#409EFF;
+}
+.primary.is-outline:active{
+  background:#ECF5FF;
+}
+.btn.success{
   background-color:#67C23A;
   border-color:#67C23A;
 }
-.is-outline.btn-success{
-  color:#67C23A;
-}
-.is-plain.btn-success{
+.btn.is-plain.success{
   background-color:#F0F9EB;
   color:#67C23A;
   border-color:#C2E7B0;
 }
-.btn-info{
+.btn.is-plain.success:active{
+  background:#67C23A;
+  color:#fff;
+}
+.success.is-outline{
+  background:#fff;
+  color:#67C23A;
+}
+.success.is-outline:active{
+  background:#F0F9EB;
+}
+.btn.info{
   background-color:#909399;
   border-color:#909399;
 }
-.is-outline.btn-info{
-  color:#909399;
-}
-.is-plain.btn-info{
+.btn.is-plain.info{
   background-color:#F4F4F5;
   color:#909399;
   border-color:#D3D4D6;
 }
-.btn-warning{
+.btn.is-plain.info:active{
+  background:#909399;
+  color:#fff;
+}
+.info.is-outline{
+  background:#fff;
+  color:#909399;
+}
+.info.is-outline:active{
+  background:#F4F4F5;
+}
+.btn.warning{
   background-color:#E6A23C;
   border-color:#E6A23C;
 }
-.is-outline.btn-warning{
-  color:#E6A23C;
-}
-.is-plain.btn-warning{
+.btn.is-plain.warning{
   background-color:#FDF6EC;
   color:#E6A23C;
   border-color:#F5DAB1;
 }
-.btn-danger{
+.btn.is-plain.warning:active{
+  background:#E6A23C;
+  color:#fff;
+}
+.warning.is-outline{
+  background:#fff;
+  color:#E6A23C;
+}
+.warning.is-outline:active{
+  background:#FDF6EC;
+}
+.btn.danger{
   background-color:#F56C6C;
   border-color:#F56C6C;
 }
-.is-outline.btn-danger{
-  color:#F56C6C;
-}
-.is-plain.btn-danger{
+.btn.is-plain.danger{
   background-color:#FEF0F0;
   color:#F56C6C;
   border-color:#FBC4C4;
+}
+.btn.is-plain.danger:active{
+  background:#F56C6C;
+  color:#fff;
+}
+.danger.is-outline{
+  background:#fff;
+  color:#F56C6C;
+}
+.danger.is-outline:active{
+  background:#FEF0F0;
 }
 
 /* 输入框*/

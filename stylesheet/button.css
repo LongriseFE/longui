@@ -2,7 +2,7 @@
   display:inline-block;
   font-size:14px;
   border:1px solid transparent;
-  padding:0.8rem 1rem;
+  padding:10px 20px;
   color:#fff;
   font-family:"微软雅黑";
   outline:none;
@@ -20,13 +20,16 @@
   vertical-align: middle;
   display:inline-block;
 }
-.btn-large{
+.btn.large{
   padding:14px 25px;
 }
-.btn-small{
+.btn.medium{
+  padding:12px 20px;
+}
+.btn.small{
   padding:8px 10px;
 }
-.btn-mini{
+.btn.mini{
   padding:5px 8px;
 }
 .is-conner{
@@ -41,8 +44,5 @@
 }
 .btn:active{
   opacity:0.8;
-}
-.btn.is-outline{
-  background:#fff;
 }
 

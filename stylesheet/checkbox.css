@@ -18,8 +18,8 @@
 .checkbox .label:before{
   content:"";
   display:inline-block;
-  width:18px;
-  height:18px;
+  width:16px;
+  height:16px;
   border:1px solid #ccc;
   border-radius:3px;
   position:absolute;
@@ -47,7 +47,7 @@
   left:6px;
   background:none;
   border-radius:0;
-  top: 0;
+  top: -1px;
 }
 .checkbox input:checked + .label:after{
   position: absolute;
