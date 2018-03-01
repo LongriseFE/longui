@@ -9,6 +9,18 @@
   -webkit-tap-highlight-color:rgba(0,0,0,0);
   transition:0.3s;
   line-height:1;
+  box-sizing:border-box;
+  margin:5px 0;
+}
+.btn:disabled{
+  opacity:0.4;
+}
+.btn:disabled:active{
+  opacity:0.4;
+}
+.btn.full{
+  width:100%;
+  text-align:center;
 }
 .btn .label{
   display:inline-block;
@@ -19,6 +31,19 @@
   margin-right:5px;
   vertical-align: middle;
   display:inline-block;
+}
+.btn .icon-loading{
+  display:none;
+}
+.btn.is-loading{
+  opacity:0.6;
+}
+.btn.is-loading:active{
+  opacity:0.6;
+}
+.is-loading .icon-loading{
+  display:inline-block;
+  animation: loading 1s infinite;
 }
 .btn.large{
   padding:14px 25px;
@@ -45,4 +70,11 @@
 .btn:active{
   opacity:0.8;
 }
-
+@keyframes loading {
+  from {
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}

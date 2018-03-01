@@ -114,7 +114,9 @@
   border:none;
 }
 .radio-list .radio .label:before{
-  display:none;
+  display:inline-block;
+  left:auto;
+  right:10px;
 }
 .radio-list .radio .label:after{
   display:table;
@@ -127,7 +129,6 @@
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   position:absolute;
-  right:0;
   left:auto;
   background:none;
   border-radius:0;
@@ -137,10 +138,11 @@
   height:12px;
   position: absolute;
   top: 50%;
-  right:1rem;
+  right:16px;
   border: 1px solid #fff;
   border-top: 0;
   border-left: 0;
+  border-color:#fff;
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
   transition: all .2s ease-in-out;
@@ -344,4 +346,7 @@
 }
 .radio-button.large .label{
   padding-right:26px;
+}
+.radio-list.large input:checked + .label:after{
+  right:18px;
 }
