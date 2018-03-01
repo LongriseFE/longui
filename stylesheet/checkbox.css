@@ -1,0 +1,273 @@
+/*-------------基本样式------------*/
+.checkbox{
+  display:inline-block;
+  vertical-align: middle;
+}
+.checkbox input{
+  display:none;
+}
+.checkbox .label{
+  font-size:14px;
+  color:#606266;
+  position:relative;
+  padding-left:20px;
+  line-height:1;
+  transition:0.3s;
+  display:inline-block;
+}
+.checkbox .label:before{
+  content:"";
+  display:inline-block;
+  width:18px;
+  height:18px;
+  border:1px solid #ccc;
+  border-radius:3px;
+  position:absolute;
+  left:0;
+  top:50%;
+  margin-top:-9px;
+  box-sizing: border-box;
+  transition:.3s;
+}
+.checkbox .label:after{
+  content: "";
+  display:table;
+  width:5px;
+  height:10px;
+  border-top:0;
+  border-left:0;
+  transform:rotate(45deg) scale(0);
+  -webkit-transform:rotate(45deg) scale(0);
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  position:absolute;
+  left:6px;
+  background:none;
+  border-radius:0;
+  top: 50%;
+  margin-top:-4px;
+}
+.checkbox input:checked + .label:after{
+  width: 5px;
+  height:10px;
+  position: absolute;
+  top: 50%;
+  right:1rem;
+  background:none;
+  border: 2px solid #CCC;
+  border-top: 0;
+  border-left: 0;
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  transition: all .2s ease-in-out;
+  margin-top:-8px;
+}
+.checkbox input:checked + .label:before{
+  border-color:#ccc;
+}
+/*checkbox-list*/
+.checkbox-list .checkbox{
+  display:block;
+}
+.checkbox-list .checkbox .label{
+  padding-left:0;
+  display:block;
+  position:relative;
+  padding:10px;
+  border-bottom:1px solid #DCDFE6;
+}
+.checkbox-list .checkbox:last-child .label{
+  border:none;
+}
+.checkbox-list .checkbox .label:before{
+  display:none;
+}
+.checkbox-list .checkbox .label:after{
+  display:table;
+  width:6px;
+  height:12px;
+  border-top:0;
+  border-left:0;
+  transform:rotate(45deg) scale(0);
+  -webkit-transform:rotate(45deg) scale(0);
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  position:absolute;
+  right:0;
+  left:auto;
+  background:none;
+  border-radius:0;
+}
+.checkbox-list .checkbox input:checked + .label:after{
+  width: 6px;
+  height:12px;
+  position: absolute;
+  top: 50%;
+  right:1rem;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  transition: all .2s ease-in-out;
+  margin-top:-10px;
+}
+.checkbox-list.steep .checkbox input:checked + .label{
+  background:none;
+}
+/*checkbox-button*/
+.checkbox-button{
+  font-size:0;
+  padding-left:1px;
+}
+.checkbox-button .label{
+  padding:8px 20px;
+  display:inline-block;
+  border:1px solid #DCDFE6;
+  margin-left:-1px;
+}
+.checkbox-button .checkbox{
+  margin:0;
+}
+.checkbox-button .label:before,.checkbox-button .label:after{
+  display:none;
+}
+.checkbox-button input:checked + .label{
+  color:#fff;
+  z-index:100;
+}
+.checkbox-button.is-conner .checkbox:first-child .label{
+  border-radius:5px 0 0 5px;
+}
+.checkbox-button.is-conner .checkbox:last-child .label{
+  border-radius:0 5px 5px 0;
+}
+.checkbox-button.is-round .checkbox:first-child .label{
+  border-radius:50px 0 0 50px;
+}
+.checkbox-button.is-round .checkbox:last-child .label{
+  border-radius:0 50px 50px 0;
+}
+.checkbox-button.steep input:checked + .label{
+  z-index:100;
+}
+.checkbox-button.primary.steep input:checked + .label,
+.checkbox-button.success.steep input:checked + .label{
+  background:none;
+}
+/*checkbox-tab*/
+.checkbox-tab{
+  border-bottom:1px solid #DCDFE6;
+}
+.checkbox-tab .checkbox{
+  margin-right:5px;
+}
+.checkbox-tab .label{
+  padding:10px 1em;
+  border-bottom:2px solid transparent;
+  position:relative;
+  top:1px;
+}
+.checkbox-tab .label:before,.checkbox-tab .label:after{
+  display:none;
+}
+.checkbox-tab.full{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+}
+.checkbox-tab.full .checkbox{
+  flex:1;
+  -webkit-flex: 1;
+  text-align:center;
+}
+.checkbox-tab.vertical{
+  border:none;
+}
+.checkbox-tab.vertical .checkbox{
+  display:block;
+  border-bottom:1px solid #DCDFE6;
+}
+.checkbox-tab.vertical .label{
+  display:block;
+}
+.checkbox-tab.vertical.primary .label:after{
+  content:"";
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:0;
+  border-color:#fff;
+  background:none;
+  position:absolute;
+  right:10px;
+  left:auto;
+  top:50%;
+  margin-top:-5px;
+  border-style: solid;
+  border-width:0;
+  border-right-width: 1px;
+  border-bottom-width:1px;
+  transform:rotate(-45deg);
+}
+/*--------------------尺寸-------------*/
+/*mini*/
+.mini .label{
+  padding-left:20px;
+  font-size:12px;
+}
+.mini .label:before{
+  width:16px;
+  height:16px;
+  margin-top:-8px;
+}
+.mini .label:after{
+  width:8px;
+  height:8px;
+  margin-top:-4px;
+}
+/*small*/
+.small .label{
+  padding-left:22px;
+  font-size:14px;
+}
+.small .label:before{
+  width:18px;
+  height:18px;
+  margin-top:-9px;
+}
+.small .label:after{
+  width:10px;
+  height:10px;
+  margin-top:-5px;
+}
+/*medium*/
+.medium .label{
+  padding-left:24px;
+  font-size:15px;
+}
+.medium .label:before{
+  width:20px;
+  height:20px;
+  margin-top:-10px;
+}
+.medium .label:after{
+  width:12px;
+  height:12px;
+  margin-top:-6px;
+}
+/*large*/
+.large .label{
+  padding-left:28px;
+  font-size:16px;
+}
+.large .label:before{
+  width:24px;
+  height:24px;
+  margin-top:-12px;
+}
+.large .label:after{
+  width:16px;
+  height:16px;
+  margin-top:-8px;
+}

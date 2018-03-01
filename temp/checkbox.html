@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheet/reset.css">
+  <link rel="stylesheet" href="../stylesheet/checkbox.css">
+  <link rel="stylesheet" href="../stylesheet/theme-default.css">
+  <style>
+  html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} /*这个是必须的*/
+  body{padding:10px;font-family:"微软雅黑";}
+  h1{font-size:16px;font-weight:normal;color:#666;padding:10px;background:#f5f5f5;}
+  .content{padding:20px 10px;border:1px solid #f5f5f5;}
+  .line{height:4px;background:#F5F5F5;margin:10px 0;}
+  </style>
+</head>
+<body>
+  <h1>单个使用(不同颜色)</h1>
+  <div class="content">
+    <label for="n1" class="checkbox">
+      <input type="checkbox" name="n" id="n1">
+      <span class="label">男</span>
+    </label>
+    <label for="n2" class="checkbox primary">
+      <input type="checkbox" name="n" id="n2">
+      <span class="label">女</span>
+    </label>
+    <label for="n3" class="checkbox success">
+      <input type="checkbox" name="n" id="n3">
+      <span class="label">私密</span>
+    </label>
+    <label for="n4" class="checkbox info">
+      <input type="checkbox" name="n" id="n4">
+      <span class="label">私密</span>
+    </label>
+    <label for="n5" class="checkbox warning">
+      <input type="checkbox" name="n" id="n5">
+      <span class="label">私密</span>
+    </label>
+    <label for="n6" class="checkbox danger">
+      <input type="checkbox" name="n" id="n6">
+      <span class="label">私密</span>
+    </label>
+  </div>
+  <h1>checkboxgGoup</h1>
+  <div class="content">
+    <div class="checkbox-group info">
+      <label for="g1" class="checkbox">
+        <input type="checkbox" name="g" id="g1">
+        <span class="label">男</span>
+      </label>
+      <label for="g2" class="checkbox">
+        <input checked type="checkbox" name="g" id="g2">
+        <span class="label">女</span>
+      </label>
+      <label for="g3" class="checkbox">
+        <input type="checkbox" name="g" id="g3">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group primary">
+      <label for="g11" class="checkbox">
+        <input type="checkbox" name="g2" id="g11">
+        <span class="label">男</span>
+      </label>
+      <label for="g12" class="checkbox">
+        <input checked type="checkbox" name="g2" id="g12">
+        <span class="label">女</span>
+      </label>
+      <label for="g13" class="checkbox">
+        <input type="checkbox" name="g2" id="g13">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group success">
+      <label for="g121" class="checkbox">
+        <input type="checkbox" name="g3" id="g121">
+        <span class="label">男</span>
+      </label>
+      <label for="g122" class="checkbox">
+        <input checked type="checkbox" name="g3" id="g122">
+        <span class="label">女</span>
+      </label>
+      <label for="g123" class="checkbox">
+        <input type="checkbox" name="g3" id="g123">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group warning">
+      <label for="g131" class="checkbox">
+        <input type="checkbox" name="g4" id="g131">
+        <span class="label">男</span>
+      </label>
+      <label for="g132" class="checkbox">
+        <input checked type="checkbox" name="g4" id="g132">
+        <span class="label">女</span>
+      </label>
+      <label for="g133" class="checkbox">
+        <input type="checkbox" name="g4" id="g133">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group danger">
+      <label for="g141" class="checkbox">
+        <input type="checkbox" name="g5" id="g141">
+        <span class="label">男</span>
+      </label>
+      <label for="g142" class="checkbox">
+        <input checked type="checkbox" name="g5" id="g142">
+        <span class="label">女</span>
+      </label>
+      <label for="g143" class="checkbox">
+        <input type="checkbox" name="g5" id="g143">
+        <span class="label">私密</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkboxgGoup(选中文字变色)</h1>
+  <div class="content">
+    <div class="checkbox-group steep primary">
+      <label for="g41" class="checkbox">
+        <input type="checkbox" name="gg" id="g41">
+        <span class="label">男</span>
+      </label>
+      <label for="g42" class="checkbox">
+        <input checked type="checkbox" name="gg" id="g42">
+        <span class="label">女</span>
+      </label>
+      <label for="g43" class="checkbox">
+        <input type="checkbox" name="gg" id="g43">
+        <span class="label">私密</span>
+      </label>
+    </div>
+  </div>
+  <h1>不同尺寸</h1>
+  <div class="content">
+    <div class="checkbox-group primary mini">
+      <label for="f1" class="checkbox">
+        <input type="checkbox" name="f" id="f1">
+        <span class="label">男</span>
+      </label>
+      <label for="f2" class="checkbox">
+        <input checked type="checkbox" name="f" id="f2">
+        <span class="label">女</span>
+      </label>
+      <label for="f3" class="checkbox">
+        <input type="checkbox" name="f" id="f3">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group primary small">
+      <label for="ff1" class="checkbox">
+        <input type="checkbox" name="ff" id="ff1">
+        <span class="label">男</span>
+      </label>
+      <label for="ff2" class="checkbox">
+        <input checked type="checkbox" name="ff" id="ff2">
+        <span class="label">女</span>
+      </label>
+      <label for="ff3" class="checkbox">
+        <input type="checkbox" name="ff" id="ff3">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group primary medium">
+      <label for="fff1" class="checkbox">
+        <input type="checkbox" name="fff" id="fff1">
+        <span class="label">男</span>
+      </label>
+      <label for="fff2" class="checkbox">
+        <input checked type="checkbox" name="fff" id="fff2">
+        <span class="label">女</span>
+      </label>
+      <label for="fff3" class="checkbox">
+        <input type="checkbox" name="fff" id="fff3">
+        <span class="label">私密</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-group primary large">
+      <label for="ffff1" class="checkbox">
+        <input type="checkbox" name="ffff" id="ffff1">
+        <span class="label">男</span>
+      </label>
+      <label for="ffff2" class="checkbox">
+        <input checked type="checkbox" name="ffff" id="ffff2">
+        <span class="label">女</span>
+      </label>
+      <label for="ffff3" class="checkbox">
+        <input type="checkbox" name="ffff" id="ffff3">
+        <span class="label">私密</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-list(不同尺寸)</h1>
+  <div class="content">
+    <div class="checkbox-list info mini">
+      <label for="pp1" class="checkbox">
+        <input type="checkbox" name="pp" id="pp1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="pp2" class="checkbox">
+        <input checked type="checkbox" name="pp" id="pp2">
+        <span class="label">微信</span>
+      </label>
+      <label for="pp3" class="checkbox">
+        <input type="checkbox" name="pp" id="pp3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <div class="line"></div>
+    <div class="checkbox-list primary small">
+      <label for="ppp1" class="checkbox">
+        <input type="checkbox" name="ppp" id="ppp1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="ppp2" class="checkbox">
+        <input checked type="checkbox" name="ppp" id="ppp2">
+        <span class="label">微信</span>
+      </label>
+      <label for="ppp3" class="checkbox">
+        <input type="checkbox" name="ppp" id="ppp3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <div class="line"></div>
+    <div class="checkbox-list warning medium">
+      <label for="pppp1" class="checkbox">
+        <input type="checkbox" name="pppp" id="pppp1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="pppp2" class="checkbox">
+        <input type="checkbox" name="pppp" id="pppp2">
+        <span class="label">微信</span>
+      </label>
+      <label for="pppp3" class="checkbox">
+        <input checked type="checkbox" name="pppp" id="pppp3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <div class="line"></div>
+    <div class="checkbox-list danger large">
+      <label for="ppppp1" class="checkbox">
+        <input type="checkbox" name="ppppp" id="ppppp1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="ppppp2" class="checkbox">
+        <input checked type="checkbox" name="ppppp" id="ppppp2">
+        <span class="label">微信</span>
+      </label>
+      <label for="ppppp3" class="checkbox">
+        <input type="checkbox" name="ppppp" id="ppppp3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-list(steep)</h1>
+  <div class="content">
+    <div class="checkbox-list danger medium steep">
+      <label for="p1" class="checkbox">
+        <input type="checkbox" name="p" id="p1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="p2" class="checkbox">
+        <input checked type="checkbox" name="p" id="p2">
+        <span class="label">微信</span>
+      </label>
+      <label for="p3" class="checkbox">
+        <input type="checkbox" name="p" id="p3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>单选按钮（button）</h1>
+  <div class="content">
+    <div class="checkbox-button primary mini">
+      <label for="aa1" class="checkbox">
+        <input type="checkbox" name="aa" id="aa1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="aa2" class="checkbox">
+        <input checked type="checkbox" name="aa" id="aa2">
+        <span class="label">微信</span>
+      </label>
+      <label for="aa3" class="checkbox">
+        <input type="checkbox" name="aa" id="aa3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-button primary is-conner small">
+      <label for="ba1" class="checkbox">
+        <input type="checkbox" name="ba" id="ba1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="ba2" class="checkbox">
+        <input checked type="checkbox" name="ba" id="ba2">
+        <span class="label">微信</span>
+      </label>
+      <label for="ba3" class="checkbox">
+        <input type="checkbox" name="ba" id="ba3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-button primary is-round medium">
+      <label for="br1" class="checkbox">
+        <input type="checkbox" name="br" id="br1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="br2" class="checkbox">
+        <input checked type="checkbox" name="br" id="br2">
+        <span class="label">微信</span>
+      </label>
+      <label for="br3" class="checkbox">
+        <input type="checkbox" name="br" id="br3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-button primary is-conner large">
+      <label for="baa1" class="checkbox">
+        <input type="checkbox" name="baa" id="baa1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="baa2" class="checkbox">
+        <input checked type="checkbox" name="baa" id="baa2">
+        <span class="label">微信</span>
+      </label>
+      <label for="baa3" class="checkbox">
+        <input type="checkbox" name="baa" id="baa3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-button (steep)</h1>
+  <div class="content">
+    <div class="checkbox-button primary is-round steep size-medium">
+      <label for="brs1" class="checkbox">
+        <input type="checkbox" name="brs" id="brs1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="brs2" class="checkbox">
+        <input checked type="checkbox" name="brs" id="brs2">
+        <span class="label">微信</span>
+      </label>
+      <label for="brs3" class="checkbox">
+        <input type="checkbox" name="brs" id="brs3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-button success is-round steep size-large">
+      <label for="brss1" class="checkbox">
+        <input type="checkbox" name="brss" id="brss1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="brss2" class="checkbox">
+        <input checked type="checkbox" name="brss" id="brss2">
+        <span class="label">微信</span>
+      </label>
+      <label for="brss3" class="checkbox">
+        <input type="checkbox" name="brss" id="brss3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-tab（不同大小）</h1>
+  <div class="content">
+    <div class="checkbox-tab primary">
+      <label for="tab1" class="checkbox">
+        <input type="checkbox" name="tab" id="tab1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="tab2" class="checkbox">
+        <input checked type="checkbox" name="tab" id="tab2">
+        <span class="label">微信</span>
+      </label>
+      <label for="tab3" class="checkbox">
+        <input type="checkbox" name="tab" id="tab3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+    <br>
+    <div class="checkbox-tab primary medium">
+      <label for="tab11" class="checkbox">
+        <input type="checkbox" name="tab1" id="tab11">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="tab12" class="checkbox">
+        <input checked type="checkbox" name="tab1" id="tab12">
+        <span class="label">微信</span>
+      </label>
+      <label for="tab13" class="checkbox">
+        <input type="checkbox" name="tab1" id="tab13">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-tab（平均分布）</h1>
+  <div class="content">
+    <div class="checkbox-tab primary full">
+      <label for="tabs1" class="checkbox">
+        <input type="checkbox" name="tabs" id="tabs1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="tabs2" class="checkbox">
+        <input checked type="checkbox" name="tabs" id="tabs2">
+        <span class="label">微信</span>
+      </label>
+      <label for="tabs3" class="checkbox">
+        <input type="checkbox" name="tabs" id="tabs3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+  <h1>checkbox-tab垂直排列</h1>
+  <div class="content">
+    <div class="checkbox-tab primary vertical">
+      <label for="tabb1" class="checkbox">
+        <input type="checkbox" name="tabb" id="tabb1">
+        <span class="label">支付宝</span>
+      </label>
+      <label for="tabb2" class="checkbox">
+        <input checked type="checkbox" name="tabb" id="tabb2">
+        <span class="label">微信</span>
+      </label>
+      <label for="tabb3" class="checkbox">
+        <input type="checkbox" name="tabb" id="tabb3">
+        <span class="label">银行卡</span>
+      </label>
+    </div>
+  </div>
+</body>
+</html>

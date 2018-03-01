@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheet/reset.css">
+  <link rel="stylesheet" href="../stylesheet/datetime.css">
+</head>
+<body>
+  <div class="dt-container">
+    <ul class="dt-header">
+      <li class="dt-item">
+        取消
+      </li>
+      <li class="dt-item"></li>
+      <li class="dt-item">
+        确定
+      </li>
+    </ul>
+    <ul class="dt-content">
+      <li class="dt-item">
+        <div class="item" id="year">
+          <div class="scroller-mask"></div>
+          <div class="scroller-indicator"></div>
+          <div class="scroller">
+            <div class="xs-container">
+              <ul class="xs-content">
+                <li class="scroller-item cur">Home</li>
+                <li class="scroller-item">Demo</li>
+                <li class="scroller-item">Application</li>
+                <li class="scroller-item">Document</li>
+                <li class="scroller-item">Profile</li>
+                <li class="scroller-item">Messages</li>
+                <li class="scroller-item">Settings</li>
+                <li class="scroller-item">Favourite</li>
+                <li class="scroller-item">Link</li>
+                <li class="scroller-item">More</li>
+                <li class="scroller-item">Detail</li>
+                <li class="scroller-item">About</li>
+                <li class="scroller-item">Home</li>
+                <li class="scroller-item">Demo</li>
+                <li class="scroller-item">Application</li>
+                <li class="scroller-item">Document</li>
+                <li class="scroller-item">Profile</li>
+                <li class="scroller-item">Messages</li>
+                <li class="scroller-item">Settings</li>
+                <li class="scroller-item">Favourite</li>
+                <li class="scroller-item">Link</li>
+                <li class="scroller-item">More</li>
+                <li class="scroller-item">Detail</li>
+                <li class="scroller-item">About</li>
+              </ul>
+            </div>
+          </div>
+       </div>
+      </li>
+    </ul>
+  </div>
+  <script src="../node_modules/xscroll/lib/sea.js"></script>
+  <script>
+    seajs.config({
+      base: '../node_modules/xscroll/build/cmd'
+    });
+    seajs.use(['simulate-scroll', 'plugins/snap', 'plugins/infinite'], function (XScroll, Snap, Infinite) {
+      var year = new XScroll({
+        renderTo: '#year'
+      })
+      var cellHeight = document.querySelector('#year li').offsetHeight;
+      year.plug(new Snap({
+        snapHeight: cellHeight,
+        autoStep: true,
+        snapRowsNum: document.querySelectorAll('#year li').length
+      }))
+      year.render();
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/*--------------------radio主题----------------------*/
+/*primary*/
+.primary .label:after{
+  background:#409EFF;
+}
+.primary input:checked + .label:before{
+  border-color:#409EFF;
+}
+.primary.steep input:checked + .label{
+  color:#409EFF;
+}
+.radio-list.primary input:checked + .label{
+  background:#409EFF;
+  color:#fff;
+}
+.radio-list.primary.steep input:checked + .label{
+  color:#409EFF;
+}
+.radio-list.primary.steep input:checked + .label:after{
+  border-color:#409EFF;
+}
+.radio-button.primary input:checked + .label{
+  background-color:#409EFF;
+  border-color:#409EFF;
+}
+.radio-tab.primary input:checked + .label{
+  color:#409EFF;
+  border-bottom-color:#409EFF;
+}
+.radio-tab.vertical.primary input:checked + .label{
+  border-color:transparent;
+}
+.radio-tab.vertical.primary input:checked + .label:after{
+  border-color:#409EFF;
+}
+/*success*/
+.success .label:after{
+  background:#67C23A;
+}
+.success input:checked + .label:before{
+  border-color:#67C23A;
+}
+.success.steep input:checked + .label{
+  color:#67C23A;
+}
+.radio-list.success input:checked + .label{
+  background:#67C23A;
+  color:#fff;
+}
+.radio-list.success.steep input:checked + .label{
+  color:#67C23A;
+}
+.radio-list.success.steep input:checked + .label:after{
+  border-color:#67C23A;
+}
+.radio-button.success input:checked + .label{
+  background:#67C23A;
+  border-color:#67C23A;
+}
+.radio-tab.success input:checked + .label{
+  color:#67C23A;
+  border-bottom-color:#67C23A;
+}
+.radio-tab.vertical.success input:checked + .label:after{
+  border-color:#67C23A;
+}
+/*info*/
+.info .label:after{
+  background:#909399;
+}
+.info input:checked + .label:before{
+  border-color:#909399;
+}
+.info.steep input:checked + .label{
+  color:#909399;
+}
+.radio-list.info input:checked + .label{
+  background:#909399;
+  color:#fff;
+}
+.radio-list.info.steep input:checked + .label{
+  color:#909399;
+}
+.radio-list.info.steep input:checked + .label:after{
+  border-color:#909399;
+}
+.radio-button.info input:checked + .label{
+  background:#909399;
+  border-color:#909399;
+}
+.radio-tab.info input:checked + .label{
+  color:#909399;
+  border-bottom-color:#909399;
+}
+.radio-tab.vertical.info input:checked + .label:after{
+  border-color:#909399;
+}
+/*warning*/
+.warning .label:after{
+  background:#E6A23C;
+}
+.warning input:checked + .label:before{
+  border-color:#E6A23C;
+}
+.warning.steep input:checked + .label{
+  color:#E6A23C;
+}
+.radio-list.warning input:checked + .label{
+  background:#E6A23C;
+  color:#fff;
+}
+.radio-list.warning.steep input:checked + .label{
+  color:#E6A23C;
+}
+.radio-list.warning.steep input:checked + .label:after{
+  border-color:#E6A23C;
+}
+.radio-button.warning input:checked + .label{
+  background:#E6A23C;
+  border-color:#E6A23C;
+}
+.radio-tab.warning input:checked + .label{
+  color:#E6A23C;
+  border-bottom-color:#E6A23C;
+}
+.radio-tab.vertical.warning input:checked + .label:after{
+  border-color:#E6A23C;
+}
+/*danger*/
+.danger .label:after{
+  background:#F56C6C;
+}
+.danger input:checked + .label:before{
+  border-color:#F56C6C;
+}
+.danger.steep input:checked + .label{
+  color:#F56C6C;
+}
+.radio-list.danger input:checked + .label{
+  background:#F56C6C;
+  color:#fff;
+}
+.radio-list.danger.steep input:checked + .label{
+  color:#F56C6C;
+}
+.radio-list.danger.steep input:checked + .label:after{
+  border-color:#F56C6C;
+}
+.radio-button.danger input:checked + .label{
+  background:#F56C6C;
+  border-color:#F56C6C;
+}
+.radio-tab.danger input:checked + .label{
+  color:#F56C6C;
+  border-bottom-color:#F56C6C;
+}
+.radio-tab.vertical.danger input:checked + .label:after{
+  border-color:#F56C6C;
+}
+/*------------------checkbox主题-----------------*/
+/*primary*/
+.primary input:checked + .label:after{
+  border-color:#409EFF;
+}
+/*success*/
+.success input:checked + .label:after{
+  border-color:#67C23A;
+}
+/*info*/
+.info input:checked + .label:after{
+  border-color:#909399;
+}
+/*warning*/
+.warning input:checked + .label:after{
+  border-color:#E6A23C;
+}
+/*danger*/
+.danger input:checked + .label:after{
+  border-color:#F56C6C;
+}
+/*--------------------------------按钮主题----------------------*/
+.btn-default{
+  background-color:#DCDFE6;
+  border-color:#DCDFE6;
+  color:#606266;
+}
+.is-plain.btn-default{
+  background:#fff;
+}
+.btn-primary{
+  background-color:#409EFF;
+  border-color:#409EFF;
+}
+.is-outline.btn-primary{
+  color:#409EFF;
+}
+.is-plain.btn-primary{
+  background-color:#ECF5FF;
+  color:#409EFF;
+  border-color:#B3D8FF;
+}
+.btn-success{
+  background-color:#67C23A;
+  border-color:#67C23A;
+}
+.is-outline.btn-success{
+  color:#67C23A;
+}
+.is-plain.btn-success{
+  background-color:#F0F9EB;
+  color:#67C23A;
+  border-color:#C2E7B0;
+}
+.btn-info{
+  background-color:#909399;
+  border-color:#909399;
+}
+.is-outline.btn-info{
+  color:#909399;
+}
+.is-plain.btn-info{
+  background-color:#F4F4F5;
+  color:#909399;
+  border-color:#D3D4D6;
+}
+.btn-warning{
+  background-color:#E6A23C;
+  border-color:#E6A23C;
+}
+.is-outline.btn-warning{
+  color:#E6A23C;
+}
+.is-plain.btn-warning{
+  background-color:#FDF6EC;
+  color:#E6A23C;
+  border-color:#F5DAB1;
+}
+.btn-danger{
+  background-color:#F56C6C;
+  border-color:#F56C6C;
+}
+.is-outline.btn-danger{
+  color:#F56C6C;
+}
+.is-plain.btn-danger{
+  background-color:#FEF0F0;
+  color:#F56C6C;
+  border-color:#FBC4C4;
+}
+
+/* 输入框*/
+.is-border input{
+  border-color:#dcdfe6;
+}
+.is-border input:focus{
+  box-shadow:0 1px 4px #ccc;
+}
+.is-line input{
+  border-bottom-color:#dcdfe6;
+}
+.is-plain{
+  background:#eee;
+}
