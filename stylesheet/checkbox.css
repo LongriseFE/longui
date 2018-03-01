@@ -29,6 +29,9 @@
   box-sizing: border-box;
   transition:.3s;
 }
+.checkbox-list input:checked + .label{
+  background:#F5F5F5;
+}
 .checkbox .label:after{
   content: "";
   display:table;
@@ -44,23 +47,18 @@
   left:6px;
   background:none;
   border-radius:0;
-  top: 50%;
-  margin-top:-4px;
+  top: 0;
 }
 .checkbox input:checked + .label:after{
-  width: 5px;
-  height:10px;
   position: absolute;
-  top: 50%;
   right:1rem;
   background:none;
-  border: 2px solid #CCC;
+  border: 1px solid #CCC;
   border-top: 0;
   border-left: 0;
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
   transition: all .2s ease-in-out;
-  margin-top:-8px;
 }
 .checkbox input:checked + .label:before{
   border-color:#ccc;
@@ -68,13 +66,14 @@
 /*checkbox-list*/
 .checkbox-list .checkbox{
   display:block;
+  margin:0;
 }
 .checkbox-list .checkbox .label{
   padding-left:0;
   display:block;
   position:relative;
   padding:10px;
-  border-bottom:1px solid #DCDFE6;
+  border-bottom:1px solid #F2F2F2;
 }
 .checkbox-list .checkbox:last-child .label{
   border:none;
@@ -83,6 +82,7 @@
   display:none;
 }
 .checkbox-list .checkbox .label:after{
+  content: "";
   display:table;
   width:6px;
   height:12px;
@@ -99,12 +99,10 @@
   border-radius:0;
 }
 .checkbox-list .checkbox input:checked + .label:after{
-  width: 6px;
-  height:12px;
   position: absolute;
   top: 50%;
   right:1rem;
-  border: 2px solid #fff;
+  border: 1px solid #ccc;
   border-top: 0;
   border-left: 0;
   -ms-transform: rotate(45deg) scale(1);
@@ -135,6 +133,10 @@
 .checkbox-button input:checked + .label{
   color:#fff;
   z-index:100;
+  border-width:1px;
+  border-style:solid;
+  border-top-color:#fff;
+  border-bottom-color:#fff;
 }
 .checkbox-button.is-conner .checkbox:first-child .label{
   border-radius:5px 0 0 5px;
@@ -155,61 +157,6 @@
 .checkbox-button.success.steep input:checked + .label{
   background:none;
 }
-/*checkbox-tab*/
-.checkbox-tab{
-  border-bottom:1px solid #DCDFE6;
-}
-.checkbox-tab .checkbox{
-  margin-right:5px;
-}
-.checkbox-tab .label{
-  padding:10px 1em;
-  border-bottom:2px solid transparent;
-  position:relative;
-  top:1px;
-}
-.checkbox-tab .label:before,.checkbox-tab .label:after{
-  display:none;
-}
-.checkbox-tab.full{
-  display:flex;
-  display:-webkit-flex;
-  flex-direction: row;
-}
-.checkbox-tab.full .checkbox{
-  flex:1;
-  -webkit-flex: 1;
-  text-align:center;
-}
-.checkbox-tab.vertical{
-  border:none;
-}
-.checkbox-tab.vertical .checkbox{
-  display:block;
-  border-bottom:1px solid #DCDFE6;
-}
-.checkbox-tab.vertical .label{
-  display:block;
-}
-.checkbox-tab.vertical.primary .label:after{
-  content:"";
-  display:inline-block;
-  width:10px;
-  height:10px;
-  border-radius:0;
-  border-color:#fff;
-  background:none;
-  position:absolute;
-  right:10px;
-  left:auto;
-  top:50%;
-  margin-top:-5px;
-  border-style: solid;
-  border-width:0;
-  border-right-width: 1px;
-  border-bottom-width:1px;
-  transform:rotate(-45deg);
-}
 /*--------------------尺寸-------------*/
 /*mini*/
 .mini .label{
@@ -222,9 +169,8 @@
   margin-top:-8px;
 }
 .mini .label:after{
-  width:8px;
+  width:4px;
   height:8px;
-  margin-top:-4px;
 }
 /*small*/
 .small .label{
@@ -237,9 +183,8 @@
   margin-top:-9px;
 }
 .small .label:after{
-  width:10px;
+  width:5px;
   height:10px;
-  margin-top:-5px;
 }
 /*medium*/
 .medium .label{
@@ -252,22 +197,29 @@
   margin-top:-10px;
 }
 .medium .label:after{
-  width:12px;
+  width:6px;
   height:12px;
-  margin-top:-6px;
+  left:6px;
+}
+.checkbox-button.medium .label{
+  padding-right:24px;
 }
 /*large*/
 .large .label{
-  padding-left:28px;
+  padding-left:26px;
   font-size:16px;
 }
 .large .label:before{
-  width:24px;
-  height:24px;
+  width:22px;
+  height:22px;
   margin-top:-12px;
 }
 .large .label:after{
-  width:16px;
+  width:8px;
   height:16px;
-  margin-top:-8px;
+  margin-top:-4px;
+  left:7px;
+}
+.checkbox-button.large .label{
+  padding-right:26px;
 }

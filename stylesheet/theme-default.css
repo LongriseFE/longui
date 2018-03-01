@@ -162,20 +162,90 @@
 .primary input:checked + .label:after{
   border-color:#409EFF;
 }
+.checkbox-list.primary input:checked + .label{
+  color:#409EFF;
+}
+.checkbox-list.primary input:checked + .label:after {
+  border-color:#409EFF;
+}
+.checkbox-button.primary input:checked + .label{
+  background:#409EFF;
+  border-top-color:#409EFF;
+  border-bottom-color:#409EFF;
+}
+.checkbox-button.steep.primary input:checked + .label{
+  border-color:#409EFF;
+}
 /*success*/
 .success input:checked + .label:after{
+  border-color:#67C23A;
+}
+.checkbox-list.success input:checked + .label{
+  color:#67C23A;
+}
+.checkbox-list.success input:checked + .label:after {
+  border-color:#67C23A;
+}
+.checkbox-button.success input:checked + .label{
+  background:#67C23A;
+  border-top-color:#67C23A;
+  border-bottom-color:#67C23A;
+}
+.checkbox-button.steep.success input:checked + .label{
   border-color:#67C23A;
 }
 /*info*/
 .info input:checked + .label:after{
   border-color:#909399;
 }
+.checkbox-list.info input:checked + .label{
+  color:#909399;
+}
+.checkbox-list.info input:checked + .label:after {
+  border-color:#909399;
+}
+.checkbox-button.info input:checked + .label{
+  background:#909399;
+  border-top-color:#909399;
+  border-bottom-color:#909399;
+}
+.checkbox-button.steep.info input:checked + .label{
+  border-color:#909399;
+}
 /*warning*/
 .warning input:checked + .label:after{
   border-color:#E6A23C;
 }
+.checkbox-list.warning input:checked + .label{
+  color:#E6A23C;
+}
+.checkbox-list.warning input:checked + .label:after {
+  border-color:#E6A23C;
+}
+.checkbox-button.warning input:checked + .label{
+  background:#E6A23C;
+  border-top-color:#E6A23C;
+  border-bottom-color:#E6A23C;
+}
+.checkbox-button.steep.warning input:checked + .label{
+  border-color:#E6A23C;
+}
 /*danger*/
 .danger input:checked + .label:after{
+  border-color:#F56C6C;
+}
+.checkbox-list.danger input:checked + .label{
+  color:#F56C6C;
+}
+.checkbox-list.danger input:checked + .label:after {
+  border-color:#F56C6C;
+}
+.checkbox-button.danger input:checked + .label{
+  background:#F56C6C;
+  border-top-color:#F56C6C;
+  border-bottom-color:#F56C6C;
+}
+.checkbox-button.steep.danger input:checked + .label{
   border-color:#F56C6C;
 }
 /*--------------------------------按钮主题----------------------*/
