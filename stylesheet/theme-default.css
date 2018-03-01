@@ -249,6 +249,7 @@
   border-color:#F56C6C;
 }
 /*--------------------------------按钮主题----------------------*/
+/*default*/
 .btn.default{
   background-color:#DCDFE6;
   border-color:#DCDFE6;
@@ -260,6 +261,7 @@
 .default.is-outline{
   background:#fff;
 }
+/*primary*/
 .btn.primary{
   background-color:#409EFF;
   border-color:#409EFF;
@@ -280,6 +282,7 @@
 .primary.is-outline:active{
   background:#ECF5FF;
 }
+/*success*/
 .btn.success{
   background-color:#67C23A;
   border-color:#67C23A;
@@ -300,6 +303,7 @@
 .success.is-outline:active{
   background:#F0F9EB;
 }
+/*info*/
 .btn.info{
   background-color:#909399;
   border-color:#909399;
@@ -320,6 +324,7 @@
 .info.is-outline:active{
   background:#F4F4F5;
 }
+/*warning*/
 .btn.warning{
   background-color:#E6A23C;
   border-color:#E6A23C;
@@ -340,6 +345,7 @@
 .warning.is-outline:active{
   background:#FDF6EC;
 }
+/*danger*/
 .btn.danger{
   background-color:#F56C6C;
   border-color:#F56C6C;
