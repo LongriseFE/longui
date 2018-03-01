@@ -2,6 +2,7 @@
 .radio{
   display:inline-block;
   vertical-align: middle;
+  position:relative;
 }
 .radio input{
   display:none;
@@ -56,6 +57,48 @@
 .radio input:checked + .label:before{
   border-color:#ccc;
 }
+/*禁用状态*/
+.radio input:disabled + .label{
+  color:#c0c4cc;
+}
+.radio input:disabled + .label:before{
+  border-color:#e4e7ed;
+  background:#f5f7fa;
+}
+.radio input:disabled:checked + .label{
+  color:#c0c4cc;
+}
+.primary.steep input:disabled:checked + .label,
+.success.steep input:disabled:checked + .label,
+.info.steep input:disabled:checked + .label,
+.warning.steep input:disabled:checked + .label,
+.danger.steep input:disabled:checked + .label{
+  color:#c0c4cc;
+}
+.radio input:disabled:checked + .label:before{
+  border-color:#e4e7ed;
+  background:#f5f7fa;
+}
+.radio input:disabled:checked + .label:after{
+  background:#C0C4CC;
+}
+.radio-list .radio input:disabled:checked + .label,
+.radio-list.steep .radio input:disabled:checked + .label{
+  background-color:#f5f7fa;
+  color:#c0c4cc;
+}
+.radio-list .radio input:disabled:checked + .label:after,
+.radio-list.steep .radio input:disabled:checked + .label:after{
+  border-color:#c0c4cc;
+  background:none;
+}
+.radio-button .radio input:disabled:checked + .label{
+  background:#f5f7fa;
+  border-color:#e4e7ed;
+}
+.radio-button.steep .radio input:disabled:checked + .label{
+  background:#F5F7FA;
+}
 /*radio-list*/
 .radio-list .radio{
   display:block;
@@ -95,7 +138,7 @@
   position: absolute;
   top: 50%;
   right:1rem;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-top: 0;
   border-left: 0;
   -ms-transform: rotate(45deg) scale(1);
@@ -200,6 +243,37 @@
   border-right-width: 1px;
   border-bottom-width:1px;
   transform:rotate(-45deg);
+}
+.radio-tab .dot:after{
+  content:"";
+  display:inline-block;
+  width:5px;
+  height:5px;
+  background:#f00;
+  border-radius:50%;
+  position:absolute;
+  right:0;
+  top:0;
+}
+.radio-tab .badge:after{
+  content:attr(total);
+  display:inline-block;
+  background:#f00;
+  color:#fff;
+  padding:0 5px;
+  height:14px;
+  line-height:15px;
+  border-radius:10px;
+  position:absolute;
+  left:80%;
+  top:0;
+  font-size:10px;
+}
+.radio-tab.vertical .badge:after{
+  top:50%;
+  transform:translateY(-50%);
+  left:auto;
+  right:30px;
 }
 /*--------------------尺寸-------------*/
 /*mini*/

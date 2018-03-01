@@ -63,6 +63,49 @@
 .checkbox input:checked + .label:before{
   border-color:#ccc;
 }
+/*禁用状态*/
+.checkbox input:disabled + .label{
+  color:#c0c4cc;
+}
+.checkbox input:disabled + .label:before{
+  border-color:#e4e7ed;
+  background:#f5f7fa;
+}
+.checkbox input:disabled:checked + .label{
+  color:#c0c4cc;
+}
+.primary.steep input:disabled:checked + .label,
+.success.steep input:disabled:checked + .label,
+.info.steep input:disabled:checked + .label,
+.warning.steep input:disabled:checked + .label,
+.danger.steep input:disabled:checked + .label{
+  color:#c0c4cc;
+}
+.checkbox input:disabled:checked + .label:before{
+  border-color:#e4e7ed;
+  background:#f5f7fa;
+}
+.checkbox input:disabled:checked + .label:after{
+  border-color:#C0C4CC;
+}
+.checkbox-list .checkbox input:disabled:checked + .label,
+.checkbox-list.steep .checkbox input:disabled:checked + .label{
+  background-color:#f5f7fa;
+  color:#c0c4cc;
+}
+.checkbox-list .checkbox input:disabled:checked + .label:after,
+.checkbox-list.steep .checkbox input:disabled:checked + .label:after{
+  border-color:#c0c4cc;
+  background:none;
+}
+.checkbox-button .checkbox input:disabled:checked + .label{
+  background:#f5f7fa;
+  border-color:#e4e7ed;
+}
+.checkbox-button.steep .checkbox input:disabled:checked + .label{
+  background:#F5F7FA;
+  border-color:#DCDFE6;
+}
 /*checkbox-list*/
 .checkbox-list .checkbox{
   display:block;
