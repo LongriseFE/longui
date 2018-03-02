@@ -1,0 +1,157 @@
+.switch{
+  display:inline-flex;
+  display:-webkit-inline-flex;
+  -webkit-box-align:center;
+  align-items:center;
+  position:relative;
+}
+.switch-input{
+  display:none;
+}
+.switch-label{
+  font-size:14px;
+  padding-left:0.5em;
+  display:none;
+  color:rgba(48,49,51,1);
+}
+.switch-label.off{
+  display:inline-block;
+}
+.switch-core{
+  display:inline-block;
+  position:relative;
+  width:42px;
+  height:22px;
+  border:1px solid rgba(217,217,217,1);
+  border-radius:15px;
+  box-sizing:border-box;
+  background:rgba(217,217,217,1);
+}
+.switch-core:after,.switch-core:before{
+  content:"";
+  top:0;
+  left:0;
+  position:absolute;
+  -webkit-transition:-webkit-form .3s;
+  transition:-webkit-transform .3s;
+  transition:transform .3s;
+  transition:transform .3s, -webkit-transform .3s;
+  border-radius:15px;
+}
+.switch-core:before{
+  width:40px;
+  height:20px;
+  background:rgba(253,253,253,1);
+}
+.switch-core:after{
+  width:20px;
+  height:20px;
+  background-color:rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+.switch-input:checked + .switch-core:before{
+  -webkit-transform:scale(0);
+  transform:scale(0);
+}
+.switch-input:checked + .switch-core:after{
+  -webkit-transform:translateX(20px);
+  transform:translateX(20px);
+}
+.switch-input:checked + .switch-core + .on{
+  display:inline-block;
+}
+.switch-input:checked + .switch-core + .on + .off{
+  display:none;
+}
+/*禁用状态*/
+.switch-input:disabled + .switch-core{
+  box-shadow:0 0 0 rgba(0,0,0,0);
+  border-color:rgba(234,236,240,1);
+}
+.switch-input:disabled + .switch-core:before{
+  background:rgba(234,236,240,1);
+}
+.switch-input:disabled + .switch-core:after{
+  box-shadow:0 0 0 rgba(0,0,0,0);
+}
+.switch-input:checked:disabled + .switch-core{
+  opacity:0.5;
+}
+.switch-input:checked:disabled + .switch-core + .on{
+  opacity:0.5;
+}
+.switch-input:disabled + .switch-core + .on + .off{
+  opacity:0.5;
+}
+/*不同尺寸*/
+/*large*/
+.large .switch-core{
+  width:52px;
+  height:26px;
+}
+.large .switch-core:before{
+  width:50px;
+  height:24px;
+}
+.large .switch-core:after{
+  width:24px;
+  height:24px;
+}
+.large .switch-input:checked + .switch-core:after{
+  -webkit-transform:translateX(26px);
+  transform:translateX(26px);
+}
+/*medium*/
+.medium .switch-core{
+  width:48px;
+  height:24px;
+}
+.medium .switch-core:before{
+  width:46px;
+  height:22px;
+}
+.medium .switch-core:after{
+  width:22px;
+  height:22px;
+}
+.medium .switch-input:checked + .switch-core:after{
+  -webkit-transform:translateX(24px);
+  transform:translateX(24px);
+}
+/*small*/
+.small .switch-core{
+  width:38px;
+  height:19px;
+}
+.small .switch-core:before{
+  width:36px;
+  height:17px;
+}
+.small .switch-core:after{
+  width:17px;
+  height:17px;
+}
+.small .switch-input:checked + .switch-core:after{
+  -webkit-transform:translateX(19px);
+  transform:translateX(19px);
+}
+/*mini*/
+.mini .switch-core{
+  width:34px;
+  height:17px;
+}
+.mini .switch-core:before{
+  width:32px;
+  height:15px;
+}
+.mini .switch-core:after{
+  width:15px;
+  height:15px;
+}
+.mini .switch-input:checked + .switch-core:after{
+  -webkit-transform:translateX(17px);
+  transform:translateX(17px);
+}
+.mini .switch-label{
+  font-size:12px;
+}

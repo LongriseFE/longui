@@ -548,3 +548,45 @@
 .danger input:focus + .prefix,.danger input:focus + .prefix + .suffix{
   color:rgba(245,108,108,1)
 }
+
+/*--------------switch-------------*/
+/*primary*/
+.primary .switch-input:checked + .switch-core{
+  background-color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,1);
+}
+.primary .switch-input:checked + .switch-core + .on{
+  color:rgba(64,158,255,1);
+}
+/*success*/
+.success .switch-input:checked + .switch-core{
+  background-color:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,1);
+}
+.success .switch-input:checked + .switch-core + .on{
+  color:rgba(103,194,58,1);
+}
+/*info*/
+.info .switch-input:checked + .switch-core{
+  background-color:rgba(144,147,153,1);
+  border-color:rgba(144,147,153,1);
+}
+.info .switch-input:checked + .switch-core + .on{
+  color:rgba(144,147,153,1);
+}
+/*warning*/
+.warning .switch-input:checked + .switch-core{
+  background-color:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,1);
+}
+.warning .switch-input:checked + .switch-core + .on{
+  color:rgba(230,162,60,1);
+}
+/*danger*/
+.danger .switch-input:checked + .switch-core{
+  background-color:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,1);
+}
+.danger .switch-input:checked + .switch-core + .on{
+  color:rgba(245,108,108,1);
+}
