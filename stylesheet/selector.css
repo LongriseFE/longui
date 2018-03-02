@@ -1,0 +1,12 @@
+.selector{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+}
+.selector select{
+  -webkit-appearance: none;
+  flex:1;
+  background:none;
+  padding:10px;
+  border:1px solid rgba(220,223,230,1);
+}
