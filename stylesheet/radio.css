@@ -229,11 +229,10 @@
 }
 .radio-tab.vertical.primary .label:after{
   content:"";
-  display:inline-block;
   width:10px;
   height:10px;
   border-radius:0;
-  border-color:#fff;
+  border-color:#DCDFE6;
   background:none;
   position:absolute;
   right:10px;
@@ -245,6 +244,8 @@
   border-right-width: 1px;
   border-bottom-width:1px;
   transform:rotate(-45deg);
+  display:inline-block;
+  opacity:1;
 }
 .radio-tab .dot:after{
   content:"";
