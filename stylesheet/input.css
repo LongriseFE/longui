@@ -31,3 +31,55 @@
 .is-steep input{
   border:none;
 }
+.is-bottom-line input{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+.is-outline input{
+  border-top:none;
+}
+.is-outline:before,.is-outline:after{
+  content:"";
+  display:inline-block;
+  width:1px;
+  height:28px;
+  background:#fff;
+  position:absolute;
+  top:0;
+}
+.is-outline:before{
+  left:0;
+}
+.is-outline:after{
+  right:0;
+}
+/*尺寸*/
+/*mini*/
+.mini input{
+  padding:5px 10px;
+}
+.mini.is-outline:before,.mini.is-outline:after{
+  height:18px;
+}
+/*small*/
+.small input{
+  padding:8px 10px;
+}
+.small.is-outline:before,.small.is-outline:after{
+  height:22px;
+}
+/*medium*/
+.medium input{
+  padding:10px;
+}
+.medium.is-outline:before,.medium.is-outline:after{
+  height:26px;
+}
+/*large*/
+.large input{
+  padding:12px 10px;
+}
+.large.is-outline:before,.large.is-outline:after{
+  height:30px;
+}
