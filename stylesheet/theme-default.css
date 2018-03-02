@@ -590,3 +590,39 @@
 .danger .switch-input:checked + .switch-core + .on{
   color:rgba(245,108,108,1);
 }
+/* ----------selector下拉框--------------- */
+/* primary */
+.primary .selector-core:focus{
+  border-color:rgba(64,158,255,1);
+}
+.primary .selector-core:focus + .selector-arrow{
+  border-color:rgba(64,158,255,1);
+}
+/* success */
+.success .selector-core:focus{
+  border-color:rgba(103,194,58,1);
+}
+.success .selector-core:focus + .selector-arrow{
+  border-color:rgba(103,194,58,1);
+}
+/* info */
+.info .selector-core:focus{
+  border-color:rgba(144,147,153,1);
+}
+.info .selector-core:focus + .selector-arrow{
+  border-color:rgba(144,147,153,1);
+}
+/* warning */
+.warning .selector-core:focus{
+  border-color:rgba(230,162,60,1);
+}
+.warning .selector-core:focus + .selector-arrow{
+  border-color:rgba(230,162,60,1);
+}
+/* danger */
+.danger .selector-core:focus{
+  border-color:rgba(245,108,108,1);
+}
+.danger .selector-core:focus + .selector-arrow{
+  border-color:rgba(245,108,108,1);
+}
