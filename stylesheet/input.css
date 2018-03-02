@@ -8,14 +8,37 @@
   box-sizing: border-box;
 }
 .input input{
-  font-size:1.4rem;
-  padding:0.8rem 1rem;
+  font-size:14px;
+  padding:10px 10px;
   flex:1;
   -webkit-flex:1;
   box-sizing: border-box;
   background:none;
   border:1px solid #DCDFE6;
   transition:0.3s;
+}
+/*fix*/
+.input.is-fix input{
+  padding-left:35px;
+  padding-right:35px;
+}
+.input.is-fix .suffix,.input.is-fix .prefix{
+  display:inline-block;
+}
+.input .suffix,.input .prefix{
+  position:absolute;
+  top:50%;
+  box-sizing: border-box;
+  transform:translate(0, -50%);
+  padding:0 10px;
+  font-size:0;
+  display:none;
+}
+.input .suffix{
+  right:0;
+}
+.input .prefix{
+  left:0;
 }
 .input input::-webkit-input-placeholder{
   font-family: "微软雅黑";

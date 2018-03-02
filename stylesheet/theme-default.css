@@ -305,7 +305,7 @@
   background:rgba(64,158,255,1);
   color:#fff;
 }
-.primary.is-outline{
+.button.primary.is-outline{
   background:#fff;
   color:rgba(64,158,255,1);
 }
@@ -326,7 +326,7 @@
   background:rgba(103,194,58,1);
   color:#fff;
 }
-.success.is-outline{
+.button.success.is-outline{
   background:#fff;
   color:rgba(103,194,58,1);
 }
@@ -347,7 +347,7 @@
   background:rgba(144,147,153,1);
   color:#fff;
 }
-.info.is-outline{
+.button.info.is-outline{
   background:#fff;
   color:rgba(144,147,153,1);
 }
@@ -368,7 +368,7 @@
   background:rgba(230,162,60,1);
   color:#fff;
 }
-.warning.is-outline{
+.button.warning.is-outline{
   background:#fff;
   color:rgba(230,162,60,1);
 }
@@ -389,7 +389,7 @@
   background:rgba(245,108,108,1);
   color:#fff;
 }
-.danger.is-outline{
+.button.danger.is-outline{
   background:#fff;
   color:rgba(245,108,108,1);
 }
@@ -416,6 +416,12 @@
 .is-steep.primary input:focus{
   background-color:rgba(64,158,255,0.05);
 }
+.primary.is-plain .prefix,.primary.is-plain .suffix{
+  color:rgba(64,158,255,0.9);
+}
+.primary input:focus + .prefix,.primary input:focus + .prefix + .suffix{
+  color:rgba(64,158,255,1)
+}
 /*success*/
 .success input:focus{
   border-color:rgba(103,194,58,0.6);
@@ -433,6 +439,12 @@
 }
 .is-steep.success input:focus{
   background-color:rgba(103,194,58,0.05);
+}
+.success.is-plain .prefix,.success.is-plain .suffix{
+  color:rgba(103,194,58,0.9);
+}
+.success input:focus + .prefix,.success input:focus + .prefix + .suffix{
+  color:rgba(103,194,58,1)
 }
 /*info*/
 .info input:focus{
@@ -452,6 +464,12 @@
 .is-steep.info input:focus{
   background-color:rgba(144,147,153,0.05);
 }
+.info.is-plain .prefix,.info.is-plain .suffix{
+  color:rgba(144,147,153,0.9);
+}
+.info input:focus + .prefix,.info input:focus + .prefix + .suffix{
+  color:rgba(144,147,153,1)
+}
 /*warning*/
 .warning input:focus{
   border-color:rgba(230,162,60,0.6);
@@ -470,6 +488,12 @@
 .is-steep.warning input:focus{
   background-color:rgba(230,162,60,0.05);
 }
+.warning.is-plain .prefix,.warning.is-plain .suffix{
+  color:rgba(230,162,60,0.9);
+}
+.warning input:focus + .prefix,.warning input:focus + .prefix + .suffix{
+  color:rgba(230,162,60,1)
+}
 /*danger*/
 .danger input:focus{
   border-color:rgba(245,108,108,0.6);
@@ -487,4 +511,10 @@
 }
 .is-steep.danger input:focus{
   background-color:rgba(245,108,108,0.05);
+}
+.danger.is-plain .prefix,.danger.is-plain .suffix{
+  color:rgba(245,108,108,0.9);
+}
+.danger input:focus + .prefix,.danger input:focus + .prefix + .suffix{
+  color:rgba(245,108,108,1)
 }
