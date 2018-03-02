@@ -1,0 +1,8 @@
+.form-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  -webkit-flex-direction:row;
+  padding:10px 0;
+  font-size:14px;
+}

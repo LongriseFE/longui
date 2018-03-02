@@ -1,56 +1,33 @@
 .input{
   font-size:0;
-  display:inline-block;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  -webkit-flex-direction:row;
   position:relative;
   box-sizing: border-box;
 }
 .input input{
   font-size:1.4rem;
   padding:0.8rem 1rem;
-  width:100%;
+  flex:1;
+  -webkit-flex:1;
   box-sizing: border-box;
   background:none;
-  border:1px solid transparent;
+  border:1px solid #DCDFE6;
   transition:0.3s;
+}
+.input input::-webkit-input-placeholder{
+  font-family: "微软雅黑";
+  font-size:14px;
+  color:#C0C4CC;
 }
 .is-conner input{
   border-radius:5px;
 }
 .is-round input{
-  border-radius:2rem;
+  border-radius:30px;
 }
-.suffix input{
-  padding-right:3rem;
-}
-.prefix input{
-  padding-left:3rem;
-}
-.suffix .iconfont,.prefix .iconfont{
-  font-size:2rem;
-  display:inline-block;
-  width:3rem;
-  text-align:center;
-  color:#888;
-}
-.suffix .iconfont{
-  position:absolute;
-  right:0;
-  top:50%;
-  transform:translateY(-50%);
-}
-.prefix .iconfont{
-  position:absolute;
-  right:left;
-  top:50%;
-  transform:translateY(-50%);
-}
-.input .btn{
-  position:absolute;
-  right:0;
-  top:0;
-  bottom:0;
-}
-.input.is-line .btn{
-  top:auto;
-  bottom:5px;
+.is-steep input{
+  border:none;
 }

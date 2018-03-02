@@ -1,188 +1,188 @@
 /*--------------------radio主题----------------------*/
 /*primary*/
 .primary .label:after{
-  background:#409EFF;
+  background:rgba(64,158,255,1);
 }
 .primary input:checked + .label:before{
-  border-color:#409EFF;
+  border-color:rgba(64,158,255,1);
 }
 .primary.steep input:checked + .label{
-  color:#409EFF;
+  color:rgba(64,158,255,1);
 }
 .radio-list.primary input:checked + .label{
-  background:#E8F5FF;
-  color:#409EFF;
+  background:rgba(64,158,255,0.3);
+  color:rgba(64,158,255,1);
 }
 .radio-list.primary.steep input:checked + .label{
-  color:#409EFF;
+  color:rgba(64,158,255,1);
 }
 .radio-list.primary.steep input:checked + .label:after{
   border-color:#fff;
 }
 .radio-button.primary input:checked + .label{
-  background-color:#409EFF;
-  border-color:#409EFF;
+  background-color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,1);
 }
 .radio-tab.primary input:checked + .label{
-  color:#409EFF;
-  border-bottom-color:#409EFF;
+  color:rgba(64,158,255,1);
+  border-bottom-color:rgba(64,158,255,1);
 }
 .radio-tab.vertical.primary input:checked + .label{
   border-color:transparent;
 }
 .radio-tab.vertical.primary input:checked + .label:after{
-  border-color:#409EFF;
+  border-color:rgba(64,158,255,1);
 }
 .radio-list.primary input:checked + .label:before{
-  background:#409EFF;
+  background:rgba(64,158,255,1);
 }
 .radio-list.primary input:checked + .label:after{
   border-color:#fff;
 }
 /*success*/
 .success .label:after{
-  background:#67C23A;
+  background:rgba(103,194,58,1);
 }
 .success input:checked + .label:before{
-  border-color:#67C23A;
+  border-color:rgba(103,194,58,1);
 }
 .success.steep input:checked + .label{
-  color:#67C23A;
+  color:rgba(103,194,58,1);
 }
 .radio-list.success input:checked + .label{
-  background:#E0F7D6;
-  color:#67C23A;
+  background:rgba(103,194,58,0.3);
+  color:rgba(103,194,58,1);
 }
 .radio-list.success.steep input:checked + .label{
-  color:#67C23A;
+  color:rgba(103,194,58,1);
 }
 .radio-list.success.steep input:checked + .label:after{
   border-color:#fff;
 }
 .radio-button.success input:checked + .label{
-  background:#67C23A;
-  border-color:#67C23A;
+  background:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,1);
 }
 .radio-tab.success input:checked + .label{
-  color:#67C23A;
-  border-bottom-color:#67C23A;
+  color:rgba(103,194,58,1);
+  border-bottom-color:rgba(103,194,58,1);
 }
 .radio-tab.vertical.success input:checked + .label:after{
-  border-color:#67C23A;
+  border-color:rgba(103,194,58,1);
 }
 .radio-list.success input:checked + .label:before{
-  background:#67C23A;
+  background:rgba(103,194,58,1);
 }
 .radio-list.success input:checked + .label:after{
   border-color:#fff;
 }
 /*info*/
 .info .label:after{
-  background:#909399;
+  background:rgba(144,147,153,1);
 }
 .info input:checked + .label:before{
-  border-color:#909399;
+  border-color:rgba(144,147,153,1);
 }
 .info.steep input:checked + .label{
-  color:#909399;
+  color:rgba(144,147,153,1);
 }
 .radio-list.info input:checked + .label{
-  background:#E0E0E0;
-  color:#909399;
+  background:rgba(144,147,153,0.3);
+  color:rgba(144,147,153,1);
 }
 .radio-list.info.steep input:checked + .label{
-  color:#909399;
+  color:rgba(144,147,153,1);
 }
 .radio-list.info.steep input:checked + .label:after{
   border-color:#fff;
 }
 .radio-button.info input:checked + .label{
-  background:#909399;
-  border-color:#909399;
+  background:rgba(144,147,153,1);
+  border-color:rgba(144,147,153,1);
 }
 .radio-tab.info input:checked + .label{
-  color:#909399;
-  border-bottom-color:#909399;
+  color:rgba(144,147,153,1);
+  border-bottom-color:rgba(144,147,153,1);
 }
 .radio-tab.vertical.info input:checked + .label:after{
-  border-color:#909399;
+  border-color:rgba(144,147,153,1);
 }
 .radio-list.info input:checked + .label:before{
-  background:#909399;
+  background:rgba(144,147,153,1);
 }
 .radio-list.info input:checked + .label:after{
   border-color:#fff;
 }
 /*warning*/
 .warning .label:after{
-  background:#E6A23C;
+  background:rgba(230,162,60,1);
 }
 .warning input:checked + .label:before{
-  border-color:#E6A23C;
+  border-color:rgba(230,162,60,1);
 }
 .warning.steep input:checked + .label{
-  color:#E6A23C;
+  color:rgba(230,162,60,1);
 }
 .radio-list.warning input:checked + .label{
-  background:#FFF7E5;
-  color:#E6A23C;
+  background:rgba(230,162,60,0.3);
+  color:rgba(230,162,60,1);
 }
 .radio-list.warning.steep input:checked + .label{
-  color:#E6A23C;
+  color:rgba(230,162,60,1);
 }
 .radio-list.warning.steep input:checked + .label:after{
   border-color:#fff;
 }
 .radio-button.warning input:checked + .label{
-  background:#E6A23C;
-  border-color:#E6A23C;
+  background:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,1);
 }
 .radio-tab.warning input:checked + .label{
-  color:#E6A23C;
-  border-bottom-color:#E6A23C;
+  color:rgba(230,162,60,1);
+  border-bottom-color:rgba(230,162,60,1);
 }
 .radio-tab.vertical.warning input:checked + .label:after{
-  border-color:#E6A23C;
+  border-color:rgba(230,162,60,1);
 }
 .radio-list.warning input:checked + .label:before{
-  background:#E6A23C;
+  background:rgba(230,162,60,1);
 }
 .radio-list.warning input:checked + .label:after{
   border-color:#fff;
 }
 /*danger*/
 .danger .label:after{
-  background:#F56C6C;
+  background:rgba(245,108,108,1);
 }
 .danger input:checked + .label:before{
-  border-color:#F56C6C;
+  border-color:rgba(245,108,108,1);
 }
 .danger.steep input:checked + .label{
-  color:#F56C6C;
+  color:rgba(245,108,108,1);
 }
 .radio-list.danger input:checked + .label{
-  background:#FCEAEA;
-  color:#F56C6C;
+  background:rgba(245,108,108,0.3);
+  color:rgba(245,108,108,1);
 }
 .radio-list.danger.steep input:checked + .label{
-  color:#F56C6C;
+  color:rgba(245,108,108,1);
 }
 .radio-list.danger.steep input:checked + .label:after{
   border-color:#fff;
 }
 .radio-button.danger input:checked + .label{
-  background:#F56C6C;
-  border-color:#F56C6C;
+  background:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,1);
 }
 .radio-tab.danger input:checked + .label{
-  color:#F56C6C;
-  border-bottom-color:#F56C6C;
+  color:rgba(245,108,108,1);
+  border-bottom-color:rgba(245,108,108,1);
 }
 .radio-tab.vertical.danger input:checked + .label:after{
-  border-color:#F56C6C;
+  border-color:rgba(245,108,108,1);
 }
 .radio-list.danger input:checked + .label:before{
-  background:#F56C6C;
+  background:rgba(245,108,108,1);
 }
 .radio-list.danger input:checked + .label:after{
   border-color:#fff;
@@ -190,97 +190,97 @@
 /*------------------checkbox主题-----------------*/
 /*primary*/
 .primary input:checked + .label:after{
-  border-color:#409EFF;
+  border-color:rgba(64,158,255,1);
 }
 .checkbox-list.primary input:checked + .label{
-  color:#409EFF;
+  color:rgba(64,158,255,1);
 }
 .checkbox-list.primary input:checked + .label:after {
-  border-color:#409EFF;
+  border-color:rgba(64,158,255,1);
 }
 .checkbox-button.primary input:checked + .label{
-  background:#409EFF;
-  border-top-color:#409EFF;
-  border-bottom-color:#409EFF;
+  background:rgba(64,158,255,1);
+  border-top-color:rgba(64,158,255,1);
+  border-bottom-color:rgba(64,158,255,1);
 }
 .checkbox-button.steep.primary input:checked + .label{
-  border-color:#409EFF;
+  border-color:rgba(64,158,255,1);
 }
 /*success*/
 .success input:checked + .label:after{
-  border-color:#67C23A;
+  border-color:rgba(103,194,58,1);
 }
 .checkbox-list.success input:checked + .label{
-  color:#67C23A;
+  color:rgba(103,194,58,1);
 }
 .checkbox-list.success input:checked + .label:after {
-  border-color:#67C23A;
+  border-color:rgba(103,194,58,1);
 }
 .checkbox-button.success input:checked + .label{
-  background:#67C23A;
-  border-top-color:#67C23A;
-  border-bottom-color:#67C23A;
+  background:rgba(103,194,58,1);
+  border-top-color:rgba(103,194,58,1);
+  border-bottom-color:rgba(103,194,58,1);
 }
 .checkbox-button.steep.success input:checked + .label{
-  border-color:#67C23A;
+  border-color:rgba(103,194,58,1);
 }
 /*info*/
 .info input:checked + .label:after{
-  border-color:#909399;
+  border-color:rgba(144,147,153,1);
 }
 .checkbox-list.info input:checked + .label{
-  color:#909399;
+  color:rgba(144,147,153,1);
 }
 .checkbox-list.info input:checked + .label:after {
-  border-color:#909399;
+  border-color:rgba(144,147,153,1);
 }
 .checkbox-button.info input:checked + .label{
-  background:#909399;
-  border-top-color:#909399;
-  border-bottom-color:#909399;
+  background:rgba(144,147,153,1);
+  border-top-color:rgba(144,147,153,1);
+  border-bottom-color:rgba(144,147,153,1);
 }
 .checkbox-button.steep.info input:checked + .label{
-  border-color:#909399;
+  border-color:rgba(144,147,153,1);
 }
 /*warning*/
 .warning input:checked + .label:after{
-  border-color:#E6A23C;
+  border-color:rgba(230,162,60,1);
 }
 .checkbox-list.warning input:checked + .label{
-  color:#E6A23C;
+  color:rgba(230,162,60,1);
 }
 .checkbox-list.warning input:checked + .label:after {
-  border-color:#E6A23C;
+  border-color:rgba(230,162,60,1);
 }
 .checkbox-button.warning input:checked + .label{
-  background:#E6A23C;
-  border-top-color:#E6A23C;
-  border-bottom-color:#E6A23C;
+  background:rgba(230,162,60,1);
+  border-top-color:rgba(230,162,60,1);
+  border-bottom-color:rgba(230,162,60,1);
 }
 .checkbox-button.steep.warning input:checked + .label{
-  border-color:#E6A23C;
+  border-color:rgba(230,162,60,1);
 }
 /*danger*/
 .danger input:checked + .label:after{
-  border-color:#F56C6C;
+  border-color:rgba(245,108,108,1);
 }
 .checkbox-list.danger input:checked + .label{
-  color:#F56C6C;
+  color:rgba(245,108,108,1);
 }
 .checkbox-list.danger input:checked + .label:after {
-  border-color:#F56C6C;
+  border-color:rgba(245,108,108,1);
 }
 .checkbox-button.danger input:checked + .label{
-  background:#F56C6C;
-  border-top-color:#F56C6C;
-  border-bottom-color:#F56C6C;
+  background:rgba(245,108,108,1);
+  border-top-color:rgba(245,108,108,1);
+  border-bottom-color:rgba(245,108,108,1);
 }
 .checkbox-button.steep.danger input:checked + .label{
-  border-color:#F56C6C;
+  border-color:rgba(245,108,108,1);
 }
 /*--------------------------------按钮主题----------------------*/
 /*default*/
-.btn.default{
+.button.default{
   background-color:#DCDFE6;
   border-color:#DCDFE6;
   color:#606266;
@@ -292,121 +292,199 @@
   background:#fff;
 }
 /*primary*/
-.btn.primary{
-  background-color:#409EFF;
-  border-color:#409EFF;
+.button.primary{
+  background-color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,1);
 }
-.btn.is-plain.primary{
-  background-color:#ECF5FF;
-  color:#409EFF;
-  border-color:#B3D8FF;
+.button.is-plain.primary{
+  background-color:rgba(64,158,255,0.2);
+  color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,0.5);
 }
-.btn.is-plain.primary:enabled:active{
-  background:#409EFF;
+.button.is-plain.primary:enabled:active{
+  background:rgba(64,158,255,1);
   color:#fff;
 }
 .primary.is-outline{
   background:#fff;
-  color:#409EFF;
+  color:rgba(64,158,255,1);
 }
 .primary.is-outline:enabled:active{
   background:#ECF5FF;
 }
 /*success*/
-.btn.success{
-  background-color:#67C23A;
-  border-color:#67C23A;
+.button.success{
+  background-color:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,1);
 }
-.btn.is-plain.success{
-  background-color:#F0F9EB;
-  color:#67C23A;
-  border-color:#C2E7B0;
+.button.is-plain.success{
+  background-color:rgba(103,194,58,0.2);
+  color:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,0.5);
 }
-.btn.is-plain.success:enabled:active{
-  background:#67C23A;
+.button.is-plain.success:enabled:active{
+  background:rgba(103,194,58,1);
   color:#fff;
 }
 .success.is-outline{
   background:#fff;
-  color:#67C23A;
+  color:rgba(103,194,58,1);
 }
 .success.is-outline:enabled:active{
   background:#F0F9EB;
 }
 /*info*/
-.btn.info{
-  background-color:#909399;
-  border-color:#909399;
+.button.info{
+  background-color:rgba(144,147,153,1);
+  border-color:rgba(144,147,153,1);
 }
-.btn.is-plain.info{
-  background-color:#F4F4F5;
-  color:#909399;
-  border-color:#D3D4D6;
+.button.is-plain.info{
+  background-color:rgba(144,147,153,0.2);
+  color:rgba(144,147,153,1);
+  border-color:rgba(144,147,153,0.5);
 }
-.btn.is-plain.info:enabled:active{
-  background:#909399;
+.button.is-plain.info:enabled:active{
+  background:rgba(144,147,153,1);
   color:#fff;
 }
 .info.is-outline{
   background:#fff;
-  color:#909399;
+  color:rgba(144,147,153,1);
 }
 .info.is-outline:enabled:active{
   background:#F4F4F5;
 }
 /*warning*/
-.btn.warning{
-  background-color:#E6A23C;
-  border-color:#E6A23C;
+.button.warning{
+  background-color:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,1);
 }
-.btn.is-plain.warning{
-  background-color:#FDF6EC;
-  color:#E6A23C;
-  border-color:#F5DAB1;
+.button.is-plain.warning{
+  background-color:rgba(230,162,60,0.2);
+  color:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,0.5);
 }
-.btn.is-plain.warning:enabled:active{
-  background:#E6A23C;
+.button.is-plain.warning:enabled:active{
+  background:rgba(230,162,60,1);
   color:#fff;
 }
 .warning.is-outline{
   background:#fff;
-  color:#E6A23C;
+  color:rgba(230,162,60,1);
 }
 .warning.is-outline:enabled:active{
   background:#FDF6EC;
 }
 /*danger*/
-.btn.danger{
-  background-color:#F56C6C;
-  border-color:#F56C6C;
+.button.danger{
+  background-color:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,1);
 }
-.btn.is-plain.danger{
-  background-color:#FEF0F0;
-  color:#F56C6C;
-  border-color:#FBC4C4;
+.button.is-plain.danger{
+  background-color:rgba(245,108,108,0.2);
+  color:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,0.5);
 }
-.btn.is-plain.danger:enabled:active{
-  background:#F56C6C;
+.button.is-plain.danger:enabled:active{
+  background:rgba(245,108,108,1);
   color:#fff;
 }
 .danger.is-outline{
   background:#fff;
-  color:#F56C6C;
+  color:rgba(245,108,108,1);
 }
 .danger.is-outline:enabled:active{
   background:#FEF0F0;
 }
 
-/* 输入框*/
-.is-border input{
-  border-color:#dcdfe6;
+/*---------------------------输入框--------------------------*/
+/*primary*/
+.primary input:focus{
+  border-color:rgba(64,158,255,0.6);
 }
-.is-border input:focus{
-  box-shadow:0 1px 4px #ccc;
+.is-plain.primary input{
+  background-color:rgba(64,158,255,0.03);
+  border-color:rgba(64,158,255,0.4);
 }
-.is-line input{
-  border-bottom-color:#dcdfe6;
+.is-plain.primary input::-webkit-input-placeholder{
+  color:rgba(64,158,255,0.5);
 }
-.is-plain{
-  background:#eee;
+.is-plain.primary input:focus{
+  background-color:rgba(64,158,255,0.08);
+  border-color:rgba(64,158,255,0.3);
+}
+.is-steep.primary input:focus{
+  background-color:rgba(64,158,255,0.03);
+}
+/*success*/
+.success input:focus{
+  border-color:rgba(103,194,58,0.6);
+}
+.is-plain.success input{
+  background-color:rgba(103,194,58,0.03);
+  border-color:rgba(103,194,58,0.4);
+}
+.is-plain.success input::-webkit-input-placeholder{
+  color:rgba(103,194,58,0.5);
+}
+.is-plain.success input:focus{
+  background-color:rgba(103,194,58,0.08);
+  border-color:rgba(103,194,58,0.3);
+}
+.is-steep.success input:focus{
+  background-color:rgba(103,194,58,0.03);
+}
+/*info*/
+.info input:focus{
+  border-color:rgba(144,147,153,0.6);
+}
+.is-plain.info input{
+  background-color:rgba(144,147,153,0.03);
+  border-color:rgba(144,147,153,0.4);
+}
+.is-plain.info input::-webkit-input-placeholder{
+  color:rgba(144,147,153,0.5);
+}
+.is-plain.info input:focus{
+  background-color:rgba(144,147,153,0.08);
+  border-color:rgba(144,147,153,0.3);
+}
+.is-steep.info input:focus{
+  background-color:rgba(144,147,153,0.03);
+}
+/*warning*/
+.warning input:focus{
+  border-color:rgba(230,162,60,0.6);
+}
+.is-plain.warning input{
+  background-color:rgba(230,162,60,0.03);
+  border-color:rgba(230,162,60,0.2);
+}
+.is-plain.warning input::-webkit-input-placeholder{
+  color:rgba(230,162,60,0.5);
+}
+.is-plain.warning input:focus{
+  background-color:rgba(230,162,60,0.08);
+  border-color:rgba(230,162,60,0.3);
+}
+.is-steep.warning input:focus{
+  background-color:rgba(230,162,60,0.03);
+}
+/*danger*/
+.danger input:focus{
+  border-color:rgba(245,108,108,0.6);
+}
+.is-plain.danger input{
+  background-color:rgba(245,108,108,0.03);
+  border-color:rgba(245,108,108,0.2);
+}
+.is-plain.danger input::-webkit-input-placeholder{
+  color:rgba(245,108,108,0.5);
+}
+.is-plain.danger input:focus{
+  background-color:rgba(245,108,108,0.08);
+  border-color:rgba(245,108,108,0.3);
+}
+.is-steep.danger input:focus{
+  background-color:rgba(245,108,108,0.03);
 }

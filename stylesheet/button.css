@@ -1,4 +1,4 @@
-.btn{
+.button{
   display:inline-block;
   font-size:14px;
   border:1px solid transparent;
@@ -12,54 +12,94 @@
   box-sizing:border-box;
   margin:5px 0;
 }
-.btn:disabled{
+/*button-group*/
+.button-group{
+  font-size:0;
+  padding-left:1px;
+}
+.button-group .button{
+  margin-left:1px;
+}
+/*is-conner*/
+.button-group .is-conner{
+  border-radius:0;
+}
+.button-group .is-conner:first-child{
+  border-radius: 5px 0 0 5px;
+  margin-left:-1px;
+}
+.button-group .is-conner:last-child{
+  border-radius:0 5px 5px 0;
+}
+/*is-round*/
+.button-group .is-round{
+  border-radius:0;
+}
+.button-group .is-round:first-child{
+  border-radius: 30px 0 0 30px;
+  margin-left:-1px;
+}
+.button-group .is-round:last-child{
+  border-radius:0 30px 30px 0;
+}
+/*is-plain*/
+.button-group .is-plain{
+  margin-left:-1px;
+}
+/*is-outline*/
+.button-group .is-outline{
+  margin-left:-1px;
+}
+.button:disabled{
   opacity:0.4;
 }
-.btn:disabled:active{
+.button:disabled:active{
   opacity:0.4;
 }
-.btn.full{
+.button.full{
   width:100%;
   text-align:center;
 }
-.btn .label{
+.button .label{
   display:inline-block;
   vertical-align: middle;
 }
-.btn .iconfont{
+.button .iconfont{
   font-size:18px;
   margin-right:5px;
   vertical-align: middle;
   display:inline-block;
 }
-.btn .icon-loading{
+.button .icon-loading{
   display:none;
 }
-.btn.is-loading{
+.button.is-loading{
   opacity:0.6;
 }
-.btn.is-loading:active{
+.button.is-loading:active{
   opacity:0.6;
 }
 .is-loading .icon-loading{
   display:inline-block;
   animation: loading 1s infinite;
 }
-.btn.large{
+/*尺寸*/
+.button.large{
   padding:14px 25px;
 }
-.btn.medium{
+.button.medium{
   padding:12px 20px;
 }
-.btn.small{
+.button.small{
   padding:8px 10px;
 }
-.btn.mini{
+.button.mini{
   padding:5px 8px;
 }
 .is-conner{
   border-radius:5px;
 }
+/*按钮样式*/
 .is-round{
   border-radius:30px;
 }
@@ -67,7 +107,7 @@
   width:100%;
   text-align:center;
 }
-.btn:active{
+.button:active{
   opacity:0.8;
 }
 @keyframes loading {
