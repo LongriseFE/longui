@@ -23,11 +23,13 @@
   <h1>默认用法</h1>
   <div class="content">
     <div class="selector">
-      <select>
+      <select class="selector-core"  onchange="this.blur()">
         <option value="">前端组</option>
         <option value="">动画组</option>
         <option value="">平面组</option>
       </select>
+      <span class="selector-arrow"></span>
+      <span class="prefix"></span>
     </div>
   </div>
 </body>

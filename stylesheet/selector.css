@@ -2,11 +2,34 @@
   display:flex;
   display:-webkit-flex;
   flex-direction:row;
+  position: relative;
 }
-.selector select{
+.selector-core{
   -webkit-appearance: none;
   flex:1;
   background:none;
   padding:10px;
   border:1px solid rgba(220,223,230,1);
+}
+.selector-arrow{
+  display:inline-block;
+  width:12px;
+  height:12px;
+  border:1px solid rgba(220,223,230,1);
+  border-top:none;
+  border-left:none;
+  transform:translate(-50%,-75%) rotate(45deg);
+  position: absolute;
+  right:10px;
+  top:50%;
+  transition:0.3s;
+  transform-origin: 75% 75%;
+  -webkit-transform-origin: 75% 75%;
+}
+.selector-core:focus{
+  border-color:rgba(64,158,255,1);
+}
+.selector-core:focus + .selector-arrow{
+  transform:translate(-50%,-75%) rotate(-135deg);
+  border-color:rgba(64,158,255,1);
 }
