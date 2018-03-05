@@ -1,0 +1,39 @@
+.action-sheet{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:101;
+  padding:0 10px;
+}
+.action-content{
+  background:rgba(255,255,255,1);
+  border-radius:5px;
+  overflow:hidden;
+}
+.action-list li a{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  font-size:14px;
+  padding:12px;
+  border-bottom:1px solid #EFEFEF;
+  box-sizing:border-box;
+}
+.action-cancel{
+  display:block;
+  background:rgba(255,255,255,1);
+  padding:12px;
+  text-align:center;
+  color:#f00;
+  margin:5px 0;
+  border-radius:5px;
+}
+.action-title{
+  text-align:center;
+  font-size:14px;
+  font-weight:normal;
+  padding:12px 0;
+  color:#8f8f8f;
+  border-bottom:1px solid #eeeeef;
+}

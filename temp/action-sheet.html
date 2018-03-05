@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>title</title>
-  <link rel="stylesheet" href="../stylesheet/reset.css">
-  <link rel="stylesheet" href="../stylesheet/radio.css">
-  <link rel="stylesheet" href="../stylesheet/title.css">
-  <link rel="stylesheet" href="../stylesheet/theme-default.css">
+  <title>action sheet</title>
+  <link rel="stylesheet" href="../stylesheet/style.css">
   <style>
   html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} /*这个是必须的*/
   body{padding:10px;font-family:"微软雅黑";}
@@ -16,16 +13,33 @@
   .content{padding:20px 10px;border:1px solid #f5f5f5;}
   .line{height:4px;background:#F5F5F5;margin:10px 0;}
   .checkbox{margin:5px 10px 5px 0;}
-  .btn{margin:5px;}
   </style>
 </head>
 <body>
-  <h1>普通用法</h1>
+  <h1>基础用法</h1>
   <div class="content">
-    <div class="title">
-      <h2 class="label"></h2>
-      
+    <button class="button primary">打开</button>
+  </div>
+  <div class="mask show"></div>
+  <div class="action-sheet">
+    <div class="action-content">
+      <h2 class="action-title">分享给</h2>
+      <ul class="action-list">
+        <li>
+          <a href="">删除</a>
+        </li>
+        <li>
+          <a href="">分享</a>
+        </li>
+        <li>
+          <a href="">收藏</a>
+        </li>
+        <li>
+          <a href="">播放</a>
+        </li>
+      </ul>
     </div>
+    <div class="action-cancel">取消</div>
   </div>
 </body>
 </html>
