@@ -20,26 +20,34 @@
   <div class="content">
     <button class="button primary">打开</button>
   </div>
-  <div class="mask show"></div>
+  <div class="mask"></div>
   <div class="action-sheet">
     <div class="action-content">
       <h2 class="action-title">分享给</h2>
       <ul class="action-list">
         <li>
-          <a href="">删除</a>
+          <button class="button is-text info full"><span class="label">播放</span></button>
         </li>
         <li>
-          <a href="">分享</a>
+          <button class="button is-text warning full">收藏</button>
         </li>
         <li>
-          <a href="">收藏</a>
-        </li>
-        <li>
-          <a href="">播放</a>
+          <button class="button is-text success full">分享</button>
         </li>
       </ul>
     </div>
-    <div class="action-cancel">取消</div>
+    <div class="action-cancel">
+      <button class="button danger full">取消</button>
+    </div>
   </div>
+  <script src="../node_modules/zepto/dist/zepto.js"></script>
+  <script>
+    $('.button').click(function(){
+      $('.mask,.action-sheet').addClass('show')
+    })
+    $('.mask').click(function(){
+      $('.mask,.action-sheet').removeClass('show')
+    })
+  </script>
 </body>
 </html>
