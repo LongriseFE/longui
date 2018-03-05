@@ -9,73 +9,40 @@
   <link rel="stylesheet" href="../stylesheet/mask.css">
   <link rel="stylesheet" href="../stylesheet/popup.css">
   <link rel="stylesheet" href="../stylesheet/picker.css">
-  <style>
-    #wrapper{
-      height:180px;
-      background:#eee;
-    }
-  #wrapper li{
-    padding:10px;
-  }
-  </style>
 </head>
 <body>
-  <div class="mask"></div>
-  <div id="wrapper">
-    <ul>
-        <li>1...</li>
-        <li>2...</li>
-        <li>1...</li>
-        <li>2...</li>
-        <li>1...</li>
-        <li>2...</li>
-        <li>1...</li>
-        <li>2...</li>
-        <li>1...</li>
-        <li>2...</li>
-        <li>1...</li>
-        <li>2...</li>
-    </ul>
-  </div>
-  <div class="popup">
+  <div class="mask show"></div>
+  <div class="popup show">
     <div class="picker">
-      <div class="picker-item" id="wrapper">
+      <div class="picker-item" id="year">
         <ul>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
-          <li>jafhwei</li>
+          <li>2018</li>
+          <li>2017</li>
+          <li>2016</li>
+          <li>2015</li>
+          <li>2014</li>
+          <li>2013</li>
+          <li>2012</li>
+          <li>2011</li>
+          <li>2010</li>
+          <li>2018</li>
+          <li>2018</li>
+          <li>2018</li>
+          <li>2018</li>
+          <li>2018</li>
+          <li>2018</li>
+          <li>2018</li>
         </ul>
       </div>
     </div>
   </div>
   <script src="../node_modules/iscroll/build/iscroll.js"></script>
   <script>
-    var myScroll = new IScroll('#wrapper');
-    // var myScroll;
-    // function loaded () {
-    //   myScroll = new IScroll('#wrapper', {
-    //     disablePointer: true
-    //   });
-    // }
-
-    // document.addEventListener('touchmove', function (event) {
-    //     event.preventDefault();
-    // }, {
-    //     passive: false
-    // });
+    var myScroll;
+    function loaded () {
+      myScroll = new IScroll('#year', {
+      });
+    }
   </script>
 </body>
 </html>
