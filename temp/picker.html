@@ -9,10 +9,35 @@
   <link rel="stylesheet" href="../stylesheet/mask.css">
   <link rel="stylesheet" href="../stylesheet/popup.css">
   <link rel="stylesheet" href="../stylesheet/picker.css">
+  <style>
+    #wrapper{
+      height:180px;
+      background:#eee;
+    }
+  #wrapper li{
+    padding:10px;
+  }
+  </style>
 </head>
-<body onload="loaded()">
-  <div class="mask show"></div>
-  <div class="popup show">
+<body>
+  <div class="mask"></div>
+  <div id="wrapper">
+    <ul>
+        <li>1...</li>
+        <li>2...</li>
+        <li>1...</li>
+        <li>2...</li>
+        <li>1...</li>
+        <li>2...</li>
+        <li>1...</li>
+        <li>2...</li>
+        <li>1...</li>
+        <li>2...</li>
+        <li>1...</li>
+        <li>2...</li>
+    </ul>
+  </div>
+  <div class="popup">
     <div class="picker">
       <div class="picker-item" id="wrapper">
         <ul>
@@ -38,18 +63,19 @@
   </div>
   <script src="../node_modules/iscroll/build/iscroll.js"></script>
   <script>
-    var myScroll;
-    function loaded () {
-      myScroll = new IScroll('#wrapper', {
-        disablePointer: true
-      });
-    }
+    var myScroll = new IScroll('#wrapper');
+    // var myScroll;
+    // function loaded () {
+    //   myScroll = new IScroll('#wrapper', {
+    //     disablePointer: true
+    //   });
+    // }
 
-    document.addEventListener('touchmove', function (event) {
-        event.preventDefault();
-    }, {
-        passive: false
-    });
+    // document.addEventListener('touchmove', function (event) {
+    //     event.preventDefault();
+    // }, {
+    //     passive: false
+    // });
   </script>
 </body>
 </html>
