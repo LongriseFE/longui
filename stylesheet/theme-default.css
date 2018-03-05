@@ -14,17 +14,17 @@
 .primary input:checked + .label:before{
   border-color:rgba(64,158,255,1);
 }
-.primary.steep input:checked + .label{
+.primary.is-steep input:checked + .label{
   color:rgba(64,158,255,1);
 }
 .radio-list.primary input:checked + .label{
   background:rgba(64,158,255,0.3);
   color:rgba(64,158,255,1);
 }
-.radio-list.primary.steep input:checked + .label{
+.radio-list.primary .is-steep input:checked + .label{
   color:rgba(64,158,255,1);
 }
-.radio-list.primary.steep input:checked + .label:after{
+.radio-list.primary .is-steep input:checked + .label:after{
   border-color:rgba(255,255,255,1);
 }
 .radio-button.primary input:checked + .label{
@@ -54,17 +54,17 @@
 .success input:checked + .label:before{
   border-color:rgba(103,194,58,1);
 }
-.success.steep input:checked + .label{
+.success.is-steep input:checked + .label{
   color:rgba(103,194,58,1);
 }
 .radio-list.success input:checked + .label{
   background:rgba(103,194,58,0.3);
   color:rgba(103,194,58,1);
 }
-.radio-list.success.steep input:checked + .label{
+.radio-list.success .is-steep input:checked + .label{
   color:rgba(103,194,58,1);
 }
-.radio-list.success.steep input:checked + .label:after{
+.radio-list.success .is-steep input:checked + .label:after{
   border-color:rgba(255,255,255,1);
 }
 .radio-button.success input:checked + .label{
@@ -91,17 +91,17 @@
 .info input:checked + .label:before{
   border-color:rgba(144,147,153,1);
 }
-.info.steep input:checked + .label{
+.info.is-steep input:checked + .label{
   color:rgba(144,147,153,1);
 }
 .radio-list.info input:checked + .label{
   background:rgba(144,147,153,0.3);
   color:rgba(144,147,153,1);
 }
-.radio-list.info.steep input:checked + .label{
+.radio-list.info .is-steep input:checked + .label{
   color:rgba(144,147,153,1);
 }
-.radio-list.info.steep input:checked + .label:after{
+.radio-list.info .is-steep input:checked + .label:after{
   border-color:rgba(255,255,255,1);
 }
 .radio-button.info input:checked + .label{
@@ -128,17 +128,17 @@
 .warning input:checked + .label:before{
   border-color:rgba(230,162,60,1);
 }
-.warning.steep input:checked + .label{
+.warning.is-steep input:checked + .label{
   color:rgba(230,162,60,1);
 }
 .radio-list.warning input:checked + .label{
   background:rgba(230,162,60,0.3);
   color:rgba(230,162,60,1);
 }
-.radio-list.warning.steep input:checked + .label{
+.radio-list.warning .is-steep input:checked + .label{
   color:rgba(230,162,60,1);
 }
-.radio-list.warning.steep input:checked + .label:after{
+.radio-list.warning .is-steep input:checked + .label:after{
   border-color:rgba(255,255,255,1);
 }
 .radio-button.warning input:checked + .label{
@@ -165,17 +165,17 @@
 .danger input:checked + .label:before{
   border-color:rgba(245,108,108,1);
 }
-.danger.steep input:checked + .label{
+.danger.is-steep input:checked + .label{
   color:rgba(245,108,108,1);
 }
 .radio-list.danger input:checked + .label{
   background:rgba(245,108,108,0.3);
   color:rgba(245,108,108,1);
 }
-.radio-list.danger.steep input:checked + .label{
+.radio-list.danger .is-steep input:checked + .label{
   color:rgba(245,108,108,1);
 }
-.radio-list.danger.steep input:checked + .label:after{
+.radio-list.danger .is-steep input:checked + .label:after{
   border-color:rgba(255,255,255,1);
 }
 .radio-button.danger input:checked + .label{
@@ -211,7 +211,7 @@
   border-top-color:rgba(64,158,255,1);
   border-bottom-color:rgba(64,158,255,1);
 }
-.checkbox-button.steep.primary input:checked + .label{
+.checkbox-button.is-steep.primary input:checked + .label{
   border-color:rgba(64,158,255,1);
 }
 /*success*/
@@ -229,7 +229,7 @@
   border-top-color:rgba(103,194,58,1);
   border-bottom-color:rgba(103,194,58,1);
 }
-.checkbox-button.steep.success input:checked + .label{
+.checkbox-button.is-steep.success input:checked + .label{
   border-color:rgba(103,194,58,1);
 }
 /*info*/
@@ -247,7 +247,7 @@
   border-top-color:rgba(144,147,153,1);
   border-bottom-color:rgba(144,147,153,1);
 }
-.checkbox-button.steep.info input:checked + .label{
+.checkbox-button.is-steep.info input:checked + .label{
   border-color:rgba(144,147,153,1);
 }
 /*warning*/
@@ -265,7 +265,7 @@
   border-top-color:rgba(230,162,60,1);
   border-bottom-color:rgba(230,162,60,1);
 }
-.checkbox-button.steep.warning input:checked + .label{
+.checkbox-button .is-steep.warning input:checked + .label{
   border-color:rgba(230,162,60,1);
 }
 /*danger*/
@@ -283,7 +283,7 @@
   border-top-color:rgba(245,108,108,1);
   border-bottom-color:rgba(245,108,108,1);
 }
-.checkbox-button.steep.danger input:checked + .label{
+.checkbox-button.is-steep.danger input:checked + .label{
   border-color:rgba(245,108,108,1);
 }
 /*--------------------------------按钮主题----------------------*/
@@ -636,18 +636,73 @@
 }
 
 /* tag标签 */
+/* primary */
 .tag.primary{
-  background:var(--primary);
+  background:rgba(64,158,255,1);
 }
+.tag.primary.is-plain{
+  border-color:rgba(64,158,255,0.5);
+  color:rgba(64,158,255,1);
+  background:rgba(64,158,255,0.2);
+}
+.tag.primary.is-outline{
+  background:none;
+  color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,0.5);
+}
+/* success */
 .tag.success{
-  background:var(--success);
+  background:rgba(103,194,58,1);
 }
+.tag.success.is-plain{
+  border-color:rgba(103,194,58,0.5);
+  color:rgba(103,194,58,1);
+  background:rgba(103,194,58,0.2);
+}
+.tag.success.is-outline{
+  background:none;
+  color:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,0.5);
+}
+/* info */
 .tag.info{
-  background:var(--info);
+  background:rgba(144,147,153,1);
 }
+.tag.info.is-plain{
+  border-color:rgba(144,147,153,0.5);
+  color:rgba(144,147,153,1);
+  background:rgba(144,147,153,0.2);
+}
+.tag.info.is-outline{
+  background:none;
+  color:rgba(144,147,153,1);
+  border-color:rgba(144,147,153,0.5);
+}
+/* warning */
 .tag.warning{
-  background:var(--warning);
+  background:rgba(230,162,60,1);
 }
+.tag.warning.is-plain{
+  border-color:rgba(230,162,60,0.5);
+  color:rgba(230,162,60,1);
+  background:rgba(230,162,60,0.2);
+}
+.tag.warning.is-outline{
+  background:none;
+  color:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,0.5);
+}
+/* danger */
 .tag.danger{
-  background:var(--danger);
+  background:rgba(245,108,108,1);
+}
+.tag.danger.is-plain{
+  border-color:rgba(245,108,108,0.5);
+  color:rgba(245,108,108,1);
+  background:rgba(245,108,108,0.2);
+}
+.tag.danger.is-outline{
+  background:none;
+  color:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,0.5);
 }

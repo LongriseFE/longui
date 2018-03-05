@@ -1,0 +1,10 @@
+.picker{
+  height:100%;
+}
+.picker-item{
+  height:100%;
+}
+.picker-item ul li{
+  font-size:14px;
+  padding:10px;
+}

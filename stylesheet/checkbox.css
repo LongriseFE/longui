@@ -74,11 +74,11 @@
 .checkbox input:disabled:checked + .label{
   color:#c0c4cc;
 }
-.primary.steep input:disabled:checked + .label,
-.success.steep input:disabled:checked + .label,
-.info.steep input:disabled:checked + .label,
-.warning.steep input:disabled:checked + .label,
-.danger.steep input:disabled:checked + .label{
+.primary.is-steep input:disabled:checked + .label,
+.success.is-steep input:disabled:checked + .label,
+.info.is-steep input:disabled:checked + .label,
+.warning.is-steep input:disabled:checked + .label,
+.danger.is-steep input:disabled:checked + .label{
   color:#c0c4cc;
 }
 .checkbox input:disabled:checked + .label:before{
@@ -89,12 +89,12 @@
   border-color:#C0C4CC;
 }
 .checkbox-list .checkbox input:disabled:checked + .label,
-.checkbox-list.steep .checkbox input:disabled:checked + .label{
+.checkbox-list.is-steep .checkbox input:disabled:checked + .label{
   background-color:#f5f7fa;
   color:#c0c4cc;
 }
 .checkbox-list .checkbox input:disabled:checked + .label:after,
-.checkbox-list.steep .checkbox input:disabled:checked + .label:after{
+.checkbox-list.is-steep .checkbox input:disabled:checked + .label:after{
   border-color:#c0c4cc;
   background:none;
 }
@@ -102,7 +102,7 @@
   background:#f5f7fa;
   border-color:#e4e7ed;
 }
-.checkbox-button.steep .checkbox input:disabled:checked + .label{
+.checkbox-button.is-steep .checkbox input:disabled:checked + .label{
   background:#F5F7FA;
   border-color:#DCDFE6;
 }
@@ -153,7 +153,7 @@
   transition: all .2s ease-in-out;
   margin-top:-10px;
 }
-.checkbox-list.steep .checkbox input:checked + .label{
+.checkbox-list.is-steep .checkbox input:checked + .label{
   background:none;
 }
 /*checkbox-button*/
@@ -193,11 +193,11 @@
 .checkbox-button.is-round .checkbox:last-child .label{
   border-radius:0 50px 50px 0;
 }
-.checkbox-button.steep input:checked + .label{
+.checkbox-button.is-steep input:checked + .label{
   z-index:100;
 }
-.checkbox-button.primary.steep input:checked + .label,
-.checkbox-button.success.steep input:checked + .label{
+.checkbox-button.primary.is-steep input:checked + .label,
+.checkbox-button.success.is-steep input:checked + .label{
   background:none;
 }
 /*--------------------尺寸-------------*/

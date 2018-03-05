@@ -1,0 +1,15 @@
+.popup{
+  position:fixed;
+  background-color:#fff;
+  z-index:101;
+  display:inline-block;
+  bottom:0;
+  left:0;
+  right:0;
+  height:40%;
+  transition:0.3s;
+  transform:translateY(100%);
+}
+.popup.show{
+  transform:translateY(0);
+}
