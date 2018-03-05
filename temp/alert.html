@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>alert</title>
+  <link rel="stylesheet" href="../stylesheet/style.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_543156_nzzcp25sppvte29.css">
+  <style>
+  html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} /*这个是必须的*/
+  body{padding:10px;font-family:"微软雅黑";}
+  h1{font-size:16px;font-weight:normal;color:#666;padding:10px;background:#f5f5f5;}
+  .content{padding:20px 10px;border:1px solid #f5f5f5;}
+  .line{height:4px;background:#F5F5F5;margin:10px 0;}
+  .checkbox{margin:5px 10px 5px 0;}
+  .btn{margin:5px;}
+  </style>
+</head>
+<body>
+  <button class="button primary" id="b1"><span class="label">打开弹出框</span></button>
+  <div class="mask"></div>
+  <div class="alert">
+    <div class="alert-head">
+      <h2 class="title">警告</h2>
+    </div>
+    <div class="alert-content">
+      <p>您确认要删除该用户！</p>
+    </div>
+    <ul class="alert-footer">
+      <li class="alert-col">
+        <button class="button is-full is-conner">取消</button>
+      </li>
+      <li class="alert-col">
+        <button class="button danger is-full is-conner">确定</button>
+      </li>
+    </ul>
+  </div>
+  <script src="../node_modules/zepto/dist/zepto.js"></script>
+  <script>
+    $('#b1,#b2').click(function(){
+      $('.mask,.alert').addClass("show")
+    })
+    $('.mask').click(function(){
+      $('.mask,.alert').removeClass("show")
+    })
+  </script>
+</body>
+</html>

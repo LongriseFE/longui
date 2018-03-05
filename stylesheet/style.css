@@ -14,4 +14,6 @@
 @import "switch.css";
 @import "tag.css";
 @import "title.css";
-@import "theme-default.css";
+@import "alert.css";
+@import "badge.css";
+/* @import "theme-default.css"; */
