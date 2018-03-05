@@ -7,6 +7,13 @@
   --danger: rgba(245,108,108,1);
 }
 /*--------------------radio主题----------------------*/
+.radio-tab.primary.is-steep input:checked + .label,
+.radio-tab.success.is-steep input:checked + .label,
+.radio-tab.info.is-steep input:checked + .label,
+.radio-tab.warning.is-steep input:checked + .label,
+.radio-tab.danger.is-steep input:checked + .label{
+  border:none;
+}
 /*primary*/
 .primary .label:after{
   background:rgba(64,158,255,1);
@@ -705,4 +712,22 @@
   background:none;
   color:rgba(245,108,108,1);
   border-color:rgba(245,108,108,0.5);
+}
+
+/* ----------------title---------------- */
+.primary .title-col > .label{
+  color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,1);
+}
+.success .title-col > .label{
+  color:rgba(103,194,58,1);
+  border-color:rgba(103,194,58,1);
+}
+.warning .title-col > .label{
+  color:rgba(230,162,60,1);
+  border-color:rgba(230,162,60,1);
+}
+.danger .title-col > .label{
+  color:rgba(245,108,108,1);
+  border-color:rgba(245,108,108,1);
 }

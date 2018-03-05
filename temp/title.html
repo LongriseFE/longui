@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>title</title>
+  <link rel="stylesheet" href="../stylesheet/reset.css">
+  <link rel="stylesheet" href="../stylesheet/radio.css">
+  <link rel="stylesheet" href="../stylesheet/title.css">
+  <link rel="stylesheet" href="../stylesheet/theme-default.css">
+  <style>
+  html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} /*这个是必须的*/
+  body{padding:10px;font-family:"微软雅黑";}
+  h1{font-size:16px;font-weight:normal;color:#666;padding:10px;background:#f5f5f5;}
+  .content{padding:20px 10px;border:1px solid #f5f5f5;}
+  .line{height:4px;background:#F5F5F5;margin:10px 0;}
+  .checkbox{margin:5px 10px 5px 0;}
+  .btn{margin:5px;}
+  </style>
+</head>
+<body>
+  <h1>普通用法</h1>
+  <div class="content">
+    <div class="title primary">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title success">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title warning">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title danger">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+  </div>
+  <h1>普通用法(带下划线)</h1>
+  <div class="content">
+    <div class="title primary is-subline">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title success is-subline">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title warning is-subline">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+    <div class="title danger is-subline">
+      <div class="title-col">
+        <h2 class="label">会议通知</h2>
+      </div>
+    </div>
+  </div>
+  <h1>带二级tab</h1>
+  <div class="content">
+    <div class="title primary is-subline">
+      <div class="title-col">
+        <h2 class="label">公文处理</h2>
+      </div>
+      <div class="title-col">
+        <!-- 嵌入radio-tab组件 -->
+        <div class="radio-tab primary mini is-steep">
+          <label for="tab11" class="radio badge" total="100">
+            <input type="radio" name="tab1" id="tab11">
+            <span class="label">全部</span>
+          </label>
+          <label for="tab12" class="radio badge" total="10">
+            <input checked type="radio" name="tab1" id="tab12">
+            <span class="label">待办</span>
+          </label>
+          <label for="tab13" class="radio badge" total="2">
+            <input type="radio" name="tab1" id="tab13">
+            <span class="label">已办</span>
+          </label>
+        </div>
+      </div>
+      <div class="title-col"></div>
+    </div>
+  </div>
+</body>
+</html>

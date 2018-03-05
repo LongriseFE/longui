@@ -192,6 +192,12 @@
   background:none;
 }
 /*radio-tab*/
+.radio-tab.is-steep{
+  border:none;
+}
+.radio-tab.is-steep .label{
+  border:none;
+}
 .radio-tab{
   border-bottom:1px solid #DCDFE6;
 }
