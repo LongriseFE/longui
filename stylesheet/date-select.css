@@ -11,7 +11,7 @@
   flex-direction: row;
   -webkit-flex-direction:row;
   border-bottom:1px solid #F5F5F5;
-  padding-top:5px 0 3px 0;
+  padding:5px 0 5px 0;
 }
 .date-head-item{
   flex:1;
@@ -51,6 +51,9 @@
   border-left:none;
   border-bottom:none;
   transform:rotate(45deg);
+}
+.date-body{
+  padding:10px 0;
 }
 .date-body,.date-body-item{
   flex:1;
