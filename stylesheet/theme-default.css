@@ -1,3 +1,11 @@
+:root{
+  /* 全局变量 */
+  --primary: rgba(64,158,255,1);
+  --success: rgba(103,194,58,1);
+  --info: rgba(144,147,153,1);
+  --warning: rgba(230,162,60,1);
+  --danger: rgba(245,108,108,1);
+}
 /*--------------------radio主题----------------------*/
 /*primary*/
 .primary .label:after{
@@ -625,4 +633,21 @@
 }
 .danger .selector-core:focus + .selector-arrow{
   border-color:rgba(245,108,108,1);
+}
+
+/* tag标签 */
+.tag.primary{
+  background:var(--primary);
+}
+.tag.success{
+  background:var(--success);
+}
+.tag.info{
+  background:var(--info);
+}
+.tag.warning{
+  background:var(--warning);
+}
+.tag.danger{
+  background:var(--danger);
 }
