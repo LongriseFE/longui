@@ -3,6 +3,7 @@
 }
 .picker-item{
   height:100%;
+  touch-action: none
 }
 .picker-item ul li{
   font-size:14px;

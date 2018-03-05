@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="../stylesheet/popup.css">
   <link rel="stylesheet" href="../stylesheet/picker.css">
 </head>
-<body>
+<body onload="loaded()">
   <div class="mask show"></div>
   <div class="popup show">
     <div class="picker">
-      <div class="picker-item" id="year">
+      <div class="picker-item" id="wrapper">
         <ul>
           <li>jafhwei</li>
           <li>jafhwei</li>
@@ -38,10 +38,18 @@
   </div>
   <script src="../node_modules/iscroll/build/iscroll.js"></script>
   <script>
-    window.onload = function () {
-      var wrapper = document.getElementById('year');
-      var myScroll = new IScroll(wrapper);
+    var myScroll;
+    function loaded () {
+      myScroll = new IScroll('#wrapper', {
+        disablePointer: true
+      });
     }
+
+    document.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, {
+        passive: false
+    });
   </script>
 </body>
 </html>
