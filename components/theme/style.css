@@ -1,3 +1,7 @@
 @import './test.css';
 @import './reset.css';
 @import '../hc-radio/radio.css';
+@import '../hc-checkbox/checkbox.css';
+@import '../hc-switch/switch.css';
+@import '../hc-input/input.css';
+@import '../hc-picker/picker.css';

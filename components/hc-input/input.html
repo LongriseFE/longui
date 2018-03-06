@@ -5,19 +5,11 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="../stylesheet/style.css">
+  <link rel="stylesheet" href="../theme/style.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_543156_nzzcp25sppvte29.css">
-  <style>
-  html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);} /*这个是必须的*/
-  body{padding:10px;font-family:"微软雅黑";}
-  h1{font-size:16px;font-weight:normal;color:#666;padding:10px;background:#f5f5f5;}
-  .content{padding:20px 10px;border:1px solid #f5f5f5;}
-  .line{height:4px;background:#F5F5F5;margin:10px 0;}
-  .checkbox{margin:5px 10px 5px 0;}
-  </style>
 </head>
 <body>
-  <h1>普通用法</h1>
+  <h1 class="t">普通用法</h1>
   <div class="content">
     <div class="input primary is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -69,7 +61,7 @@
       </span>
     </div>
   </div>
-  <h1>圆角</h1>
+  <h1 class="t">圆角</h1>
   <div class="content">
     <div class="input is-conner">
       <input type="text" placeholder="请填写相关内容！">
@@ -81,7 +73,7 @@
       </span>
     </div>
   </div>
-  <h1>圆形</h1>
+  <h1 class="t">圆形</h1>
   <div class="content">
     <div class="input is-round">
       <input type="text" placeholder="请填写相关内容！">
@@ -93,7 +85,7 @@
       </span>
     </div>
   </div>
-  <h1>plain</h1>
+  <h1 class="t">plain</h1>
   <div class="content">
     <div class="input is-conner is-plain primary is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -135,7 +127,7 @@
       </span>
     </div>
   </div>
-  <h1>steep</h1>
+  <h1 class="t">steep</h1>
   <div class="content">
     <div class="input is-steep primary is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -177,7 +169,7 @@
       </span>
     </div>
   </div>
-  <h1>线条输入框</h1>
+  <h1 class="t">线条输入框</h1>
   <div class="content">
     <div class="input is-bottom-line primary is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -219,7 +211,7 @@
       </span>
     </div>
   </div>
-  <h1>线条输入框(变性)</h1>
+  <h1 class="t">线条输入框(变性)</h1>
   <div class="content">
     <div class="input is-outline primary mini is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -261,7 +253,7 @@
       </span>
     </div>
   </div>
-  <h1>不同尺寸</h1>
+  <h1 class="t">不同尺寸</h1>
   <div class="content">
     <div class="input primary mini is-fix">
       <input type="text" placeholder="请填写相关内容！">
@@ -304,94 +296,6 @@
       <span class="suffix">
         <span class="iconfont icon-list"></span>
       </span>
-    </div>
-  </div>
-  <h1>配合form-item组合复杂的表单</h1>
-  <div class="content">
-    <div class="form-item is-subline">
-      <div class="prepend">手机号：</div>
-      <div class="value">
-        <div class="input is-steep">
-          <input type="text" placeholder="请填写相关内容！">
-          <span class="prefix">
-            <span class="iconfont icon-denglu"></span>
-          </span>
-          <span class="suffix">
-            <span class="iconfont icon-list"></span>
-          </span>
-        </div>
-      </div>
-      <div class="append">
-        <button class="button mini primary">发送验证码</button>
-      </div>
-    </div>
-    <div class="form-item is-subline">
-      <div class="prepend">验证码：</div>
-      <div class="value">
-        <div class="input is-steep">
-          <input type="text" placeholder="请填写相关内容！">
-          <span class="prefix">
-            <span class="iconfont icon-denglu"></span>
-          </span>
-          <span class="suffix">
-            <span class="iconfont icon-list"></span>
-          </span>
-        </div>
-      </div>
-      <div class="append">
-      </div>
-    </div>
-  </div>
-  <h1>配合form-item组合复杂的表单</h1>
-  <div class="content">
-    <div class="form-item">
-      <div class="prepend" style="width:60px;">姓名：</div>
-      <div class="value">
-        <div class="input primary">
-          <input type="text" placeholder="请填写相关内容！">
-          <span class="prefix">
-            <span class="iconfont icon-denglu"></span>
-          </span>
-          <span class="suffix">
-            <span class="iconfont icon-list"></span>
-          </span>
-        </div>
-      </div>
-      <div class="append">
-      </div>
-    </div>
-    <div class="form-item">
-      <div class="prepend" style="width:60px;">手机号：</div>
-      <div class="value">
-        <div class="input primary">
-          <input type="text" placeholder="请填写相关内容！">
-          <span class="prefix">
-            <span class="iconfont icon-denglu"></span>
-          </span>
-          <span class="suffix">
-            <span class="iconfont icon-list"></span>
-          </span>
-        </div>
-      </div>
-      <div class="append">
-        <button class="button primary is-text">发送验证码</button>
-      </div>
-    </div>
-    <div class="form-item">
-      <div class="prepend" style="width:60px;">验证码：</div>
-      <div class="value">
-        <div class="input primary">
-          <input type="text" placeholder="请填写相关内容！">
-          <span class="prefix">
-            <span class="iconfont icon-denglu"></span>
-          </span>
-          <span class="suffix">
-            <span class="iconfont icon-list"></span>
-          </span>
-        </div>
-      </div>
-      <div class="append">
-      </div>
     </div>
   </div>
 </body>
