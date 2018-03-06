@@ -8,20 +8,104 @@
   <link rel="stylesheet" href="../theme/style.css">
 </head>
 <body>
-  <div style="height:170px;">
-    <div class="hc-picker">
-      <div class="hc-picker-body">
-        <div class="hc-picker-mask"></div>
-        <div class="hc-picker-indicator"></div>
-        <ul class="hc-picker-content">
-          <li class="hc-picker-item">小米</li>
-          <li class="hc-picker-item">华为</li>
-          <li class="hc-picker-item hc-picker-item-select">锤子</li>
-          <li class="hc-picker-item">乐视</li>
-          <li class="hc-picker-item">红米</li>
-        </ul>
-      </div>
+  <div class="hc-picker">
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">2012年</li>
+        <li class="hc-picker-item">2013年</li>
+        <li class="hc-picker-item hc-selected">2014年</li>
+        <li class="hc-picker-item">2015年</li>
+        <li class="hc-picker-item">2016年</li>
+      </ul>
+    </div>
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">1月</li>
+        <li class="hc-picker-item">2月</li>
+        <li class="hc-picker-item hc-selected">3月</li>
+        <li class="hc-picker-item">4月</li>
+        <li class="hc-picker-item">5月</li>
+      </ul>
+    </div>
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">1日</li>
+        <li class="hc-picker-item">2日</li>
+        <li class="hc-picker-item hc-selected">3日</li>
+        <li class="hc-picker-item">4日</li>
+        <li class="hc-picker-item">5日</li>
+      </ul>
     </div>
   </div>
+  <br>
+  <br>
+  <div class="hc-picker-steep">
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">2012年</li>
+        <li class="hc-picker-item">2013年</li>
+        <li class="hc-picker-item hc-selected">2014年</li>
+        <li class="hc-picker-item">2015年</li>
+        <li class="hc-picker-item">2016年</li>
+      </ul>
+    </div>
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">1月</li>
+        <li class="hc-picker-item">2月</li>
+        <li class="hc-picker-item hc-selected">3月</li>
+        <li class="hc-picker-item">4月</li>
+        <li class="hc-picker-item">5月</li>
+      </ul>
+    </div>
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">1日</li>
+        <li class="hc-picker-item">2日</li>
+        <li class="hc-picker-item hc-selected">3日</li>
+        <li class="hc-picker-item">4日</li>
+        <li class="hc-picker-item">5日</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="hc-picker-steep">
+    <div class="hc-picker-item">
+      <div class="hc-mask-top"></div>
+      <div class="hc-mask-bottom"></div>
+      <ul class="hc-picker-list">
+        <li class="hc-picker-item">小米</li>
+        <li class="hc-picker-item">华为</li>
+        <li class="hc-picker-item hc-selected">苹果</li>
+        <li class="hc-picker-item">乐视</li>
+        <li class="hc-picker-item">锤子</li>
+      </ul>
+    </div>
+  </div>
+  <script src="zepto.min.js"></script>
+  <script>
+    $(function(){
+      $('.hc-picker').each((idx,el)=>{
+        var selected = $(el).find('.hc-picker-item').find('.selected')
+        selected.prev('li').css('transform','rotateX(-20deg)')
+        selected.prev('li').prev('li').css('transform','rotateX(-40deg)')
+        selected.next('li').css('transform','rotateX(20deg)')
+        selected.next('li').next('li').css('transform','rotateX(40deg)')
+      })
+    })
+  </script>
 </body>
 </html>

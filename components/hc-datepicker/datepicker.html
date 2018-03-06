@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../theme/style.css">
+</head>
+<body>
+  <h1 class="t">弹出时间</h1>
+  <div class="content">
+    <button class="hc-button hc-button-primary" id="date">
+      <span class="hc-button-label">从下面划出</span>
+    </button>
+  </div>
+  <div class="hc-masker"></div>
+  <div class="hc-popup hc-popup-down">
+    <div class="hc-datepicker">
+      <div class="hc-datepicker-handle">
+        <button class="hc-button-text hc-button-info">
+          <span class="hc-button-label">取消</span>
+        </button>
+        <button class="hc-button-text hc-button-primary">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </div>
+      <div class="hc-datepicker-head"></div>
+      <div class="hc-datepicker-body">
+        <div class="hc-picker hc-picker-view-7">
+          <div class="hc-picker-item">
+            <div class="hc-mask-top"></div>
+            <div class="hc-mask-bottom"></div>
+            <ul class="hc-picker-list">
+              <li class="hc-picker-item">2012年</li>
+              <li class="hc-picker-item">2013年</li>
+              <li class="hc-picker-item">2012年</li>
+              <li class="hc-picker-item">2013年</li>
+              <li class="hc-picker-item hc-selected">2014年</li>
+              <li class="hc-picker-item">2015年</li>
+              <li class="hc-picker-item">2016年</li>
+              <li class="hc-picker-item">2015年</li>
+              <li class="hc-picker-item">2016年</li>
+            </ul>
+          </div>
+          <div class="hc-picker-item">
+            <div class="hc-mask-top"></div>
+            <div class="hc-mask-bottom"></div>
+            <ul class="hc-picker-list">
+              <li class="hc-picker-item">1月</li>
+              <li class="hc-picker-item">2月</li>
+              <li class="hc-picker-item">1月</li>
+              <li class="hc-picker-item">2月</li>
+              <li class="hc-picker-item hc-selected">3月</li>
+              <li class="hc-picker-item">4月</li>
+              <li class="hc-picker-item">5月</li>
+              <li class="hc-picker-item">4月</li>
+              <li class="hc-picker-item">5月</li>
+            </ul>
+          </div>
+          <div class="hc-picker-item">
+            <div class="hc-mask-top"></div>
+            <div class="hc-mask-bottom"></div>
+            <ul class="hc-picker-list">
+              <li class="hc-picker-item">1日</li>
+              <li class="hc-picker-item">2日</li>
+              <li class="hc-picker-item">1日</li>
+              <li class="hc-picker-item">2日</li>
+              <li class="hc-picker-item hc-selected">3日</li>
+              <li class="hc-picker-item">4日</li>
+              <li class="hc-picker-item">5日</li>
+              <li class="hc-picker-item">4日</li>
+              <li class="hc-picker-item">5日</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../zepto.min.js"></script>
+  <script>
+    $('#date').click(function(){
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup').addClass('hc-popup-show')
+    })
+    $('.hc-masker').click(function(){
+      $(this).removeClass('hc-masker-show')
+      $('.hc-popup').removeClass('hc-popup-show')
+    })
+  </script>
+</body>
+</html>

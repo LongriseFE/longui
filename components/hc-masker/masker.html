@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mask遮罩</title>
+  <link rel="stylesheet" href="../theme/style.css">
+</head>
+<body>
+  <h1 class="t">普通用法</h1>
+  <div class="content">
+    <button class="hc-button hc-button-primary" id="fade">
+      <span class="hc-button-label">打开遮罩(zoomIn)</span>
+    </button>
+    <button class="hc-button hc-button-primary" id="zoom">
+      <span class="hc-button-label">打开遮罩(fadeIn)</span>
+    </button>
+  </div>
+  <div class="hc-masker"></div>
+  <div class="hc-masker-zoom"></div>
+  <script src="../zepto.min.js"></script>
+  <script>
+    $('#fade').click(function(){
+      $('.hc-masker').addClass('hc-masker-show')
+    })
+    $('#zoom').click(function(){
+      $('.hc-masker-zoom').addClass('hc-masker-show')
+    })
+    $('.hc-masker,.hc-masker-zoom').click(function(){
+      $(this).removeClass('hc-masker-show')
+    })
+  </script>
+</body>
+</html>
