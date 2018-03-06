@@ -21,7 +21,7 @@
   display:inline-block;
   width:18px;
   height:18px;
-  border:1px solid #ccc;
+  border:1px solid #D3D3D3;
   border-radius:50%;
   position:absolute;
   left:0;
@@ -37,7 +37,7 @@
   position:absolute;
   width:10px;
   height:10px;
-  background:#ccc;
+  background:#909399;
   left:4px;
   top:50%;
   opacity:0;
@@ -57,7 +57,7 @@
 .radio input:checked + .label:before{
   border-color:#ccc;
 }
-/*禁用状态*/
+/*--------------------------禁用状态-----------------------*/
 .radio input:disabled + .label{
   color:#c0c4cc;
 }
@@ -99,7 +99,7 @@
 .radio-button.is-steep .radio input:disabled:checked + .label{
   background:#F5F7FA;
 }
-/*radio-list*/
+/*--------------------------------radio-list---------------------*/
 .radio-list .radio{
   display:block;
 }
@@ -108,7 +108,7 @@
   display:block;
   position:relative;
   padding:10px;
-  border-bottom:1px solid #DCDFE6;
+  box-shadow:inset 0px -1px 1px -1px #EBEBEB;
 }
 .radio-list .radio:last-child .label{
   border:none;
@@ -120,38 +120,38 @@
 }
 .radio-list .radio .label:after{
   display:table;
-  width:6px;
-  height:12px;
+  width:9px;
+  height:18px;
   border-top:0;
   border-left:0;
-  transform:rotate(45deg) scale(0);
-  -webkit-transform:rotate(45deg) scale(0);
+  transform:scale(0);
+  -webkit-transform:scale(0);
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
+  transform-origin: center center;
   position:absolute;
   left:auto;
   background:none;
   border-radius:0;
 }
 .radio-list .radio input:checked + .label:after{
-  width: 6px;
-  height:12px;
+  width: 9px;
+  height:18px;
   position: absolute;
   top: 50%;
-  right:16px;
+  right:28px;
   border: 1px solid #fff;
   border-top: 0;
   border-left: 0;
-  border-color:#fff;
-  -ms-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
+  -ms-transform:scale(1);
+  transform:scale(1);
   transition: all .2s ease-in-out;
-  margin-top:-10px;
 }
 .radio-list.is-steep .radio input:checked + .label{
   background:none;
+  border-color:#DCDFE6;
 }
-/*radio-button*/
+/*------------------------radio-button-------------------------*/
 .radio-button{
   font-size:0;
   padding-left:1px;
@@ -191,7 +191,7 @@
 .radio-button.success.is-steep input:checked + .label{
   background:none;
 }
-/*radio-tab*/
+/*----------------radio-tab---------------*/
 .radio-tab.is-steep{
   border:none;
 }
@@ -354,6 +354,50 @@
 .radio-button.large .label{
   padding-right:26px;
 }
-.radio-list.large input:checked + .label:after{
-  right:18px;
+/* 默认主题 */
+.radio-tab.primary.is-steep input:checked + .label,
+.radio-tab.success.is-steep input:checked + .label,
+.radio-tab.info.is-steep input:checked + .label,
+.radio-tab.warning.is-steep input:checked + .label,
+.radio-tab.danger.is-steep input:checked + .label{
+  border:none;
+}
+/*primary*/
+.radio .label:after{
+  background:rgba(64,158,255,1);
+}
+.radio input:checked + .label:before{
+  border-color:rgba(64,158,255,1);
+}
+.is-steep input:checked + .label{
+  color:rgba(64,158,255,1);
+}
+.radio-list input:checked + .label{
+  color:rgba(64,158,255,1);
+}
+.radio-list .is-steep input:checked + .label{
+  color:rgba(64,158,255,1);
+}
+.radio-list .is-steep input:checked + .label:after{
+  border-color:rgba(255,255,255,1);
+}
+.radio-button input:checked + .label{
+  background-color:rgba(64,158,255,1);
+  border-color:rgba(64,158,255,1);
+}
+.radio-tab input:checked + .label{
+  color:rgba(64,158,255,1);
+  border-bottom-color:rgba(64,158,255,1);
+}
+.radio-tab.vertical input:checked + .label{
+  border-color:transparent;
+}
+.radio-tab.vertical input:checked + .label:after{
+  border-color:rgba(64,158,255,1);
+}
+.radio-list input:checked + .label:before{
+  background:rgba(64,158,255,1);
+}
+.radio-list input:checked + .label:after{
+  border-color:rgba(255,255,255,1);
 }

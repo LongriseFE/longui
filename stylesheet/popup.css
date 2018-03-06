@@ -6,7 +6,8 @@
   bottom:0;
   left:0;
   right:0;
-  height:55%;
+  min-height:45%;
+  max-height:70%;
   transition:0.3s;
   transform:translateY(100%);
 }
