@@ -91,11 +91,7 @@
   text-overflow:ellipsis;
   display:-webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp:1;
-}
-.hc-cover-list .hc-list-name{
   -webkit-line-clamp:2;
-  min-height:44px;
 }
 .hc-list-tail{
   display:flex;
