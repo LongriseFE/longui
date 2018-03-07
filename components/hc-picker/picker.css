@@ -5,12 +5,12 @@
   display:-webkit-flex;
   flex-direction:row;
 }
-.hc-picker-item{
+.hc-picker-block{
   flex:1;
   position:relative;
   height:100%;
 }
-.hc-picker-item .hc-mask-bottom:before{
+.hc-picker-block .hc-mask-bottom:before{
   top:0;
   bottom:auto;
 }

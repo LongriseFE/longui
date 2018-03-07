@@ -99,7 +99,7 @@
   <script>
     $(function(){
       $('.hc-picker').each((idx,el)=>{
-        var selected = $(el).find('.hc-picker-item').find('.selected')
+        var selected = $(el).find('.hc-picker-item').find('.hc-selected')
         selected.prev('li').css('transform','rotateX(-20deg)')
         selected.prev('li').prev('li').css('transform','rotateX(-40deg)')
         selected.next('li').css('transform','rotateX(20deg)')
