@@ -1,0 +1,116 @@
+/* 普通的list */
+.hc-list,.hc-cover-list,.hc-list-sort{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+.hc-list-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  align-items:center;
+  border-bottom:1px solid #efefef;
+  font-size:14px;
+  color:#333;
+  min-height:44px;
+  padding:0 5px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+.hc-list-title{
+  flex:1;
+  -webkit-flex:1;
+  width:100%;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+}
+.hc-list-item:active{
+  background-color:rgba(0,0,0,0.1);
+}
+.hc-list-cover,.hc-list-label,.hc-list-explain,.hc-list-badge,.hc-list-arrow{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  align-items:center;
+  padding:0 5px;
+}
+.hc-list-cover:empty,.hc-list-label:empty,.hc-list-explain:empty,.hc-list-badge:empty,.hc-list-arrow:empty{
+  padding:0;
+}
+/* 小图标 */
+.hc-list-cover img{
+  width:30px;
+  height:30px;
+}
+/* 文字标签 */
+.hc-list-label{
+  flex:1;
+  -webkit-flex:1;
+}
+/* 附加信息 */
+.hc-list-explain{
+  color:#999;
+}
+/* 最右边箭头也有可能是其他元素 */
+.hc-list-arrow{
+  font-size:24px;
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  color:#999;
+}
+/* 列表中的头像 */
+.hc-list-face{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+}
+/* 图片list */
+.hc-list-info{
+  flex:1;
+  -webkit-flex:1;
+}
+.hc-cover-list .hc-list-item{
+  padding:10px;
+}
+.hc-cover-list .hc-list-cover{
+  width:30%;
+  padding:0 10px 0 0;
+}
+.hc-cover-list .hc-list-cover img{
+  width:100%;
+  height:auto;
+}
+.hc-list-name{
+  font-weight:normal;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+}
+.hc-cover-list .hc-list-name{
+  -webkit-line-clamp:2;
+  min-height:44px;
+}
+.hc-list-tail{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-top:10px;
+  color:#999;
+}
+/* 有序list */
+.hc-list-sort .hc-list-item{
+  padding:10px;
+}
+.hc-list-sort .hc-list-badge{
+  padding-top:3px;
+  padding-left:0;
+  align-items: flex-start;
+}
