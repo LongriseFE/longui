@@ -17,6 +17,8 @@
   flex:1;
   -webkit-flex:1;
   align-items:center;
+  display:flex;
+  display:-webkit-flex;
 }
 .hc-datepicker-body .hc-picker{
   align-self: center;

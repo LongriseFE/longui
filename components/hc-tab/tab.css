@@ -22,14 +22,27 @@
   justify-content: space-around;
 }
 .hc-tab-bar-item{
-  display:inline-block;
-  padding:15px 20px;
+  display:inline-flex;
+  display:-webkit-inline-flex;
+  flex-direction:row;
+  padding:0 20px;
+  height:40px;
   font-size:14px;
   flex-shrink: 0;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   position: relative;
   transform:translateY(1px);
+}
+.hc-tab-bar-icon,.hc-tab-bar-label{
+  align-self: center;
+}
+.hc-tab-bar-badge{
+  align-self: flex-start;
+  position: relative;
+}
+.hc-tab-bar-badge .hc-badge{
+  position: absolute;
 }
 /* tab-bar-item选中 */
 .hc-tab-bar-item:after{
