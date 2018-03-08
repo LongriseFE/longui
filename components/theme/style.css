@@ -14,5 +14,7 @@
 @import '../hc-alert/alert.css';
 @import '../hc-list/list.css';
 @import '../hc-iconfont/iconfont.css';
+@import '../hc-selector/selector.css';
+@import '../hc-actionsheet/actionsheet.css';
 @import 'http://at.alicdn.com/t/font_543156_r2l4henolq9w9udi.css';
 @import "./default-theme.css"

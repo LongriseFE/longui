@@ -27,7 +27,7 @@
   -webkit-flex:1;
   padding:0 5px;
 }
-.hc-list-item:active{
+.hc-list-title:active{
   background-color:rgba(0,0,0,0.1);
 }
 .hc-list-cover,.hc-list-label,.hc-list-explain,.hc-list-badge,.hc-list-append{
@@ -53,6 +53,7 @@
 /* 附加信息 */
 .hc-list-explain{
   color:#999;
+  font-size:12px;
 }
 /* 最右边箭头也有可能是其他元素 */
 .hc-list-append{
@@ -104,6 +105,7 @@
   justify-content: space-between;
   margin-top:10px;
   color:#999;
+  font-size:12px;
 }
 /* 有序list */
 .hc-sort-list .hc-list-title{
@@ -169,4 +171,7 @@
 }
 .hc-list-handle-button:nth-child(2){
   background:#EA2000;
+}
+.hc-list-handle-button:active{
+  opacity:0.8;
 }

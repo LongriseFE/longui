@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../theme/style.css">
+</head>
+<body>
+  <h1 class="t">普通用法</h1>
+  <div class="content">
+    <button class="hc-button hc-button-primary">
+      <span class="hc-button-label">打开</span>
+    </button>
+  </div>
+  <div class="hc-masker"></div>
+  <div class="hc-actionsheet">
+    <div class="hc-actionsheet-content">
+      <h2 class="hc-actionsheet-title">分享给</h2>
+      <ul class="hc-actionsheet-list">
+        <li>
+          <button class="hc-button-text hc-button-info hc-button-full hc-button-large"><span class="hc-button-label">播放</span></button>
+        </li>
+        <li>
+            <button class="hc-button-text hc-button-primary hc-button-full hc-button-large"><span class="hc-button-label">播放</span></button>
+        </li>
+        <li>
+            <button class="hc-button-text hc-button-warning hc-button-full hc-button-large"><span class="hc-button-label">播放</span></button>
+        </li>
+      </ul>
+    </div>
+    <div class="hc-actionsheet-cancel">
+        <button class="hc-button hc-button-danger hc-button-full"><span class="hc-button-label">取消</span></button>
+    </div>
+  </div>
+  <script src="../zepto.min.js"></script>
+  <script>
+  $('.hc-button').click(function(){
+    $('.hc-masker').addClass('hc-masker-show')
+    $('.hc-actionsheet').addClass('hc-actionsheet-show')
+  })
+  $('.hc-masker').click(function(){
+    $(this).removeClass('hc-masker-show')
+    $('.hc-actionsheet').removeClass('hc-actionsheet-show')
+  })
+  </script>
+</body>
+</html>

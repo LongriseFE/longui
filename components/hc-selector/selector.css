@@ -1,0 +1,93 @@
+.hc-selector,
+.hc-selector-conner,
+.hc-selector-round,
+.hc-selector-line,
+.hc-selector-outline{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  position: relative;
+}
+.hc-selector-core{
+  -webkit-appearance: none;
+  flex:1;
+  background:none;
+  padding:10px;
+  border:1px solid rgba(220,223,230,1);
+  border-radius:0;
+  color:rgba(96,98,102,1);
+  position: relative;
+  z-index:2;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+.hc-selector-arrow{
+  position: absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  justify-content: center;
+  padding:0 10px;
+  z-index:1;
+  transform-origin: center center;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  color:#999;
+}
+.hc-selector-core:focus + .hc-selector-arrow{
+  transform: rotate(-180deg);
+  color:#2297E7;
+}
+.hc-selector-core:focus{
+  border-color:#2297E7;
+}
+.hc-selector-conner .hc-selector-core{
+  border-radius:5px;
+}
+.hc-selector-round .hc-selector-core{
+  border-radius:30px;
+}
+.hc-selector-line .hc-selector-core{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+.hc-selector-outline .hc-selector-core{
+  border-top:none;
+}
+.hc-selector-outline:before,.hc-selector-outline:after{
+  content:"";
+  display:inline-block;
+  width:1px;
+  position: absolute;
+  top:0;
+  bottom:8px;
+  background:#fff;
+  z-index:3;
+  left:0;
+}
+.hc-selector-outline:after{
+  left:auto;
+  right:0;
+}
+/* is-line共用input */
+/* 不同尺寸 */
+/* mini */
+.mini select{
+  padding:5px 10px;
+}
+/*small*/
+.small select{
+  padding:8px 10px;
+}
+/*medium*/
+.medium select{
+  padding:10px;
+}
+/*large*/
+.large select{
+  padding:12px 10px;
+}
