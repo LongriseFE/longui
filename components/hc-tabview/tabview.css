@@ -1,0 +1,20 @@
+.hc-tabview{
+  height:100%;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+}
+.hc-tabview .hc-tab-bar-item{
+  flex-direction:column;
+  padding:5px 0;
+}
+.hc-tabview .hc-tab-bar-badge{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.hc-tabview .hc-tab-bar-icon .iconfont{
+  font-size:22px;
+  padding-bottom:5px;
+  display:inline-block;
+}

@@ -10,9 +10,9 @@
   flex-direction: column;
   align-items:center;
   border-bottom:1px solid #efefef;
-  font-size:14px;
+  font-size:16px;
   color:#333;
-  min-height:44px;
+  min-height:54px;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   position: relative;
@@ -26,6 +26,7 @@
   flex:1;
   -webkit-flex:1;
   padding:0 5px;
+  background:#fff;
 }
 .hc-list-title:active{
   background-color:rgba(0,0,0,0.1);
@@ -52,8 +53,8 @@
 }
 /* 附加信息 */
 .hc-list-explain{
-  color:#999;
-  font-size:12px;
+  color:#666;
+  font-size:14px;
 }
 /* 最右边箭头也有可能是其他元素 */
 .hc-list-append{
@@ -65,8 +66,8 @@
 }
 /* 列表中的头像 */
 .hc-list-face{
-  width:34px;
-  height:34px;
+  width:48px;
+  height:48px;
   border-radius:50%;
 }
 /* 图片list */
@@ -106,6 +107,19 @@
   margin-top:10px;
   color:#999;
   font-size:12px;
+  align-items:center;
+}
+.hc-list-tail-col{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  align-items:center;
+}
+.hc-list-tail-item{
+  margin-left:10px;
+}
+.hc-list-tail-col .hc-tag{
+  margin-right:5px;
 }
 /* 有序list */
 .hc-sort-list .hc-list-title{
@@ -174,4 +188,20 @@
 }
 .hc-list-handle-button:active{
   opacity:0.8;
+}
+/* new-list */
+.hc-new-list .hc-list-title{
+  padding:10px;
+}
+.hc-list-summary{
+  color:#999;
+  margin-top:10px;
+}
+/* tag-list */
+.hc-tag-list .hc-list-title{
+  padding:10px;
+}
+.hc-tag-list .hc-list-badge {
+  padding-left: 0;
+  align-items: flex-start;
 }

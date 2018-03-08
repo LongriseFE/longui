@@ -17,5 +17,9 @@
 @import '../hc-selector/selector.css';
 @import '../hc-actionsheet/actionsheet.css';
 @import '../hc-fabs/fabs.css';
-@import 'http://at.alicdn.com/t/font_543156_r2l4henolq9w9udi.css';
+@import '../hc-range/range.css';
+@import '../hc-headerbar/headerbar.css';
+@import '../hc-tabview/tabview.css';
+@import '../hc-tag/tag.css';
+@import '../hc-layout/layout.css';
 @import "./default-theme.css"

@@ -15,169 +15,182 @@
   left:0;
   right:0;
   bottom:0;
-  z-index:101;
+  z-index:103;
 }
 .hc-fabs-item{
   position: absolute;
-  left:50%;
-  top:50%;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
   opacity:0;
-  transform:translate(-50%,-50%) scale(0);
+  display:flex;
+  display:-webkit-flex;
+  justify-content: center;
+  align-items:center;
+  transform-origin: center center;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
 }
 .hc-fabs-show .hc-fabs-item{
   opacity:1;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+}
+.hc-fabs-show .hc-fabs-core{
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
 }
 /* 四周展开4个 */
 .hc-fabs-show .hc-fabs-around-4-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
+  -webkit-transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-4-1{
-  transform:translate(65px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-4-2{
-  transform:translate(-50%, 65px) scale(1);
+  transform:translate(0, 87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-4-3{
-  transform:translate(-100px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 /* 四周展开5个 */
 .hc-fabs-show .hc-fabs-around-5-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-5-1{
-  transform:translate(65px, -37px) scale(1);
+  transform:translate(83px, -28px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-5-2{
-  transform:translate(32px, 52px) scale(1);
+  transform:translate(50px, 68px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-5-3{
-  transform:translate(-68px, 52px) scale(1);
+  transform:translate(-50px, 68px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-5-4{
-  transform:translate(-98px, -37px) scale(1);
+  transform:translate(-80px, -28px) scale(1);
 }
 /* 四周展开6个 */
 .hc-fabs-show .hc-fabs-around-6-0{
-  transform:translate(-50%, -106px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-6-1{
-  transform:translate(55px, -62px) scale(1);
+  transform:translate(75px, -44px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-6-2{
-  transform:translate(55px, 26px) scale(1);
+  transform:translate(75px, 44px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-6-3{
-  transform:translate(-50%, 70px) scale(1);
+  transform:translate(0, 87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-6-4{
-  transform:translate(-93px, 26px) scale(1);
+  transform:translate(-75px, 44px) scale(1);
 }
 .hc-fabs-show .hc-fabs-around-6-5{
-  transform:translate(-93px, -62px) scale(1);
+  transform:translate(-75px, -44px) scale(1);
 }
 /* 左上展开3个 */
 .hc-fabs-show .hc-fabs-tl-3-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tl-3-1{
-  transform:translate(-80px, -80px) scale(1);
+  transform:translate(-63px, -63px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tl-3-2{
-  transform:translate(-100px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 /* 左上展开4个 */
 .hc-fabs-show .hc-fabs-tl-4-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tl-4-1{
-  transform:translate(-60px, -90px) scale(1);
+  transform:translate(-76px, -45px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tl-4-2{
-  transform:translate(-90px, -60px) scale(1);
+  transform:translate(-45px, -76px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tl-4-3{
-  transform:translate(-100px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 /* 右上展开3个 */
 .hc-fabs-show .hc-fabs-tr-3-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tr-3-1{
-  transform:translate(40px, -75px) scale(1);
+  transform:translate(63px, -63px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tr-3-2{
-  transform:translate(60px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 /* 右上展开4个 */
 .hc-fabs-show .hc-fabs-tr-4-0{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tr-4-1{
-  transform:translate(25px, -90px) scale(1);
+  transform:translate(45px, -77px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tr-4-2{
-  transform:translate(55px, -60px) scale(1);
+  transform:translate(77px, -45px) scale(1);
 }
 .hc-fabs-show .hc-fabs-tr-4-3{
-  transform:translate(60px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 /* 上展开3个 */
 .hc-fabs-show .hc-fabs-t-3-0{
-  transform:translate(-100px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-3-1{
-  transform:translate(-50%, -100px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-3-2{
-  transform:translate(70px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 /* 上展开4个 */
 .hc-fabs-show .hc-fabs-t-4-0{
-  transform:translate(-106px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-4-1{
-  transform:translate(-61px, -93px) scale(1);
+  transform:translate(-45px, -77px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-4-2{
-  transform:translate(25px, -93px) scale(1);
+  transform:translate(45px, -77px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-4-3{
-  transform:translate(64px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 /* 上展开5个 */
 .hc-fabs-show .hc-fabs-t-5-0{
-  transform:translate(-104px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-5-1{
-  transform:translate(-79px, -80px) scale(1);
+  transform:translate(-63px, -63px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-5-2{
-  transform:translate(-50%, -106px) scale(1);
+  transform:translate(0, -87px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-5-3{
-  transform:translate(44px, -79px) scale(1);
+  transform:translate(63px, -63px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-5-4{
-  transform:translate(66px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }
 /* 上展开6个 */
 .hc-fabs-show .hc-fabs-t-6-0{
-  transform:translate(-104px, -50%) scale(1);
+  transform:translate(-87px, 0) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-6-1{
-  transform:translate(-87px, -70px) scale(1);
+  transform:translate(-69px, -50px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-6-2{
-  transform:translate(-44px, -100px) scale(1);
+  transform:translate(-27px, -83px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-6-3{
-  transform:translate(10px, -102px) scale(1);
+  transform:translate(27px, -83px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-6-4{
-  transform:translate(51px, -70px) scale(1);
+  transform:translate(69px, -50px) scale(1);
 }
 .hc-fabs-show .hc-fabs-t-6-5{
-  transform:translate(66px, -50%) scale(1);
+  transform:translate(87px, 0) scale(1);
 }

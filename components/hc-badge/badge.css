@@ -1,4 +1,4 @@
-.hc-badge,.hc-badge-dot{
+.hc-badge,.hc-badge-dot,.hc-badge-book{
   font-size:12px;
   display:inline-block;
   background:#EA2000;
@@ -9,4 +9,36 @@
 .hc-badge-dot{
   font-size:0;
   padding:3px;
+}
+.hc-badge-book{
+  width:12px;
+  height:18px;
+  border-radius:1px;
+  padding:0;
+  position: relative;
+}
+.hc-badge-book:after{
+  content:"";
+  display:inline-block;
+  border:6px solid transparent;
+  border-bottom:6px solid #fff;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.hc-badge-primary{
+  background:#2296E7;
+}
+.hc-badge-success{
+  background:#36B42C;
+}
+.hc-badge-info{
+  background:#8E8E93;
+}
+.hc-badge-warning{
+  background:#E0BF2E;
+}
+.hc-badge-danger{
+  background:#F3563D;
 }

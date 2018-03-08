@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tabview导航</title>
+  <link rel="stylesheet" href="../theme/style.css">
+</head>
+<body>
+  <div class="hc-tabview">
+    <div class="hc-tab hc-tab-stretch hc-tab-reserve">
+      <ul class="hc-tab-bar">
+        <li class="hc-tab-bar-item hc-tab-bar-active">
+          <span class="hc-tab-bar-icon">
+            <i class="iconfont icon-account"></i>
+          </span>
+          <span class="hc-tab-bar-label">全部</span>
+          <span class="hc-tab-bar-badge"></span>
+        </li>
+        <li class="hc-tab-bar-item">
+          <span class="hc-tab-bar-icon">
+            <i class="iconfont icon-set"></i>
+          </span>
+          <span class="hc-tab-bar-label">已读</span>
+          <span class="hc-tab-bar-badge"></span>
+        </li>
+        <li class="hc-tab-bar-item">
+          <span class="hc-tab-bar-icon">
+            <i class="iconfont icon-favorite"></i>
+          </span>
+          <span class="hc-tab-bar-label">未读</span>
+          <span class="hc-tab-bar-badge">
+            <span class="hc-badge">5</span>
+          </span>
+        </li>
+      </ul>
+      <div class="hc-tab-panel">
+        <div class="hc-tab-wrap">
+          <div class="hc-tab-item">继续项下划1</div>
+          <div class="hc-tab-item">继续项下划2</div>
+          <div class="hc-tab-item">继续项下划3</div>
+        </div>
+      </div>
+      <div class="hc-headerbar">
+        <div class="hc-headerbar-back"></div>
+        <h1 class="hc-headerbar-title">首页</h1>
+        <div class="hc-headerbar-menu"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../zepto.min.js"></script>
+  <script>
+  $('.hc-tab-bar-item').click(function(){
+    var move = - $(this).index()*100 + 'vw';
+    $(this).addClass('hc-tab-bar-active').siblings().removeClass('hc-tab-bar-active')
+    $(this).parents('.hc-tab,.hc-tab-horizontal').find('.hc-tab-wrap').css('transform', 'translateX('+move+')')
+  })
+  </script>
+</body>
+</html>
