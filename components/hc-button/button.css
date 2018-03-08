@@ -2,7 +2,8 @@
 .hc-button-conner,
 .hc-button-round,
 .hc-button-outline,
-.hc-button-text{
+.hc-button-text,
+.hc-button-circle{
   display:inline-flex;
   display:-webkit-inline-flex;
   flex-direction: row;
@@ -12,6 +13,7 @@
   padding:0 25px;
   height:36px;
   color:#fff;
+  justify-content: center;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
 }
@@ -25,7 +27,8 @@
 .hc-button:active,
 .hc-button-conner:active,
 .hc-button-round:active,
-.hc-button-outline:active{
+.hc-button-outline:active,
+.hc-button-circle:active{
   opacity:0.8;
 }
 /* 圆角按钮 */
@@ -45,6 +48,13 @@
   width:100%;
   justify-content: center;
 }
+/* 圆形按钮 */
+.hc-button-circle{
+  border-radius:50%;
+  font-size:4px;
+  padding:0;
+  width:36px;
+}
 /* 按钮禁用 */
 .hc-button:disabled,
 .hc-button-conner:disabled,
@@ -57,15 +67,35 @@
   padding:0 10px;
   height:26px;
 }
+.hc-button-circle.hc-button-mini{
+  width:30px;
+  height:30px;
+  padding:0;
+}
 .hc-button-small{
   padding:0 20px;
   height:32px;
+}
+.hc-button-circle.hc-button-small{
+  width:40px;
+  height:40px;
+  padding:0;
 }
 .hc-button-medium{
   padding:0 30px;
   height:40px;
 }
+.hc-button-circle.hc-button-medium{
+  width:50px;
+  height:50px;
+  padding:0;
+}
 .hc-button-large{
   padding:0 40px;
   height:45px;
+}
+.hc-button-circle.hc-button-large{
+  width:60px;
+  height:60px;
+  padding:0;
 }
