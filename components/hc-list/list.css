@@ -196,6 +196,8 @@
 .hc-list-summary{
   color:#999;
   margin-top:10px;
+  font-size:14px;
+  line-height:1.6;
 }
 /* tag-list */
 .hc-tag-list .hc-list-title{
