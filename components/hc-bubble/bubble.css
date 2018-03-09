@@ -1,0 +1,76 @@
+.hc-bubble{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.hc-bubble-label,.hc-bubble-voice{
+  display:inline-block;
+  background:#fff;
+  padding:10px;
+  border-radius:5px;
+  font-size:14px;
+  color:#333;
+  line-height:1.6;
+  box-sizing: border-box;
+}
+/* 箭头 */
+.hc-bubble-content{
+  position: relative;
+}
+.hc-bubble-content:after{
+  content:"";
+  display:inline-block;
+  border:8px solid transparent;
+  border-right:10px solid #fff;
+  position:absolute;
+  left:-18px;
+  top:10px;
+}
+.hc-bubble-reserve .hc-bubble-content:after{
+  border-right:10px solid transparent;
+  border-left:10px solid #fff;
+  left:auto;
+  right:-18px;
+}
+/* 声音气泡 */
+.hc-bubble-voice{
+  width:100%;
+  display:inline-flex;
+  display:-webkit-inline-flex;
+  flex-direction: row;
+  align-items:center;
+  padding:9px;
+}
+.hc-bubble-voice-label{
+  font-size:12px;
+  color:#999;
+  padding:0 5px;
+}
+.hc-bubble-badge{
+  flex:1;
+  -webkit-flex:1;
+  text-align:right;
+  position: relative;
+  height:12px;
+}
+.hc-bubble-badge .hc-badge{
+  position: absolute;
+  right:0;
+  top:-8px;
+}
+/* 反向声音气泡 */
+.hc-bubble-reserve,.hc-bubble-reserve .hc-bubble{
+  justify-content: flex-end;
+}
+.hc-bubble-reserve .hc-bubble-voice{
+  flex-direction: row-reverse;
+}
+.hc-bubble-reserve .hc-bubble-badge .hc-badge{
+  right:auto;
+  left:0;
+}
+.hc-bubble-reserve .hc-bubble-voice .iconfont{
+  transform:rotate(180deg);
+  transform-origin: center center;
+}

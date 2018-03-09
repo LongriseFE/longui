@@ -1,0 +1,56 @@
+.hc-chatlist{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+.hc-chatlist-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row-reverse;
+  padding:10px;
+  flex-wrap:wrap;
+}
+.hc-chatlist-recieve{
+  flex-direction: row;
+}
+.hc-chatlist-container{
+  flex:1;
+  -webkit-flex:1;
+  display:flex;
+  margin:0 20px 0 0;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+.hc-chatlist-recieve .hc-chatlist-container{
+  margin:0 0 0 20px;
+}
+.hc-chatlist-content{
+  text-align:right;
+}
+.hc-chatlist-label{
+  background:#fff;
+  display:inline-block;
+  padding:15px;
+  border-radius:5px;
+  text-align:left;
+  font-size:14px;
+  line-height:1.8;
+  position: relative;
+}
+.hc-chatlist-recieve .hc-chatlist-content{
+  text-align:left;
+}
+/* 列表时间 */
+.hc-chatlist-time{
+  width:100%;
+  text-align:center;
+  padding:0 0 10px 0;
+}
+.hc-chatlist-time-label{
+  display:inline-block;
+  font-size:12px;
+  padding:5px 10px;
+  background:rgba(0,0,0,0.2);
+  border-radius:5px;
+  color:#fff;
+}

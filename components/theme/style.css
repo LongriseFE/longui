@@ -22,4 +22,7 @@
 @import '../hc-tabview/tabview.css';
 @import '../hc-tag/tag.css';
 @import '../hc-layout/layout.css';
+@import '../hc-avatar/avatar.css';
+@import '../hc-chatlist/chatlist.css';
+@import '../hc-bubble/bubble.css';
 @import "./default-theme.css"
