@@ -1,0 +1,26 @@
+.hc-number{
+  display: inline-flex;
+  display:-webkit-inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hc-number-control{
+  display:inline-block;
+  width:32px;
+  height:32px;
+  font-size:18px;
+  background:#2296E7;
+  color:#fff;
+  border:1px solid #2296E7;
+}
+.hc-number-value{
+  display:inline-block;
+  padding:0;
+  height:32px;
+  border:1px solid #eee;
+  margin:0 5px;
+  min-width:3em;
+  max-width:5em;
+  font-size:14px;
+  text-align:center;
+}

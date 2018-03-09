@@ -1,0 +1,29 @@
+.hc-progress{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  height:5px;
+}
+.hc-progress-circle{
+  width:120px;
+  height:120px;
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+.hc-progress-bar{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background:#eee;
+  position: relative;
+  border-radius:5px;
+}
+.hc-progress-active{
+  display:inline-block;
+  height:100%;
+  background:#2296E7;
+  border-radius:5px;
+  position: absolute;
+  left:0;
+  top:0;
+}

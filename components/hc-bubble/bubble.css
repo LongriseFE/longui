@@ -14,6 +14,9 @@
   line-height:1.6;
   box-sizing: border-box;
 }
+.hc-bubble-label{
+  text-align: left;
+}
 /* 箭头 */
 .hc-bubble-content{
   position: relative;
