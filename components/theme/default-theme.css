@@ -59,3 +59,215 @@
   background:none;
   color:#F3563D;
 }
+
+/* ---------------radio 单选按钮---------------- */
+/* primary */
+.hc-radio-primary .hc-radio-input:checked + .hc-radio-core{
+  border-color: #2296E7;
+}
+.hc-radio-primary .hc-radio-input:checked + .hc-radio-core:before{
+  background-color:#2296E7;
+}
+.hc-radio-primary.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  color:#2296E7;
+}
+.hc-radio-primary.hc-radio-button .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  border-color:#2296E7;
+  color:#2296E7;
+}
+.hc-radio-primary.hc-radio-button.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  background-color:#2296E7;
+  color:#fff;
+}
+.hc-radio-primary.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core{
+  background-color:#2296E7;
+}
+.hc-radio-primary.hc-radio-list .hc-radio-core:before{
+  border-color:#2296E7;
+}
+/* success */
+.hc-radio-success .hc-radio-input:checked + .hc-radio-core{
+  border-color: #36B42C;
+}
+.hc-radio-success .hc-radio-input:checked + .hc-radio-core:before{
+  background-color:#36B42C;
+}
+.hc-radio-success.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  color:#36B42C;
+}
+.hc-radio-success.hc-radio-button .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  border-color:#36B42C;
+  color:#36B42C;
+}
+.hc-radio-success.hc-radio-button.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  background-color:#36B42C;
+  color:#fff;
+}
+.hc-radio-success.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core{
+  background-color:#36B42C;
+}
+.hc-radio-success.hc-radio-list .hc-radio-core:before{
+  border-color:#36B42C;
+}
+/* warning */
+.hc-radio-warning .hc-radio-input:checked + .hc-radio-core{
+  border-color: #E0BF2E;
+}
+.hc-radio-warning .hc-radio-input:checked + .hc-radio-core:before{
+  background-color:#E0BF2E;
+}
+.hc-radio-warning.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  color:#E0BF2E;
+}
+.hc-radio-warning.hc-radio-button .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  border-color:#E0BF2E;
+  color:#E0BF2E;
+}
+.hc-radio-warning.hc-radio-button.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  background-color:#E0BF2E;
+  color:#fff;
+}
+.hc-radio-warning.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core{
+  background-color:#E0BF2E;
+}
+.hc-radio-warning.hc-radio-list .hc-radio-core:before{
+  border-color:#E0BF2E;
+}
+/* danger */
+.hc-radio-danger .hc-radio-input:checked + .hc-radio-core{
+  border-color: #F3563D;
+}
+.hc-radio-danger .hc-radio-input:checked + .hc-radio-core:before{
+  background-color:#F3563D;
+}
+.hc-radio-danger.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  color:#F3563D;
+}
+.hc-radio-danger.hc-radio-button .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  border-color:#F3563D;
+  color:#F3563D;
+}
+.hc-radio-danger.hc-radio-button.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
+  background-color:#F3563D;
+  color:#fff;
+}
+.hc-radio-danger.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core{
+  background-color:#F3563D;
+}
+.hc-radio-danger.hc-radio-list .hc-radio-core:before{
+  border-color:#F3563D;
+}
+
+/* ---------------checkbox 复选框---------------- */
+/* primary */
+.hc-checkbox-primary .hc-checkbox-input:checked + .hc-checkbox-core{
+  border-color:#2296E7;
+}
+.hc-checkbox-primary .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#2296E7;
+}
+.hc-checkbox-primary.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core{
+  background-color:#2296E7;
+}
+.hc-checkbox-primary.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#fff;
+}
+.hc-checkbox-primary.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#2296E7;
+}
+.hc-checkbox-primary.hc-checkbox-button .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#2296E7;
+  border-color:#2296E7;
+}
+.hc-checkbox-primary.hc-checkbox-button.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  background:#2296E7;
+  color:#fff;
+}
+/* success */
+.hc-checkbox-success .hc-checkbox-input:checked + .hc-checkbox-core{
+  border-color:#36B42C;
+}
+.hc-checkbox-success .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#36B42C;
+}
+.hc-checkbox-success.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core{
+  background-color:#36B42C;
+}
+.hc-checkbox-success.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#fff;
+}
+.hc-checkbox-success.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#36B42C;
+}
+.hc-checkbox-success.hc-checkbox-button .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#36B42C;
+  border-color:#36B42C;
+}
+.hc-checkbox-success.hc-checkbox-button.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  background:#36B42C;
+  color:#fff;
+}
+/* warning */
+.hc-checkbox-warning .hc-checkbox-input:checked + .hc-checkbox-core{
+  border-color:#E0BF2E;
+}
+.hc-checkbox-warning .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#E0BF2E;
+}
+.hc-checkbox-warning.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core{
+  background-color:#E0BF2E;
+}
+.hc-checkbox-warning.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#fff;
+}
+.hc-checkbox-warning.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#E0BF2E;
+}
+.hc-checkbox-warning.hc-checkbox-button .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#E0BF2E;
+  border-color:#E0BF2E;
+}
+.hc-checkbox-warning.hc-checkbox-button.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  background:#E0BF2E;
+  color:#fff;
+}
+/* danger */
+.hc-checkbox-danger .hc-checkbox-input:checked + .hc-checkbox-core{
+  border-color:#F3563D;
+}
+.hc-checkbox-danger .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#F3563D;
+}
+.hc-checkbox-danger.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core{
+  background-color:#F3563D;
+}
+.hc-checkbox-danger.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core:before{
+  border-color:#fff;
+}
+.hc-checkbox-danger.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#F3563D;
+}
+.hc-checkbox-danger.hc-checkbox-button .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  color:#F3563D;
+  border-color:#F3563D;
+}
+.hc-checkbox-danger.hc-checkbox-button.hc-steep .hc-checkbox-input:checked + .hc-checkbox-core + .hc-checkbox-label{
+  background:#F3563D;
+  color:#fff;
+}
+/* ---------------switch 开关---------------- */
+.hc-switch-primary .hc-switch-core{
+  background-color:#2296E7;
+}
+.hc-switch-success .hc-switch-core{
+  background-color:#36B42C;
+}
+.hc-switch-info .hc-switch-core{
+  background-color:#8E8E93;
+}
+.hc-switch-warning .hc-switch-core{
+  background-color:#E0BF2E;
+}
+.hc-switch-danger .hc-switch-core{
+  background-color:#F3563D;
+}
