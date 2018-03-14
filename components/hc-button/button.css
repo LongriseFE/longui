@@ -16,6 +16,7 @@
   justify-content: center;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
+  box-sizing:border-box;
 }
 .hc-button-icon,.hc-button-label{
   align-self: center;
@@ -70,7 +71,6 @@
 .hc-button-circle.hc-button-mini{
   width:30px;
   height:30px;
-  padding:0;
 }
 .hc-button-small{
   padding:0 20px;
@@ -79,7 +79,7 @@
 .hc-button-circle.hc-button-small{
   width:40px;
   height:40px;
-  padding:0;
+  padding:5px;
 }
 .hc-button-medium{
   padding:0 30px;
@@ -88,7 +88,7 @@
 .hc-button-circle.hc-button-medium{
   width:50px;
   height:50px;
-  padding:0;
+  padding:8px;
 }
 .hc-button-large{
   padding:0 40px;
@@ -97,5 +97,5 @@
 .hc-button-circle.hc-button-large{
   width:60px;
   height:60px;
-  padding:0;
+  padding:10px;
 }

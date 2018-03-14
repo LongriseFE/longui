@@ -10,9 +10,14 @@
 <body>
   <h1 class="t">弹出时间</h1>
   <div class="content">
-    <button class="hc-button hc-button-primary" id="date">
-      <span class="hc-button-label">从下面划出</span>
-    </button>
+    <div class="hc-input hc-with-suffix" id="date">
+      <input readonly type="text" class="hc-input-form" placeholder="请选择时间！">
+      <span class="hc-input-prefix"></span>
+      <span class="hc-input-suffix">
+        <i class="iconfont icon-calendar"></i>
+      </span>
+      <span class="hc-input-close"></span>
+    </div>
   </div>
   <div class="hc-masker"></div>
   <div class="hc-popup hc-popup-down">

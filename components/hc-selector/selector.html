@@ -59,7 +59,7 @@
     </div>
     <br>
     <div class="hc-selector-outline">
-      <select class="hc-selector-core"  onchange="this.blur()">
+      <select disabled class="hc-selector-core"  onchange="this.blur()">
         <option value="">前端组</option>
         <option value="">动画组</option>
         <option value="">平面组</option>
@@ -69,6 +69,38 @@
       </span>
       <span class="prefix"></span>
     </div>
+    <div class="hc-selector-line hc-selector-popup-handle">
+      <select class="hc-selector-core"  onchange="this.blur()">
+        <option value="">前端组</option>
+        <option value="">动画组</option>
+        <option value="">平面组</option>
+      </select>
+      <span class="hc-selector-arrow">
+        <i class="iconfont icon-more"></i>
+      </span>
+      <span class="prefix"></span>
+    </div>
+    <div class="hc-selector-line hc-selector-popup-handle">
+      <select class="hc-selector-core"  onchange="this.blur()">
+        <option value="">前端组</option>
+        <option value="">动画组</option>
+        <option value="">平面组</option>
+      </select>
+      <span class="hc-selector-arrow">
+        <i class="iconfont icon-more"></i>
+      </span>
+      <span class="prefix"></span>
+    </div>
   </div>
+  <div class="hc-masker"></div>
+  <div class="hc-popup hc-popup-down"></div>
+  <script src="../zepto.min.js"></script>
+  <script>
+    $('.hc-selector-popup-handle').click(function(){
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup-down').addClass('hc-popup-show')
+      return false;
+    })
+  </script>
 </body>
 </html>

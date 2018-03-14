@@ -1,0 +1,34 @@
+.hc-h1,.hc-h2,.hc-h3,.hc-h4,.hc-h5,.hc-h6{
+  color:#333;
+  font-weight:normal;
+}
+.hc-h1{
+  font-size:26px;
+}
+.hc-h2{
+  font-size:24px;
+}
+.hc-h3{
+  font-size:22px;
+}
+.hc-h4{
+  font-size:20px;
+}
+.hc-h5{
+  font-size:18px;
+}
+.hc-h6{
+  font-size:16px;
+}
+.hc-section{
+  font-size:14px;
+  line-height:1.6;
+  text-indent:2em;
+  color:#666;
+}
+.hc-link{
+  font-size:14px;
+  color:#2296E7;
+  padding:5px 0;
+  display:inline-block;
+}

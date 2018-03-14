@@ -21,10 +21,14 @@
         <circle cx="55" cy="55" r="50" fill="none" stroke="#eee" stroke-width="5" stroke-linecap="round"/>
         <circle class="demo2" id="J_progress_bar" cx="55" cy="55" r="50" fill="none" stroke="#2296E7" stroke-width="5"/>
       </svg>
+      <div class="hc-progress-tips">
+        <h2 class="hc-progress-name">完成率</h2>
+        <p class="hc-progress-value">50%</p>
+      </div>
     </div>
   </div>
   <script>
-    var val = 45;
+    var val = 50;
     var progress = document.querySelector('#J_progress_bar');
     var circleLength = Math.floor(2 * Math.PI * progress.getAttribute("r"));
     val = Math.max(0,val);

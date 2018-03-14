@@ -7,8 +7,33 @@
 .hc-progress-circle{
   width:120px;
   height:120px;
-  transform-origin: center;
+  position: relative;
+}
+.hc-progress-tips{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hc-progress-name{
+  font-weight:normal;
+  font-size:14px;
+  color:#666;
+}
+.hc-progress-value{
+  font-size:24px;
+  color:#333;
+  margin-top:5px;
+}
+.hc-progress-circle svg{
   transform: rotate(-90deg);
+  transform-origin: center;
 }
 .hc-progress-bar{
   display: inline-block;
