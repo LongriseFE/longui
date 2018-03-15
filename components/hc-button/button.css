@@ -17,6 +17,7 @@
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   box-sizing:border-box;
+  font-size:14px;
 }
 .hc-button-icon,.hc-button-label{
   align-self: center;
