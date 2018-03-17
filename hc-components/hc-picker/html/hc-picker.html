@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../main.css">
+</head>
+
+<body>
+  <div class="hc-page">
+    <header class="hc-page-header">
+      <div class="hc-page-back"></div>
+      <h1 class="hc-page-title">picker</h1>
+      <div class="hc-page-menu"></div>
+    </header>
+    <section class="hc-page-view">
+      <div class="hc-page-scroller">
+        <div class="hc-form-input" id="date">
+          <input class="hc-form-core" type="text" name="r11" placeholder="请填写姓名！">
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="hc-masker"></div>
+  <div class="hc-popup hc-popup-down">
+    <div class="hc-picker">
+      <div class="hc-picker-item">
+        <div class="hc-picker-inner">
+          <div class="hc-picker-rule hc-picker-rule-top"></div>
+          <ul class="hc-picker-list">
+            <li>2012</li>
+            <li>2013</li>
+            <li>2012</li>
+            <li>2013</li>
+            <li>2014</li>
+            <li>2015</li>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2016</li>
+          </ul>
+          <div class="hc-picker-rule hc-picker-rule-bottom"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../zepto.min.js"></script>
+  <script>
+    $('#date').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup').addClass('hc-popup-show')
+    })
+    $('.hc-masker').click(function () {
+      $(this).removeClass('hc-masker-show')
+      $('.hc-popup').removeClass('hc-popup-show')
+    })
+    // $('.hc-picker').each((idx,el)=>{
+    //   $(el).find('.hc-picker-item').each((idx,el) => {
+    //     $(el).find('li').each((index,item) => {
+    //       var selectedIdx = 3 // 当前激活的索引
+    //       $(item).css('transform',`rotateX(${(index - selectedIdx)*20}deg)`)
+    //     })  
+    //   })
+    // })
+  </script>
+</body>
+
+</html>

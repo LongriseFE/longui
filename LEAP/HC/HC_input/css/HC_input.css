@@ -1,0 +1,51 @@
+/* input */
+.hc-form-input,
+.hc-form-input-light{
+  width:100%;
+  border:1px solid #aaa;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.hc-form-input-light{
+  border:none;
+}
+.hc-form-input .hc-form-core,
+.hc-form-input-light .hc-form-core{
+  border-radius:0;
+  width:100%;
+  position:static;
+  opacity:1;
+  font-size:14px;
+  height:34px;
+  line-height:34px;
+  border:none;
+  padding:0 10px;
+  box-sizing: border-box;
+}
+.hc-form-input .hc-form-label,
+.hc-form-input-light .hc-form-label{
+  padding-left:10px;
+}
+.hc-form-input .hc-form-frame,
+.hc-form-input-light .hc-form-frame{
+  width:auto;
+  border:none;
+  padding-right:10px;
+}
+
+/* conner */
+.hc-conner.hc-form-input{
+  border-radius:5px;
+}
+/* rounder */
+.hc-rounder.hc-form-input{
+  border-radius:30px;
+}
+
+/* 主题抽离 */
+.hc-primary.hc-form-input-focus{
+  border-color:#2D8CF0;
+  color:#2D8CF0;
+}

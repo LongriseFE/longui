@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tab</title>
+  <script src="../../../HC.js"  path="LEAP/HC.js" def></script>
+  <link href="../../../HC.css" path="LEAP/HC.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="hc-page">
+	<div class="hc-page-view">
+      	<div class="hc-tab hc-tab-stretch" hc="hc_tab">
+	      <ul class="hc-tab-bar" hcf="hc_tabulbox">
+	        <li class="hc-tab-bar-item hc-tab-bar-active" hcf="hc_tabitem">
+	          <span class="hc-tab-bar-icon" hcf="hc_tabicon"></span>
+	          <span class="hc-tab-bar-label" hcf="hc_tablabel">全部</span>
+	          <span class="hc-tab-bar-badge" hcf="hc_tabbadge"></span>
+	        </li>
+	        <li class="hc-tab-bar-item" hcf="hc_tabitem">
+	          <span class="hc-tab-bar-icon" hcf="hc_tabicon"></span>
+	          <span class="hc-tab-bar-label" hcf="hc_tablabel">已读</span>
+	          <span class="hc-tab-bar-badge" hcf="hc_tabbadge"></span>
+	        </li>
+	        <li class="hc-tab-bar-item" hcf="hc_tabitem">
+	          <span class="hc-tab-bar-icon" hcf="hc_tabicon"></span>
+	          <span class="hc-tab-bar-label" hcf="hc_tablabel">未读</span>
+	          <span class="hc-tab-bar-badge" hcf="hc_tabbadge"></span>
+	        </li>
+	      </ul>
+	      <div class="hc-tab-panel">
+	        <div class="hc-tab-wrap" hcf="hc_tabcontentbox">
+	          <div class="hc-tab-item" hcf="hc_contentitem">
+	          	<div class="hc-page-scroller" st="DIV_123"></div>
+	          </div>
+	          <div class="hc-tab-item" hcf="hc_contentitem" >
+	          	<div class="hc-page-scroller" st="DIV_456"></div>
+	          </div>
+	          <div class="hc-tab-item" hcf="hc_contentitem">
+	          	<div class="hc-page-scroller" st="DIV_789"></div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    </div>
+</div>
+    <script type="text/javascript">
+    	var hc_tab = HCBase.getElement("[hc=hc_tab]");
+    	var fromdiv = HCBase.getElement("[st=DIV_123]",hc_tab)
+    	var def = {name:"LEAP/module/listtest.html",parent:fromdiv}
+		HCBase.loadModule(def);
+		
+		//var fromdiv = HCBase.getElement("[st=DIV_456]",hc_tab)
+		//var def = {name:"LEAP/module/moduletest.html",parent:fromdiv}
+		//HCBase.loadModule(def);
+    </script>
+</body>
+</html>

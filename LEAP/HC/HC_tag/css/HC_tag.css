@@ -1,0 +1,48 @@
+.hc-tag,.hc-tag-line{
+  display:inline-block;
+  padding:3px 8px;
+  border-radius:20px;
+  border:1px solid transparent;
+  box-sizing: border-box;
+  color:#fff;
+  font-size:12px;
+}
+.hc-tag-line{
+  background:none !important;
+}
+
+.hc-tag-primary{
+  background-color:#2296E7;
+  border-color:#2296E7;
+}
+.hc-tag-line.hc-tag-primary{
+  color:#2296E7;
+}
+.hc-tag-info{
+  background-color:#8E8E93;
+  border-color:#8E8E93;
+}
+.hc-tag-line.hc-tag-info{
+  color:#8E8E93;
+}
+.hc-tag-success{
+  background-color:#36B42C;
+  border-color:#36B42C;
+}
+.hc-tag-line.hc-tag-success{
+  color:#36B42C;
+}
+.hc-tag-warning{
+  background-color:#E0BF2E;
+  border-color:#E0BF2E;
+}
+.hc-tag-line.hc-tag-warning{
+  color:#E0BF2E;
+}
+.hc-tag-danger{
+  background-color:#F3563D;
+  border-color:#F3563D;
+}
+.hc-tag-line.hc-tag-danger{
+  color:#F3563D;
+}

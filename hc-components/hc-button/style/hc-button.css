@@ -1,0 +1,164 @@
+.hc-button,
+.hc-button-conner,
+.hc-button-round,
+.hc-button-outline,
+.hc-button-text,
+.hc-button-circle{
+  display:inline-flex;
+  display:-webkit-inline-flex;
+  flex-direction: row;
+  -webkit-flex-direction:row;
+  border-style:solid;
+  border-color:transparent;
+  padding:0 25px;
+  height:36px;
+  color:#fff;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  font-size:14px;
+}
+.hc-button-icon,.hc-button-label{
+  align-self: center;
+}
+.hc-button-icon .iconfont{
+  font-size:20px;
+  margin-right:5px;
+}
+.hc-button:active,
+.hc-button-conner:active,
+.hc-button-round:active,
+.hc-button-outline:active,
+.hc-button-circle:active{
+  opacity:0.8;
+}
+/* 圆角按钮 */
+.hc-button-conner{
+  border-radius:5px;
+}
+/* 弧形按钮 */
+.hc-button-round{
+  border-radius:20px;
+}
+/* 线条按钮 */
+.hc-button-outline{
+  border-width:1px;
+}
+/* 通栏按钮 */
+.hc-button-full{
+  width:100%;
+  justify-content: center;
+}
+/* 圆形按钮 */
+.hc-button-circle{
+  border-radius:50%;
+  font-size:4px;
+  padding:0;
+  width:36px;
+}
+/* 按钮禁用 */
+.hc-button:disabled,
+.hc-button-conner:disabled,
+.hc-button-round:disabled,
+.hc-button-outline:disabled{
+  opacity:0.5;
+}
+/* 不同尺寸 */
+.hc-button-mini{
+  padding:0 10px;
+  height:26px;
+}
+.hc-button-circle.hc-button-mini{
+  width:30px;
+  height:30px;
+}
+.hc-button-small{
+  padding:0 20px;
+  height:32px;
+}
+.hc-button-circle.hc-button-small{
+  width:40px;
+  height:40px;
+  padding:5px;
+}
+.hc-button-medium{
+  padding:0 30px;
+  height:40px;
+}
+.hc-button-circle.hc-button-medium{
+  width:50px;
+  height:50px;
+  padding:8px;
+}
+.hc-button-large{
+  padding:0 40px;
+  height:45px;
+}
+.hc-button-circle.hc-button-large{
+  width:60px;
+  height:60px;
+  padding:10px;
+}
+
+/* ---------------按钮主题---------------- */
+.hc-button-primary{
+  background:#2296E7;
+}
+.hc-button-outline.hc-button-primary{
+  background:none;
+  border-color:#2296E7;
+  color:#2296E7;
+}
+.hc-button-text.hc-button-primary{
+  background:none;
+  color:#2296E7;
+}
+.hc-button-success{
+  background:#36B42C;
+}
+.hc-button-outline.hc-button-success{
+  background:none;
+  border-color:#36B42C;
+  color:#36B42C;
+}
+.hc-button-text.hc-button-success{
+  background:none;
+  color:#36B42C;
+}
+.hc-button-info{
+  background:#8E8E93;
+}
+.hc-button-outline.hc-button-info{
+  background:none;
+  border-color:#8E8E93;
+  color:#8E8E93;
+}
+.hc-button-text.hc-button-info{
+  background:none;
+  color:#8E8E93;
+}
+.hc-button-warning{
+  background:#E0BF2E;
+}
+.hc-button-outline.hc-button-warning{
+  background:none;
+  border-color:#E0BF2E;
+  color:#E0BF2E;
+}
+.hc-button-text.hc-button-warning{
+  background:none;
+  color:#E0BF2E;
+}
+.hc-button-danger{
+  background:#F3563D;
+}
+.hc-button-outline.hc-button-danger{
+  background:none;
+  border-color:#F3563D;
+  color:#F3563D;
+}
+.hc-button-text.hc-button-danger{
+  background:none;
+  color:#F3563D;
+}

@@ -1,167 +1,287 @@
-.hc-radio,.hc-radio-rect,.hc-radio-outline{
+/* 表单布局 */
+.hc-form{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.hc-form-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  height:50px;
+  background:#fff;
+  border-bottom:1px solid #ccc;
+  align-items:center;
+  flex-shrink: 0;
+}
+.hc-form-value{
+  flex:1;
+  -webkit-flex:1;
+}
+/* ----------------表单元素-------------------- */
+.hc-form-group{
+  font-size:0;
+  display:flex;
+  display:-webkit-flex;
+  padding:0 10px;
+}
+.hc-form-radio,
+.hc-form-radio-button,
+.hc-form-checkbox,
+.hc-form-checkbox-button,
+.hc-form-switch,
+.hc-form-input,
+.hc-form-input-light{
   display:inline-flex;
   display:-webkit-inline-flex;
   flex-direction: row;
+  position: relative;
+  justify-content: space-between;
   align-items:center;
-  vertical-align: middle;
+  color:#666;
+  font-size:18px;
 }
-.hc-radio-input{
-  display:none;
+.hc-form-radio,
+.hc-form-checkbox{
+  margin-right:10px;
 }
-.hc-radio-core{
-  display:inline-flex;
-  display:-webkit-inline-flex;
-  box-sizing: border-box;
-  align-items: center;
+.hc-full{
+  width:100%;
+}
+.hc-form-core{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:18px;
+  opacity:0;
+}
+/* 单选样式 */
+.hc-form-frame{
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
   justify-content: center;
-  border:1px solid #d3d3d3;
+  border:1px solid #aaa;
   width:18px;
   height:18px;
   border-radius:50%;
-  align-self: center;
+  box-sizing:border-box;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
-  overflow:hidden;
 }
-.hc-radio-core:before{
-  content:"";
-  display:inline-block;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  align-self: center;
-  opacity:0;
+/* 复选样式 */
+.hc-form-checkbox .hc-form-frame{
+  border-radius:3px;
+}
+.hc-icon-radio,.hc-icon-checkbox{
+  color:#aaa;
   transform:scale(0);
-  -webkit-transform:scale(0);
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
 }
-.hc-radio-label{
-  display:inline-block;
-  align-self: center;
+.hc-form-label{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  align-items:center;
+  padding-left:5px;
   font-size:14px;
-  padding:0 0.2em;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
 }
-/* 矩形单选框 */
-.hc-radio-rect .hc-radio-core{
-  border-radius:5px;
-}
-/* 线条单选框 */
-.hc-radio-outline .hc-radio-input:checked + .hc-radio-core{
-  border-color:#2296E7;
-}
-.hc-radio-outline .hc-radio-core:before{
-  display:none;
-}
-/* radio-button */
-.hc-radio-button{
-  margin-left:5px;
-}
-.hc-radio-button:first-child{
+/* radio button */
+.hc-form-radio-button:first-child .hc-form-label,
+.hc-form-checkbox-button:first-child .hc-form-label{
   margin:0;
 }
-.hc-radio-button .hc-radio-core{
+.hc-form-radio-button .hc-form-frame,
+.hc-form-checkbox-button .hc-form-frame{
   display:none;
 }
-.hc-radio-button .hc-radio-label{
-  padding:6px 10px;
-  border:1px solid #D3D3D3;
-  font-size:14px;
+.hc-form-radio-button .hc-form-label,
+.hc-form-checkbox-button .hc-form-label{
+  height:34px;
+  line-height:34px;
+  padding:0 15px;
+  border:1px solid #aaa;
+  margin-left:-1px;
+}
+/* switch */
+.hc-form-switch .hc-form-frame{
+  display: inline-block;
   position: relative;
+  width: 42px;
+  height: 22px;
+  border: 1px solid rgba(217,217,217,1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: #2296E7;
 }
-/* radio-list */
-.hc-radio-list{
-  display:block;
-  padding:10px 0;
-  border-bottom:1px solid #d3d3d3;
-  position: relative;
-}
-.hc-radio-list .hc-radio-core:before{
-  width:6px;
-  height:12px;
-  border-radius:0;
-  background:none !important;
-  border:1px solid #2296E7;
-  border-left:none;
-  border-top:none;
-  transform:rotate(45deg) translate(-30%,-20%) scale(0);
-  -webkit-transform:rotate(45deg) translate(-30%,-20%) scale(0);
-}
-.hc-reserve .hc-radio-core{
+.hc-form-switch .hc-form-frame:before,
+.hc-form-switch .hc-form-frame:after{
+  content: "";
+  top: 0;
+  left: 0;
   position: absolute;
-  right:0;
-  top:50%;
-  transform:translate(0, -50%);
-}
-/* radio-group */
-.hc-radio-group,
-.hc-radio-group-conner,
-.hc-radio-group-round{
-  font-size:0;
-}
-.hc-radio-group .hc-radio-button,
-.hc-radio-group-conner .hc-radio-button,
-.hc-radio-group-round .hc-radio-button{
-  margin:0 0 0 -1px;
-}
-/* radio-group-conner */
-.hc-radio-group-conner .hc-radio-button:first-child .hc-radio-label{
-  border-radius:5px 0 0 5px;
-}
-.hc-radio-group-conner .hc-radio-button:last-child .hc-radio-label{
-  border-radius:0 5px 5px 0;
-}
-/* radio-group-round */
-.hc-radio-group-round .hc-radio-button:first-child .hc-radio-label{
-  border-radius:20px 0 0 20px;
-}
-.hc-radio-group-round .hc-radio-button:last-child .hc-radio-label{
-  border-radius:0 20px 20px 0;
-}
-/* ----------------选中------------------ */
-/* radio-list */
-.hc-radio-list .hc-radio-input:checked + .hc-radio-core:before{
-  transform:rotate(45deg) translate(-30%,-20%) scale(1);
-  -webkit-transform:rotate(45deg) translate(-30%,-20%) scale(1);
-}
-.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core{
-  background-color:#2296E7;
-}
-.hc-radio-list.hc-steep .hc-radio-input:checked + .hc-radio-core:before{
-  transform:rotate(45deg) translate(-30%,-20%);
-  border-color:#fff;
-}
-/* radio-button */
-.hc-radio-button .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
-  border-color:#2296E7;
-  background-color:#fff;
-  color:#2296E7;
-  z-index:100;
-}
-/* steep */
-.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
-  color:#2296E7;
-}
-.hc-radio-button.hc-steep .hc-radio-input:checked + .hc-radio-core + .hc-radio-label{
-  background-color:#2296E7;
-  color:#fff;
-  z-index:100;
-}
-/* outline */
-.hc-radio-outline .hc-radio-input:checked + .hc-radio-core{
-  border-width:3px;
-}
-/* radio */
-.hc-radio-input:checked + .hc-radio-core{
-  border-color: #2296E7;
-}
-.hc-radio-input:checked + .hc-radio-core:before{
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  background-color:#2296E7;
+  -webkit-transition: all .2s ease-in-out;
+  border-radius: 15px;
+}
+.hc-form-switch .hc-form-frame:before{
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+}
+.hc-form-switch .hc-form-frame:after{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+/* input */
+.hc-form-input,
+.hc-form-input-light{
+  width:100%;
+  border:1px solid #aaa;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+.hc-form-input-light{
+  border:none;
+}
+.hc-form-input .hc-form-core,
+.hc-form-input-light .hc-form-core{
+  border-radius:0;
+  width:100%;
+  position:static;
+  opacity:1;
+  font-size:14px;
+  height:34px;
+  line-height:34px;
+  border:none;
+  padding:0 10px;
+  box-sizing: border-box;
+}
+.hc-form-input .hc-form-label,
+.hc-form-input-light .hc-form-label{
+  padding-left:10px;
+}
+.hc-form-input .hc-form-frame,
+.hc-form-input-light .hc-form-frame{
+  width:auto;
+  border:none;
+  padding-right:10px;
+}
+
+/* class控制选中 */
+.hc-form-radio-active .hc-icon-radio{
+  transform:scale(0.6);
+}
+.hc-form-checkbox-active .hc-icon-checkbox{
+  transform:scale(0.8);
+}
+.hc-form-radio-active .hc-form-label,
+.hc-form-checkbox-active .hc-form-label{
+  z-index:100;
+}
+.hc-form-switch-active  .hc-form-frame:before{
+  -webkit-transform:scale(0);
+  transform:scale(0);
+}
+.hc-form-switch-active .hc-form-frame:after{
+  -webkit-transform:translateX(20px);
+  transform:translateX(20px);
+}
+
+/* 不同样式 */
+/* primary */
+.hc-primary.hc-form-radio-active .hc-form-frame,
+.hc-primary.hc-form-checkbox-active .hc-form-frame{
+  border-color:#2D8CF0;
+}
+.hc-primary  .hc-icon-radio,
+.hc-primary .hc-icon-checkbox{
+  color:#2D8CF0;
+}
+.hc-primary.hc-form-radio-active .hc-form-label,
+.hc-primary.hc-form-checkbox-active .hc-form-label{
+  color:#2D8CF0;
+}
+.hc-primary.hc-form-radio-button.hc-form-radio-active .hc-form-label,
+.hc-primary.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  border-color:#2D8CF0;
+}
+.hc-primary.hc-form-input-focus{
+  border-color:#2D8CF0;
+  color:#2D8CF0;
+}
+/* success */
+.hc-success.hc-form-radio-active .hc-form-frame,
+.hc-success.hc-form-checkbox-active .hc-form-frame{
+  border-color:#19BE6B;
+}
+.hc-success  .hc-icon-radio,
+.hc-success .hc-icon-checkbox{
+  color:#19BE6B;
+}
+.hc-success.hc-form-radio-active .hc-form-label,
+.hc-success.hc-form-checkbox-active .hc-form-label{
+  color:#19BE6B;
+}
+.hc-success.hc-form-radio-button.hc-form-radio-active .hc-form-label,
+.hc-success.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  border-color:#19BE6B;
+}
+/* info */
+.hc-info.hc-form-radio-active .hc-form-frame,
+.hc-info.hc-form-checkbox-active .hc-form-frame{
+  border-color:#2DB7F5;
+}
+.hc-info  .hc-icon-radio,
+.hc-info .hc-icon-checkbox{
+  color:#2DB7F5;
+}
+.hc-info.hc-form-radio-active .hc-form-label,
+.hc-info.hc-form-checkbox-active .hc-form-label{
+  color:#2DB7F5;
+}
+.hc-info.hc-form-radio-button.hc-form-radio-active .hc-form-label,
+.hc-info.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  border-color:#2DB7F5;
+}
+/* warning */
+.hc-warning.hc-form-radio-active .hc-form-frame,
+.hc-warning.hc-form-checkbox-active .hc-form-frame{
+  border-color:#FF9900;
+}
+.hc-warning  .hc-icon-radio,
+.hc-warning .hc-icon-checkbox{
+  color:#FF9900;
+}
+.hc-warning.hc-form-radio-active .hc-form-label,
+.hc-warning.hc-form-checkbox-active .hc-form-label{
+  color:#FF9900;
+}
+.hc-warning.hc-form-radio-button.hc-form-radio-active .hc-form-label,
+.hc-warning.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  border-color:#FF9900;
+}
+/* danger */
+.hc-danger.hc-form-radio-active .hc-form-frame,
+.hc-danger.hc-form-checkbox-active .hc-form-frame{
+  border-color:#ED3F14;
+}
+.hc-danger  .hc-icon-radio,
+.hc-danger .hc-icon-checkbox{
+  color:#ED3F14;
+}
+.hc-danger.hc-form-radio-active .hc-form-label,
+.hc-danger.hc-form-checkbox-active .hc-form-label{
+  color:#ED3F14;
+}
+.hc-danger.hc-form-radio-button.hc-form-radio-active .hc-form-label,
+.hc-danger.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  border-color:#ED3F14;
 }

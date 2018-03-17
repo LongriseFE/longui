@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../main.css">
+</head>
+
+<body>
+  <div class="hc-page">
+    <header class="hc-page-header">
+      <div class="hc-page-back"></div>
+      <h1 class="hc-page-title">actionsheet</h1>
+      <div class="hc-page-menu"></div>
+    </header>
+    <section class="hc-page-view">
+      <div class="hc-page-scroller">
+        <button class="hc-button hc-button-primary" id="down">
+          <span class="hc-button-label">从下面划出</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="right">
+          <span class="hc-button-label">从右边划出</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="left">
+          <span class="hc-button-label">从左边划出</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="top">
+          <span class="hc-button-label">从上边划出</span>
+        </button>
+      </div>
+    </section>
+  </div>
+  <div class="hc-masker"></div>
+  <div class="hc-popup hc-popup-down"></div>
+  <div class="hc-popup hc-popup-right"></div>
+  <div class="hc-popup hc-popup-left"></div>
+  <div class="hc-popup hc-popup-top"></div>
+  <script src="../../zepto.min.js"></script>
+  <script>
+    $('#down').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup-down').addClass('hc-popup-show')
+    })
+    $('#right').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup-right').addClass('hc-popup-show')
+    })
+    $('#left').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-popup-left').addClass('hc-popup-show')
+    })
+    $('#top').click(function () {
+      $('.hc-popup-top').addClass('hc-popup-show')
+    })
+    $('.hc-masker').click(function () {
+      $(this).removeClass('hc-masker-show')
+      $('.hc-popup').removeClass('hc-popup-show')
+    })
+    $('.hc-popup').click(function () {
+      $(this).removeClass('hc-popup-show')
+      $('.hc-masker').removeClass('hc-masker-show')
+    })
+  </script>
+</body>
+
+</html>

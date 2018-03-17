@@ -1,0 +1,62 @@
+/* 表单布局 */
+.hc-form{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.hc-form-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  height:50px;
+  background:#fff;
+  border-bottom:1px solid #ccc;
+  align-items:center;
+  flex-shrink: 0;
+}
+.hc-form-value{
+  flex:1;
+  -webkit-flex:1;
+}
+/* ----------------表单元素公共样式-------------------- */
+.hc-form-group{
+  font-size:0;
+  display:flex;
+  display:-webkit-flex;
+  padding:0 10px;
+}
+.hc-form-radio,
+.hc-form-radio-button,
+.hc-form-checkbox,
+.hc-form-checkbox-button,
+.hc-form-switch,
+.hc-form-input,
+.hc-form-input-light{
+  display:inline-flex;
+  display:-webkit-inline-flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items:center;
+  color:#666;
+  font-size:14px;
+}
+.hc-form-radio,
+.hc-form-checkbox{
+  margin-right:10px;
+}
+.hc-full{
+  width:100%;
+}
+.hc-form-core{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:18px;
+  opacity:0;
+}
+.hc-form-label{
+  padding-left:5px;
+}

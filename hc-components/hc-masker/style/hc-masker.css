@@ -1,0 +1,30 @@
+.hc-masker,.hc-masker-zoom{
+  display:flex;
+  display:-webkit-flex;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgba(0,0,0,0.5);
+  opacity:0;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  z-index:-1;
+}
+.hc-masker-zoom{
+  transform:scale(0);
+  -webkit-transform:scale(0);
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+.hc-masker.hc-masker-show{
+  opacity:1;
+  z-index:100;
+}
+.hc-masker-zoom.hc-masker-show{
+  opacity:1;
+  z-index:100;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+}

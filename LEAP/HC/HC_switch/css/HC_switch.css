@@ -1,0 +1,50 @@
+/* switch */
+.hc-form-switch .hc-form-frame{
+  display: inline-block;
+  position: relative;
+  width: 42px;
+  height: 22px;
+  border: 1px solid rgba(217,217,217,1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: #2296E7;
+}
+.hc-form-switch .hc-form-frame:before,
+.hc-form-switch .hc-form-frame:after{
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  border-radius: 15px;
+}
+.hc-form-switch .hc-form-frame:before{
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+}
+.hc-form-switch .hc-form-frame:after{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* class控制选中 */
+.hc-form-checkbox-active .hc-icon-checkbox{
+  transform:scale(0.8);
+}
+.hc-form-switch-active  .hc-form-frame:before{
+  -webkit-transform:scale(0);
+  transform:scale(0);
+}
+.hc-form-switch-active .hc-form-frame:after{
+  -webkit-transform:translateX(20px);
+  transform:translateX(20px);
+}
+
+/* 主题抽离 */
+.hc-success.hc-form-switch .hc-form-frame{
+  background-color:#19BE6B;
+}

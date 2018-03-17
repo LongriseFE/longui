@@ -19,6 +19,33 @@
 .hc-page-light .hc-page-content,.hc-page-light .hc-page-content-separate{
   background:#fff;
 }
+.hc-page-scroller{
+  flex:1;
+  -webkit-flex:1;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow:auto;
+}
+.hc-content-footer{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:5px;
+}
+.hc-content-footer-item{
+  flex:1;
+  -webkit-flex:1;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  padding:5px;
+  box-sizing:border-box;
+}
 .hc-tab-bar-column .hc-tab-bar-item{
   flex-direction:column;
   padding:5px 0;

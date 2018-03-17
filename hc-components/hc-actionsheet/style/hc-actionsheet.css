@@ -1,0 +1,43 @@
+.hc-actionsheet{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:10px;
+  box-sizing: border-box;
+  z-index:101;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transform:translateY(100%);
+  -webkit-transform:translateY(100%);
+}
+.hc-actionsheet-show{
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+.hc-actionsheet-content{
+  background:#fff;
+  margin-bottom:10px;
+  border-radius:5px;
+}
+.hc-actionsheet-list{
+  overflow:hidden;
+}
+.hc-actionsheet-list li{
+  border-top:1px solid #efefef;
+  margin-top:-1px;
+}
+.hc-actionsheet-cancel{
+  border-radius:5px;
+  overflow:hidden;
+}
+.hc-actionsheet-title{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  height:44px;
+  align-items:center;
+  color:#999;
+  border-bottom:1px solid #efefef;
+}

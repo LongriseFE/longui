@@ -1,0 +1,63 @@
+.hc-page{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+/* 中间视图 */
+.hc-page-view{
+  flex:1;
+  -webkit-flex:1;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:column;
+}
+/* 头部header */
+.hc-page-header{
+  display:flex;
+  display:-webkit-flex;
+  height:50px;
+  background:#2D8CF0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.hc-page-back,
+.hc-page-title,
+.hc-page-menu{
+  display:flex;
+  display:-webkit-flex;
+  height:50px;
+  font-size:20px;
+  color:#fff;
+  font-weight:normal;
+  align-self: center;
+  align-items: center;
+  min-width:50px;
+  justify-content: center;
+}
+.hc-page-scroller{
+  padding:10px;
+  overflow:auto;
+  flex:1;
+  -webkit-flex:1;
+}
+.hc-page-view{
+  display:flex;
+  display:-webkit-flex;
+  flex:1;
+  -webkit-flex:1;
+}
+.hc-page-view-footer{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  padding:5px;
+}
+.hc-page-view-footer-item{
+  flex:1;
+  -webkit-flex:1;
+  padding:5px;
+}

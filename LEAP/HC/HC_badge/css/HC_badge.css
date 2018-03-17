@@ -1,0 +1,12 @@
+.hc-badge,.hc-badge-dot{
+  font-size:12px;
+  display:inline-block;
+  background:#EA2000;
+  color:#fff;
+  padding:2px 5px;
+  border-radius:20px;
+}
+.hc-badge-dot{
+  font-size:0;
+  padding:3px;
+}

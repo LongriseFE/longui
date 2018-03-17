@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>alert弹出框</title>
+  <link rel="stylesheet" href="../../main.css">
+</head>
+
+<body>
+  <div class="hc-page">
+    <header class="hc-page-header">
+      <div class="hc-page-back"></div>
+      <h1 class="hc-page-title">actionsheet</h1>
+      <div class="hc-page-menu"></div>
+    </header>
+    <section class="hc-page-view">
+      <div class="hc-page-scroller">
+        <button class="hc-button hc-button-primary" id="zoom">
+          <span class="hc-button-label">放大弹出</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="fade">
+          <span class="hc-button-label">淡隐淡现</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="top">
+          <span class="hc-button-label">slidedown</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="down">
+          <span class="hc-button-label">slideup</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="left">
+          <span class="hc-button-label">slideleft</span>
+        </button>
+        <br>
+        <br>
+        <button class="hc-button hc-button-primary" id="right">
+          <span class="hc-button-label">slideright</span>
+        </button>
+      </div>
+    </section>
+  </div>
+  <div class="hc-masker"></div>
+  <!-- 默认（从中间放大） -->
+  <div class="hc-alert hc-alert-zoom">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- 淡隐淡现 -->
+  <div class="hc-alert hc-alert-fade">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- 从上方掉落 -->
+  <div class="hc-alert hc-alert-slide-top">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- 从上方掉落 -->
+  <div class="hc-alert hc-alert-slide-down">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- 从左划出 -->
+  <div class="hc-alert hc-alert-slide-left">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- 从右划出 -->
+  <div class="hc-alert hc-alert-slide-right">
+    <div class="hc-alert-head">
+      <h2 class="hc-alert-title">提示</h2>
+    </div>
+    <div class="hc-alert-body">
+      <p>恭喜成功注册本站会员！</p>
+    </div>
+    <ul class="hc-alert-handle">
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-info hc-button-full">
+          <span class="hc-button-label">取消</span>
+        </button>
+      </li>
+      <li class="hc-alert-handle-item">
+        <button class="hc-button hc-button-primary hc-button-full">
+          <span class="hc-button-label">确认</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <script src="../../zepto.min.js"></script>
+  <script>
+    $('#zoom').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-zoom').addClass('hc-alert-show')
+    })
+    $('#fade').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-fade').addClass('hc-alert-show')
+    })
+    $('#top').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-slide-top').addClass('hc-alert-show')
+    })
+    $('#down').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-slide-down').addClass('hc-alert-show')
+    })
+    $('#left').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-slide-left').addClass('hc-alert-show')
+    })
+    $('#right').click(function () {
+      $('.hc-masker').addClass('hc-masker-show')
+      $('.hc-alert-slide-right').addClass('hc-alert-show')
+    })
+    $('.hc-masker').click(function () {
+      $(this).removeClass('hc-masker-show')
+      $('.hc-alert').removeClass('hc-alert-show')
+    })
+  </script>
+</body>
+
+</html>

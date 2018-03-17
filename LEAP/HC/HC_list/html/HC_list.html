@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>list</title>
+  <link href="../../HC_global/css/HC_global.css" path="LEAP/HC/HC_global/css/HC_global.css" rel="stylesheet" type="text/css" />
+  <link href="../css/HC_list.css" path="LEAP/HC_list/css/HC_list.css" rel="stylesheet" type="text/css" />
+  
+  <link href="../../HC_tag/css/HC_tag.css" path="LEAP/HC/HC_tag/css/HC_tag.css" rel="stylesheet" type="text/css" />
+  <script src="../javascript/HC_list.js"  path="LEAP/HC/HC_list/javascript/HC_list.js" def></script>
+</head>
+<body>
+	<ul class="hc-new-list" hc="hc_list" pageSize="12" autoSize="0" rowHeight="74">
+	    <li class="hc-list-item" hcf="hc_listitem" hcfe="hc_listclick">
+	      <div class="hc-list-title" hcfe="hc_listclick">
+	        <div class="hc-list-cover" hcfe="hc_listclick">
+	          <button class="hc-button-circle hc-button-primary hc-button-medium" hcfe="hc_listclick">
+	            <span class="hc-button-label" hcfe="hc_listclick" md="buistype" codev='{"平件":"hc-button-success","一般":"hc-button-primary","急件":"hc-button-warning","加急":"hc-button-danger"}'></span>
+	          </button>
+	        </div>
+	        <div class="hc-list-info" hcfe="hc_listclick">
+	          <h2 class="hc-list-name" md="listtitle" hcfe="hc_listclick"></h2>
+	          <ul class="hc-list-tail" hcfe="hc_listclick">
+	            <li class="hc-list-tail-col" hcfe="hc_listclick">
+	              <i class="hc-tag-line hc-tag-danger" hcfe="hc_listclick" md="datastate" codev='{"未阅":"hc-tag-danger","已阅":"hc-tag-info"}'></i>
+	            </li>
+	            <li class="hc-list-tail-col" hcfe="hc_listclick">
+	              <span class="hc-list-tail-item" hcfe="hc_listclick" md="category"></span>
+	              <span class="hc-list-tail-item" hcfe="hc_listclick" md="listtime"></span>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+	    </li>
+	  </ul>
+</body>
+</html>

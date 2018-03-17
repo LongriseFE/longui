@@ -1,0 +1,159 @@
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>from</title>
+  <script src="../HC.js"  path="LEAP/HC.js" def></script>
+  <link href="../HC.css" path="LEAP/HC.css" rel="stylesheet" type="text/css" />
+  <script src="./moduletest.js" path="LEAP/module/moduletest.js" def></script>
+  <!--@ module = moduletest -->
+</head>
+		<div class="hc-page">
+		    <section class="hc-page-view">
+		      <div class="hc-page-scroller">
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">紧急程度</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-form-group" hc="hc_radio">
+					      <div class="hc-form-radio hc-primary hc-form-radio-active" hcf="hc_radioitem">
+					        <input class="hc-form-core" type="radio" name="r11" hcf="hc_radioinput" value="1">
+					        <span class="hc-form-frame" hcf="hc_radiocore">
+					          <i class="hc-iconfont hc-icon-radio" hcf="hc_radiocore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_radiolabel">加急</label>
+					      </div>
+					      <div class="hc-form-radio hc-primary" hcf="hc_radioitem">
+					        <input class="hc-form-core" type="radio" name="r11" hcf="hc_radioinput" value="2">
+					        <span class="hc-form-frame" hcf="hc_radiocore">
+					          <i class="hc-iconfont hc-icon-radio" hcf="hc_radiocore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_radiolabel">紧急</label>
+					      </div>
+					      <div class="hc-form-radio hc-primary" hcf="hc_radioitem">
+					        <input class="hc-form-core" type="radio" name="r11" hcf="hc_radioinput" value="3">
+					        <span class="hc-form-frame" hcf="hc_radiocore">
+					          <i class="hc-iconfont hc-icon-radio" hcf="hc_radiocore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_radiolabel">一般</label>
+					      </div>
+					    </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">文件标题</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-input-light">
+				          <input type="text" class="hc-input-form" placeholder="请填写文件标题！">
+				          <span class="hc-input-close"></span>
+				        </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">是否收文</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-form-switch hc-primary" values='["1","2"]' hc="hc_switch">
+					     <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_switchinput">
+					     <label class="hc-form-label" hcf="hc_switchlabel"></label>
+					     <span class="hc-form-frame" hcf="hc_switchframe">
+					       <i class="hc-iconfont hc-icon-checkbox" hcf="hc_switchicon"></i>
+					     </span>
+					   </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">文件类型</dt>
+		            <dd class="hc-form-value">
+			          <div class="hc-form-input-light">
+		                <input readonly="" class="hc-form-core" type="text" name="r11" placeholder="请选择">
+		                <span class="hc-form-frame">
+		                  <i class="hc-iconfont hc-icon-moreunfold"></i>
+		                </span>
+		              </div>
+		          	</dd>
+		          </dl>
+		          
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">来文单位</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-input-light">
+				          <input readonly="readonly" type="text" class="hc-input-form" value="发改委" placeholder="请填写来文单位！">
+				          <span class="hc-input-close"></span>
+				        </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">来文字号</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-input-light">
+				          <input type="text" class="hc-input-form" placeholder="请填写来文字号！">
+				          <span class="hc-input-close"></span>
+				        </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		          		<dt class="hc-form-label">收文日期：</dt>
+				      <dd class="hc-form-value">
+				      	<div class="hc-form-input-light">
+		                <input readonly="" class="hc-form-core" type="text" name="r11" placeholder="请选择收文日期">
+		                <span class="hc-form-frame">
+		                  <i class="hc-iconfont hc-icon-date"></i>
+		                </span>
+		              </div>
+				      </dd>
+			      </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">类型选择</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-form-group" hc="hc_checkbox">
+					      <div class="hc-form-checkbox hc-primary hc-form-checkbox-active"  hcf="hc_cbitem">
+					        <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+					        <span class="hc-form-frame" hcf="hc_cbcore">
+					          <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_cblabel">一类</label>
+					      </div>
+					      <div class="hc-form-checkbox hc-primary "  hcf="hc_cbitem">
+					        <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+					        <span class="hc-form-frame" hcf="hc_cbcore">
+					          <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_cblabel">二类</label>
+					      </div>
+					      <div class="hc-form-checkbox hc-primary "  hcf="hc_cbitem">
+					        <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+					        <span class="hc-form-frame" hcf="hc_cbcore">
+					          <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+					        </span>
+					        <label class="hc-form-label" hcf="hc_cblabel">三类</label>
+					      </div>
+					    </div>
+		            </dd>
+		          </dl>
+		          <dl class="hc-form-item">
+		            <dt class="hc-form-label" style="width:5em;">所在地区</dt>
+		            <dd class="hc-form-value">
+		              <div class="hc-form-input-light">
+		                <input readonly class="hc-form-core" type="text" name="r11" placeholder="请选择所在地区">
+		                <span class="hc-form-frame">
+		                  <i class="hc-iconfont hc-icon-address"></i>
+		                </span>
+		              </div>
+		            </dd>
+		          </dl>
+		      </div>
+		      <footer class="hc-page-view-footer">
+		        <div class="hc-page-view-footer-item">
+		          <button class="hc-button hc-full hc-button-warning" hcf="clear">
+		            <span class="hc-button-icon"></span>
+		            <span class="hc-button-label">取消</span>
+		          </button>
+		        </div>
+		        <div class="hc-page-view-footer-item">
+		          <button class="hc-button hc-full hc-button-primary">
+		            <span class="hc-button-icon"></span>
+		            <span class="hc-button-label">确认</span>
+		          </button>
+		        </div>
+		      </footer>
+		    </section>
+		  </div>
