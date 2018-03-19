@@ -1,63 +1,63 @@
 /* ---------------按钮主题---------------- */
 .hc-button-primary{
-  background:#2296E7;
+  background:#2D8CF0;
 }
 .hc-button-outline.hc-button-primary{
   background:none;
-  border-color:#2296E7;
-  color:#2296E7;
+  border-color:#2D8CF0;
+  color:#2D8CF0;
 }
 .hc-button-text.hc-button-primary{
   background:none;
-  color:#2296E7;
+  color:#2D8CF0;
 }
 .hc-button-success{
-  background:#36B42C;
+  background:#19BE6B;
 }
 .hc-button-outline.hc-button-success{
   background:none;
-  border-color:#36B42C;
-  color:#36B42C;
+  border-color:#19BE6B;
+  color:#19BE6B;
 }
 .hc-button-text.hc-button-success{
   background:none;
-  color:#36B42C;
+  color:#19BE6B;
 }
 .hc-button-info{
-  background:#8E8E93;
+  background:#2DB7F5;
 }
 .hc-button-outline.hc-button-info{
   background:none;
-  border-color:#8E8E93;
-  color:#8E8E93;
+  border-color:#2DB7F5;
+  color:#2DB7F5;
 }
 .hc-button-text.hc-button-info{
   background:none;
-  color:#8E8E93;
+  color:#2DB7F5;
 }
 .hc-button-warning{
-  background:#E0BF2E;
+  background:#FF9900;
 }
 .hc-button-outline.hc-button-warning{
   background:none;
-  border-color:#E0BF2E;
-  color:#E0BF2E;
+  border-color:#FF9900;
+  color:#FF9900;
 }
 .hc-button-text.hc-button-warning{
   background:none;
-  color:#E0BF2E;
+  color:#FF9900;
 }
 .hc-button-danger{
-  background:#F3563D;
+  background:#ED3F14;
 }
 .hc-button-outline.hc-button-danger{
   background:none;
-  border-color:#F3563D;
-  color:#F3563D;
+  border-color:#ED3F14;
+  color:#ED3F14;
 }
 .hc-button-text.hc-button-danger{
   background:none;
-  color:#F3563D;
+  color:#ED3F14;
 }
 
 /* ---------------radio 单选按钮---------------- */

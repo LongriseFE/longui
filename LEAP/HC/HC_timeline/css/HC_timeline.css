@@ -1,0 +1,46 @@
+.hc-timeline{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+.hc-timeline-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.hc-timeline-cover{
+  border-right:1px dashed #ccc;
+  padding-bottom:2rem;
+  padding-right:1rem;
+}
+.hc-timeline-content{
+  padding-left:1rem;
+  flex:1;
+  -webkit-flex:1;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+.hc-timeline-title{
+  font-size:1.6rem;
+  font-weight:normal;
+  line-height:1.6;
+}
+.hc-timeline-content-item{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size:1.4rem;
+  color:#666;
+  line-height:1.8;
+}
+.hc-timeline-time{
+  font-size:1.4rem;
+  color:#999;
+  display:flex;
+  display:-webkit-flex;
+  justify-content: flex-end;
+  width:100%;
+}
