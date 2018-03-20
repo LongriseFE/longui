@@ -19,7 +19,7 @@ del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{color:#333;outline:0;}
 body{background:#fff;}
 a,a:hover{color:#333;}
-html{font-size:62.5%;}
+html{font-size:125%;}  /*1rem=20px*/
 a,button,input,optgroup,select,textarea {
     -webkit-tap-highlight-color:rgba(0,0,0,0); 
 }
@@ -92,11 +92,7 @@ a,button,input,optgroup,select,textarea {
   padding:5px;
 }
 /* 禁用手机长按选中文本 */
-*{
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+* {
+  -webkit-user-select: text;
+  -user-select: text;
 }

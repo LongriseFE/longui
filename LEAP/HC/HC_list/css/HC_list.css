@@ -10,9 +10,9 @@
   flex-direction: column;
   align-items:center;
   border-bottom:1px solid #dadada;
-  font-size:16px;
+  font-size:0.8rem;
   color:#333;
-  min-height:42px;
+  min-height:2.1rem;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
   position: relative;
@@ -25,7 +25,7 @@
   box-sizing: border-box;
   flex:1;
   -webkit-flex:1;
-  padding:0 5px;
+  padding:0 0.2rem;
   background:#fff;
 }
 .hc-list-title:active{
@@ -36,15 +36,15 @@
   display:-webkit-flex;
   flex-direction: row;
   align-items:center;
-  padding:0 5px;
+  padding:0 0.2rem;
 }
 .hc-list-cover:empty,.hc-list-label:empty,.hc-list-explain:empty,.hc-list-badge:empty,.hc-list-append:empty{
   padding:0;
 }
 /* 小图标 */
 .hc-list-cover img{
-  width:30px;
-  height:30px;
+  width:1.5rem;
+  height:1..5rem;
 }
 /* 文字标签 */
 .hc-list-label{
@@ -54,11 +54,11 @@
 /* 附加信息 */
 .hc-list-explain{
   color:#666;
-  font-size:14px;
+  font-size:0.7rem;
 }
 /* 最右边箭头也有可能是其他元素 */
 .hc-list-append{
-  font-size:24px;
+  font-size:1.2rem;
   display:flex;
   display:-webkit-flex;
   align-items:center;
@@ -66,8 +66,8 @@
 }
 /* 列表中的头像 */
 .hc-list-face{
-  width:48px;
-  height:48px;
+  width:2.4rem;
+  height:2.4rem;
   border-radius:50%;
 }
 /* 图片list */
@@ -79,11 +79,11 @@
   flex-direction:column;
 }
 .hc-cover-list .hc-list-title{
-  padding:10px;
+  padding:0.5rem;
 }
 .hc-cover-list .hc-list-cover{
   width:30%;
-  padding:0 10px 0 0;
+  padding:0 0.5rem 0 0;
 }
 .hc-cover-list .hc-list-cover img{
   width:100%;
@@ -91,21 +91,21 @@
 }
 .hc-list-name{
   font-weight:normal;
-  font-size:16px;
+  font-size:0.8rem;
   line-height:1.4;
   overflow:hidden;
   text-overflow:ellipsis;
   display:-webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp:2;
-  margin-bottom:5px;
-  height:40px;
+  margin-bottom:0.2rem;
+  height:2rem;
 }
 .hc-list-row{
-  padding:2px 0;
+  padding:0.1rem 0;
 }
 .hc-list-row-label{
-  font-size:14px;
+  font-size:0.7rem;
   color:#666;
 }
 .hc-list-tail{
@@ -114,7 +114,7 @@
   flex-direction:row;
   justify-content: space-between;
   color:#999;
-  font-size:12px;
+  font-size:0.6rem;
   align-items:center;
 }
 .hc-list-tail-col{
@@ -124,17 +124,17 @@
   align-items:center;
 }
 .hc-list-tail-item{
-  margin-left:10px;
+  margin-left:0.5rem;
 }
 .hc-list-tail-col .hc-tag{
-  margin-right:5px;
+  margin-right:0.2rem;
 }
 /* 有序list */
 .hc-sort-list .hc-list-title{
-  padding:10px;
+  padding:0.5rem;
 }
 .hc-sort-list .hc-list-badge{
-  padding-top:3px;
+  padding-top:0.15rem;
   padding-left:0;
   align-items: flex-start;
 }
@@ -143,11 +143,11 @@
   padding-left:0;
 }
 .hc-chat-list .hc-list-cover img{
-  width:48px;
-  height:48px;
+  width:2.4rem;
+  height:2.4rem;
 }
 .hc-list-message{
-  font-size:12px;
+  font-size:0.6rem;
   color:#999;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -159,11 +159,11 @@
   align-items:flex-end;
 }
 .hc-list-time{
-  font-size:14px;
+  font-size:0.7rem;
   color:#999;
 }
 .hc-chat-list .hc-list-title{
-  padding:10px;
+  padding:0.5rem;
 }
 .hc-chat-list .hc-list-info{
   justify-content: space-around;
@@ -199,17 +199,17 @@
 }
 /* new-list */
 .hc-new-list .hc-list-title{
-  padding:10px;
+  padding:0.5rem;
 }
 .hc-list-summary{
   color:#999;
-  margin-top:10px;
-  font-size:14px;
+  margin-top:0.5rem;
+  font-size:0.7rem;
   line-height:1.6;
 }
 /* tag-list */
 .hc-tag-list .hc-list-title{
-  padding:10px;
+  padding:0.5rem;
 }
 .hc-tag-list .hc-list-badge {
   padding-left: 0;

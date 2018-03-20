@@ -9,7 +9,7 @@
   display:flex;
   display:-webkit-flex;
   flex-direction: row;
-  height:50px;
+  height:2.5rem;
   background:#fff;
   border-bottom:1px solid #ccc;
   align-items:center;
@@ -24,7 +24,7 @@
   font-size:0;
   display:flex;
   display:-webkit-flex;
-  padding:0 10px;
+  padding:0 0.5rem;
 }
 .hc-form-radio,
 .hc-form-radio-button,
@@ -39,12 +39,12 @@
   position: relative;
   justify-content: space-between;
   align-items:center;
-  color:#666;
-  font-size:14px;
+  color:#606266;
+  font-size:0.7rem;
 }
 .hc-form-radio,
 .hc-form-checkbox{
-  margin-right:10px;
+  margin-right:0.5rem;
 }
 .hc-full{
   width:100%;
@@ -54,9 +54,20 @@
   top:0;
   left:0;
   width:100%;
-  height:18px;
+  height:0.9rem;
   opacity:0;
 }
 .hc-form-label{
-  padding-left:5px;
+  padding-left:0.2rem;
+  font-size:0.8rem;
+}
+.hc-form-label,.hc-form-frame{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction: row;
+  align-items:center;
+}
+.hc-form-label .hc-iconfont,
+.hc-form-frame .hc-iconfont{
+  font-size:0.9rem;
 }

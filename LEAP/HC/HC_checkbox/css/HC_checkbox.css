@@ -5,13 +5,12 @@
   align-items:center;
   justify-content: center;
   border:1px solid #aaa;
-  width:18px;
-  height:18px;
-  border-radius:50%;
+  width:0.9rem;
+  height:0.9rem;
   box-sizing:border-box;
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
-  border-radius:3px;
+  border-radius:0.2rem;
 }
 .hc-form-checkbox .hc-icon-checkbox{
   transform:scale(0);
@@ -25,50 +24,89 @@
   display:none;
 }
 .hc-form-checkbox-button .hc-form-label{
-  height:30px;
-  line-height:30px;
-  padding:0 15px;
+  height:1.5rem;
+  padding:0 0.6rem;
   border:1px solid #aaa;
   margin-left:-1px;
   min-width:3em;
   display:flex;
   display:-webkit-flex;
   justify-content: center;
+  align-items:center;
 }
 
 /* conner */
-.hc-conner.hc-form-checkbox-button:first-child .hc-form-label{
-  border-radius:5px 0 0 5px;
+.hc-conner.hc-form-checkbox-button:first-child .hc-form-label,
+.hc-conner .hc-form-checkbox-button:first-child .hc-form-label{
+  border-radius:0.2rem 0 0 0.2rem;
 }
-.hc-conner.hc-form-checkbox-button:last-child .hc-form-label{
-  border-radius:0 5px 5px 0;
+.hc-conner.hc-form-checkbox-button:last-child .hc-form-label,
+.hc-conner .hc-form-checkbox-button:last-child .hc-form-label{
+  border-radius:0 0.2rem 0.2rem 0;
 }
 /* rounder */
-.hc-rounder.hc-form-checkbox-button:first-child .hc-form-label{
-  border-radius:30px 0 0 30px;
+.hc-rounder.hc-form-checkbox-button:first-child .hc-form-label,
+.hc-rounder .hc-form-checkbox-button:first-child .hc-form-label{
+  border-radius:1.5rem 0 0 1.5rem;
 }
-.hc-rounder.hc-form-checkbox-button:last-child .hc-form-label{
-  border-radius:0 30px 30px 0;
+.hc-rounder.hc-form-checkbox-button:last-child .hc-form-label,
+.hc-rounder .hc-form-checkbox-button:last-child .hc-form-label{
+  border-radius:0 1.5rem 1.5rem 0;
 }
 
-/* 选中操作 */
+/* 不同尺寸 */
+.hc-form-mini .hc-form-label,.hcform-checkbox-button.hc-form-mini .hc-form-label{
+  height:1.2rem;
+  padding:0 0.3rem;
+}
+.hc-form-small .hc-form-label,.hcform-checkbox-button.hc-form-small .hc-form-label{
+  height:1.4rem;
+  padding:0 0.45rem;
+}
+.hc-form-medium .hc-form-label,.hcform-checkbox-button.hc-form-medium .hc-form-label{
+  height:1.6rem;
+  padding:0 0.75rem;
+}
+.hc-form-large .hc-form-label,.hcform-checkbox-button.hc-form-large .hc-form-label{
+  height:1.8rem;
+  padding:0 0.9rem;
+}
+
+/* disabled */
+.hc-disabled .hc-form-frame{
+  border-color:#dcdfe6;
+}
+.hc-form-checkbox-active.hc-disabled .hc-form-frame{
+  border-color:#dcdfe6 !important;
+  background:#f2f6fc !important;
+}
+.hc-disabled .hc-form-label,
+.hc-form-checkbox-active.hc-disabled .hc-form-label{
+  color:#ccc !important;
+}
+.hc-form-checkbox-active.hc-disabled .hc-icon-checkbox{
+  color:#c0c4cc;
+}
+.hc-form-checkbox-button.hc-disabled .hc-form-label{
+  border-color:#dcdfe6;
+}
+.hc-form-checkbox-button.hc-form-checkbox-active.hc-disabled .hc-form-label{
+  background-color:#f3f3f3 !important;
+  border-color:#c0c4cc !important;
+}
+
+/* 默认选中操作 */
+.hc-form-checkbox-active .hc-form-frame{
+  background-color:#2D8CF0;
+}
 .hc-form-checkbox-active .hc-icon-checkbox{
   transform:scale(0.6);
+  color:#fff;
+}
+.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
+  background-color:#2D8CF0;
+  color:#fff;
 }
 .hc-form-checkbox-active .hc-form-label{
   z-index:100;
-}
-
-/* 主题抽离 */
-.hc-primary.hc-form-checkbox-active .hc-form-frame{
-  border-color:#2D8CF0;
-}
-.hc-primary .hc-icon-checkbox{
-  color:#2D8CF0;
-}
-.hc-primary.hc-form-checkbox-active .hc-form-label{
-  color:#2D8CF0;
-}
-.hc-primary.hc-form-checkbox-button.hc-form-checkbox-active .hc-form-label{
-  border-color:#2D8CF0;
 }

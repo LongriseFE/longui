@@ -2,75 +2,239 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>HC_radio</title>
-	<script src="../../../HC.js" path="LEAP/HC.js" def></script>
-	<link href="../../../HC.css" path="LEAP/HC.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HC_checkbox</title>
+  <script src="../../../HC.js" path="LEAP/HC.js" def></script>
+  <link href="../../../HC.css" path="LEAP/HC.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<div class="hc-page">
-		<header class="hc-page-header">
-			<div class="hc-page-back"></div>
-			<h1 class="hc-page-title">radio单选框</h1>
-			<div class="hc-page-menu"></div>
-		</header>
-		<section class="hc-page-view">
-			<div class="hc-page-scroller">
-				<br>
-				<div class="hc-form-group" hc="hc_checkbox">
-					<div class="hc-form-checkbox hc-primary hc-form-checkbox-active" hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">A</label>
-					</div>
-					<div class="hc-form-checkbox hc-primary " hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">B</label>
-					</div>
-					<div class="hc-form-checkbox hc-primary " hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">C</label>
-					</div>
-				</div>
+  <div class="hc-page">
+    <header class="hc-page-header">
+      <div class="hc-page-back" onclick="window.history.go(-1)">
+        <span class="hc-iconfont hc-icon-back"></span>
+      </div>
+      <h1 class="hc-page-title">checkbox复选框</h1>
+      <div class="hc-page-menu"></div>
+    </header>
+    <section class="hc-page-view">
+      <div class="hc-page-scroller">
+        <p style="font-size:0.7rem;color:#666;line-height:1.8;text-indent:2em;padding:0.5rem;">控制checkbox-button大小（hc-mini,hc-small,hc-medium,hc-large），形状（hc-conner,hc-rounder），颜色（hc-primary,hc-success,hc-info,hc-warning,hc-danger）既可以加在hc-checkbox-button上面，当你使用了hc-form-group的时候，这些class也可以加在hc-form-group上面，同样可以控制其相关样式！</p>
+        <br>
+        <div class="hc-form-group" hc="hc_checkbox">
+          <div class="hc-form-checkbox hc-primary hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox hc-primary " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox hc-primary hc-form-checkbox-active hc-disabled" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" disabled hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox hc-primary hc-disabled" hcf="hc_cbitem">
+            <input class="hc-form-core" disabled type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox hc-primary " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
 
-				<br>
+        <br>
 
-				<div class="hc-form-group" hc="hc_checkbox">
-					<div class="hc-form-checkbox-button hc-conner hc-primary hc-form-checkbox-active" hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">A</label>
-					</div>
-					<div class="hc-form-checkbox-button hc-conner hc-primary " hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">B</label>
-					</div>
-					<div class="hc-form-checkbox-button hc-conner hc-primary " hcf="hc_cbitem">
-						<input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
-						<span class="hc-form-frame" hcf="hc_cbcore">
-							<i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
-						</span>
-						<label class="hc-form-label" hcf="hc_cblabel">C</label>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+        <div class="hc-form-group" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-conner hc-primary hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button hc-conner hc-primary " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button hc-conner hc-primary " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="hc-form-group" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-rounder hc-danger hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button hc-rounder hc-danger " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button hc-rounder hc-danger " hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+        <br>
+        <div class="hc-form-group hc-form-mini hc-primary hc-conner" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+        <br>
+        <div class="hc-form-group hc-form-small hc-info hc-conner" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+        <br>
+        <div class="hc-form-group hc-success hc-conner" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+        <br>
+        <div class="hc-form-group hc-form-medium hc-warning hc-conner" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-form-checkbox-active hc-disabled" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" disabled name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+        <br>
+        <div class="hc-form-group hc-form-large hc-danger hc-rounder" hc="hc_checkbox">
+          <div class="hc-form-checkbox-button hc-form-checkbox-active" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="a">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">A</label>
+          </div>
+          <div class="hc-form-checkbox-button hc-disabled" hcf="hc_cbitem">
+            <input class="hc-form-core" disabled type="checkbox" name="r11" hcf="hc_cbinput" value="b">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">B</label>
+          </div>
+          <div class="hc-form-checkbox-button" hcf="hc_cbitem">
+            <input class="hc-form-core" type="checkbox" name="r11" hcf="hc_cbinput" value="c">
+            <span class="hc-form-frame" hcf="hc_cbcore">
+              <i class="hc-iconfont hc-icon-checkbox" hcf="hc_cbcore"></i>
+            </span>
+            <label class="hc-form-label" hcf="hc_cblabel">C</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>

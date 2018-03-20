@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>fab</title>
-  <script src="../../../HC.js"  path="LEAP/HC.js" def></script>
+  <script src="../../../HC.js" path="LEAP/HC.js" def></script>
   <link href="../../../HC.css" path="LEAP/HC.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <div class="hc-fabs hc-fabs-show" style="top:40%">
-    <button class="hc-button-circle hc-button-danger hc-button-large hc-fabs-core">
-      <span class="hc-button-ICon">
-        <i class="hc-iconfont hc-icon-add"></i>
-      </span>
-    </button>
-    <ul class="hc-fabs-content">
-      <li class="hc-fabs-item hc-fabs-around-4-0">
-        <button class="hc-button-circle hc-button-danger hc-button-medium">
-          <span class="hc-button-label">添加</span>
-        </button>
-      </li>
-      <li class="hc-fabs-item hc-fabs-around-4-1">
-        <button class="hc-button-circle hc-button-danger hc-button-medium">
-          <span class="hc-button-label">编辑</span>
-        </button>
-      </li>
-      <li class="hc-fabs-item hc-fabs-around-4-2">
-        <button class="hc-button-circle hc-button-danger hc-button-medium">
-          <span class="hc-button-label">查看</span>
-        </button>
-      </li>
-      <li class="hc-fabs-item hc-fabs-around-4-3">
-        <button class="hc-button-circle hc-button-danger hc-button-medium">
-          <span class="hc-button-label">删除</span>
-        </button>
-      </li>
-    </ul>
+  <div class="hc-page">
+    <header class="hc-page-header">
+      <div class="hc-page-back" onclick="window.history.go(-1)">
+        <span class="hc-iconfont hc-icon-back"></span>
+      </div>
+      <h1 class="hc-page-title">fab菜单</h1>
+      <div class="hc-page-menu"></div>
+    </header>
+    <section class="hc-page-view">
+      <div class="hc-page-scroller" style="padding:10px;">
+        <div class="hc-fabs hc-fabs-show" style="top:40%">
+          <button class="hc-button-circle hc-button-danger hc-button-large hc-fabs-core">
+            <span class="hc-button-ICon">
+              <i class="hc-iconfont hc-icon-add"></i>
+            </span>
+          </button>
+          <ul class="hc-fabs-content">
+            <li class="hc-fabs-item hc-fabs-around-4-0">
+              <button class="hc-button-circle hc-button-danger hc-button-medium">
+                <span class="hc-button-label">添加</span>
+              </button>
+            </li>
+            <li class="hc-fabs-item hc-fabs-around-4-1">
+              <button class="hc-button-circle hc-button-danger hc-button-medium">
+                <span class="hc-button-label">编辑</span>
+              </button>
+            </li>
+            <li class="hc-fabs-item hc-fabs-around-4-2">
+              <button class="hc-button-circle hc-button-danger hc-button-medium">
+                <span class="hc-button-label">查看</span>
+              </button>
+            </li>
+            <li class="hc-fabs-item hc-fabs-around-4-3">
+              <button class="hc-button-circle hc-button-danger hc-button-medium">
+                <span class="hc-button-label">删除</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
+
 </html>
